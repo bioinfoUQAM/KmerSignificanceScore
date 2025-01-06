@@ -1,0 +1,1271 @@
+{
+    "US28": {
+        "(1, 'ATGACACCG')": {
+            "variations": [
+                "ATGACGCCG",
+                "ATGACACCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 2,
+            "k_mer_significance_score": 2.3
+        },
+        "(10, 'ACGACGACG')": {
+            "variations": [
+                "ACGACAACG",
+                "ACGACGACG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(19, 'ACCGCGGAA')": {
+            "variations": [
+                "ACCGCGGAA",
+                "ACCACGGAA"
+            ],
+            "amino_acid_changes": [
+                "A8T"
+            ],
+            "protein_score": 5,
+            "mutational_score": 2,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.7
+        },
+        "(28, 'CTCACGACG')": {
+            "variations": [
+                "CTCACGACG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(37, 'GAGTTTGAC')": {
+            "variations": [
+                "GAGTTTGAC",
+                "GAGTTTGAA"
+            ],
+            "amino_acid_changes": [
+                "D15E"
+            ],
+            "protein_score": 5,
+            "mutational_score": 2,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.7
+        },
+        "(46, 'TACGATGAA')": {
+            "variations": [
+                "TACGATGAA",
+                "TACGACGAT",
+                "TATGATGAA",
+                "TACGACCTT"
+            ],
+            "amino_acid_changes": [
+                "E18L",
+                "E18D"
+            ],
+            "protein_score": 5,
+            "mutational_score": 5,
+            "discriminative_score": 4,
+            "k_mer_significance_score": 4.7
+        },
+        "(55, 'GACGCGACT')": {
+            "variations": [
+                "GAAGCGACT",
+                "GGAGCAACC",
+                "GACGCGACT",
+                "GCCGCGACT",
+                "GACGCGGCT"
+            ],
+            "amino_acid_changes": [
+                "D19A",
+                "T21A",
+                "D19E",
+                "D19G"
+            ],
+            "protein_score": 5,
+            "mutational_score": 3,
+            "discriminative_score": 5,
+            "k_mer_significance_score": 4.3
+        },
+        "(64, 'CCTTGTGTT')": {
+            "variations": [
+                "CCCTGTGTC",
+                "CCTTGTACC",
+                "CCTTGTGTT",
+                "CCCTGTGTT"
+            ],
+            "amino_acid_changes": [
+                "V24T"
+            ],
+            "protein_score": 5,
+            "mutational_score": 3,
+            "discriminative_score": 4,
+            "k_mer_significance_score": 4.0
+        },
+        "(73, 'TTCACCGAC')": {
+            "variations": [
+                "TTCACCGAC",
+                "CTCACCGAC",
+                "CTAACTGAC"
+            ],
+            "amino_acid_changes": [
+                "F25L"
+            ],
+            "protein_score": 5,
+            "mutational_score": 1,
+            "discriminative_score": 4,
+            "k_mer_significance_score": 3.3
+        },
+        "(82, 'GTGCTTAAT')": {
+            "variations": [
+                "GTGCTTAAT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(91, 'CAGTCAAAG')": {
+            "variations": [
+                "CAGTCAAAG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(100, 'CCAGTTACG')": {
+            "variations": [
+                "CCAGTCACG",
+                "CCGGTCACG",
+                "CCAGTTACG",
+                "CCGGTTACG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 4,
+            "k_mer_significance_score": 3.0
+        },
+        "(109, 'TTGTTTCTG')": {
+            "variations": [
+                "TTGTTTCTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(118, 'TACGGCGTT')": {
+            "variations": [
+                "TACGGCGTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(127, 'GTCTTTCTC')": {
+            "variations": [
+                "GTCTTTCTT",
+                "GTCTTTCTC",
+                "GTCTTTCTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 3,
+            "k_mer_significance_score": 2.7
+        },
+        "(136, 'TTCGGTTCC')": {
+            "variations": [
+                "TTCGGTTCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(145, 'ATCGGCAAC')": {
+            "variations": [
+                "ATCGGCAAC",
+                "GTCGGCAAC"
+            ],
+            "amino_acid_changes": [
+                "I49V"
+            ],
+            "protein_score": 5,
+            "mutational_score": 2,
+            "discriminative_score": 2,
+            "k_mer_significance_score": 3.0
+        },
+        "(154, 'TTCTTGGTG')": {
+            "variations": [
+                "TTCTTGGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(163, 'ATCTTCACC')": {
+            "variations": [
+                "ATCTTCACC",
+                "ATTTTCACC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 2,
+            "k_mer_significance_score": 2.3
+        },
+        "(172, 'ATCACCTGG')": {
+            "variations": [
+                "ATCACCTGG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(181, 'CGACGTCGG')": {
+            "variations": [
+                "CGACGTCGG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(190, 'ATTCAATGC')": {
+            "variations": [
+                "ATTCAATGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(199, 'TCCGGCGAT')": {
+            "variations": [
+                "TCCGGCGAT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(208, 'GTTTACTTT')": {
+            "variations": [
+                "GTTTACTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(217, 'ATCAACCTC')": {
+            "variations": [
+                "ATCAACCTC",
+                "ATCAATCTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 2,
+            "k_mer_significance_score": 2.3
+        },
+        "(226, 'GCGGCCGCC')": {
+            "variations": [
+                "GCGGCCGCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(235, 'GATTTGCTT')": {
+            "variations": [
+                "GATTTGCTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(244, 'TTCGTTTGT')": {
+            "variations": [
+                "TTCGTTTGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(253, 'ACACTACCT')": {
+            "variations": [
+                "ACACTACCT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(262, 'CTGTGGATG')": {
+            "variations": [
+                "CTGTGGATG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(271, 'CAATACCTC')": {
+            "variations": [
+                "CAATACCTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(280, 'CTAGATCAC')": {
+            "variations": [
+                "CTAGATCAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(289, 'AACTCCCTA')": {
+            "variations": [
+                "AACTCCCTA",
+                "AACTCCTTA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(298, 'GCCAGCGTG')": {
+            "variations": [
+                "GCCAGCGTA",
+                "GCCAGCGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(307, 'CCGTGTACG')": {
+            "variations": [
+                "CCGTGTACG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(316, 'TTACTCACT')": {
+            "variations": [
+                "TTACTCACT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(325, 'GCCTGTTTC')": {
+            "variations": [
+                "GCCTGTTTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(334, 'TACGTGGCT')": {
+            "variations": [
+                "TACGTGGCT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(343, 'ATGTTTGCC')": {
+            "variations": [
+                "ATGTTTGCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(352, 'AGTTTGTGT')": {
+            "variations": [
+                "AGTTTGTGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(361, 'TTTATCACG')": {
+            "variations": [
+                "TTTATTACG",
+                "TTTATCACG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(370, 'GAGATTGCA')": {
+            "variations": [
+                "GAGATTGCA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(379, 'CTCGATCGC')": {
+            "variations": [
+                "CTCGATCGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(388, 'TACTACGCT')": {
+            "variations": [
+                "TACTACGCT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(397, 'ATTGTTTAC')": {
+            "variations": [
+                "ATTGTTTAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(406, 'ATGAGATAT')": {
+            "variations": [
+                "ATGAGATAT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(415, 'CGGCCTGTA')": {
+            "variations": [
+                "CGGCCTGTA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(424, 'AAACAGGCC')": {
+            "variations": [
+                "AAACAGGCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(433, 'TGCCTTTTC')": {
+            "variations": [
+                "TGCCTTTTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(442, 'AGTATTTTT')": {
+            "variations": [
+                "AGTATTTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(451, 'TGGTGGATC')": {
+            "variations": [
+                "TGGTGGATC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(460, 'TTTGCCGTG')": {
+            "variations": [
+                "TTTGCCGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(469, 'ATCATCGCC')": {
+            "variations": [
+                "ATCATCGCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(478, 'ATTCCACAC')": {
+            "variations": [
+                "ATTCCACAC",
+                "ATTCCACAT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(487, 'TTTATGGTG')": {
+            "variations": [
+                "TTTATGGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(496, 'GTGACCAAA')": {
+            "variations": [
+                "GTGACCAAA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(505, 'AAAGACAAT')": {
+            "variations": [
+                "AAAGACAAT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(514, 'CAATGTATG')": {
+            "variations": [
+                "CAATGTATG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(523, 'ACCGACTAC')": {
+            "variations": [
+                "ACTGACTAC",
+                "ACCGACTAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(532, 'GACTACTTA')": {
+            "variations": [
+                "GACTACTTG",
+                "GACTACTTA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(541, 'GAGGTCAGT')": {
+            "variations": [
+                "GAGGTCAGC",
+                "GAGGTTAGT",
+                "GAGGTCAGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(550, 'TACCCGATC')": {
+            "variations": [
+                "TACCCGATC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(559, 'ATCCTCAAC')": {
+            "variations": [
+                "ATCCTCAAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(568, 'GTAGAACTC')": {
+            "variations": [
+                "GTAGAACTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(577, 'ATGCTTGGT')": {
+            "variations": [
+                "ATGCTCGGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(586, 'GCTTTCGTG')": {
+            "variations": [
+                "GCTTTCGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(595, 'ATCCCGCTC')": {
+            "variations": [
+                "ATCCCGCTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(604, 'AGTGTTATC')": {
+            "variations": [
+                "AGTGTCATC",
+                "AGCGTCATC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(613, 'AGCTACTGC')": {
+            "variations": [
+                "AGCTACTGC",
+                "AGCTATTGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(622, 'TACTACCGC')": {
+            "variations": [
+                "TACTACCGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(631, 'ATTTCCAGA')": {
+            "variations": [
+                "ATTTCCAGA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(640, 'ATCGTTGCG')": {
+            "variations": [
+                "ATCGTTGCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(649, 'GTGTCTCAG')": {
+            "variations": [
+                "GTGTCTCAG",
+                "GTGTCTCAA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(658, 'TCGCGCCAC')": {
+            "variations": [
+                "TCGCGCCAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(667, 'AAAGGTCGC')": {
+            "variations": [
+                "AAAGGCCGC",
+                "AAAGGTCGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(676, 'ATTGTACGG')": {
+            "variations": [
+                "ATTGTACGG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(685, 'GTACTTATA')": {
+            "variations": [
+                "GTACTTATA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(694, 'GCGGTCGTG')": {
+            "variations": [
+                "GCGGTCGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(703, 'CTTGTCTTT')": {
+            "variations": [
+                "CTTGTCTTC",
+                "CTTGTCTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(712, 'ATCATCTTT')": {
+            "variations": [
+                "ATCATCTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(721, 'TGGCTGCCG')": {
+            "variations": [
+                "TGGCTGCCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(730, 'TACCACCTA')": {
+            "variations": [
+                "TACCACCTG",
+                "TACCACCTA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(739, 'ACGCTGTTT')": {
+            "variations": [
+                "ACGCTGTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(748, 'GTGGACACG')": {
+            "variations": [
+                "GTGGACACG",
+                "TTGGACACG"
+            ],
+            "amino_acid_changes": [
+                "V250L"
+            ],
+            "protein_score": 5,
+            "mutational_score": 2,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.7
+        },
+        "(757, 'TTAAAACTC')": {
+            "variations": [
+                "TTGAAACTG",
+                "TTAAAACTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(766, 'CTCAAATGG')": {
+            "variations": [
+                "CTCAAATGG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(775, 'ATCTCCAGC')": {
+            "variations": [
+                "ATCTCCAGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(784, 'AGCTGCGAG')": {
+            "variations": [
+                "AGCTGCGAG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(793, 'TTCGAAAGA')": {
+            "variations": [
+                "TTCGAACGA",
+                "TTCGAAAGA",
+                "TTCGAAAAA"
+            ],
+            "amino_acid_changes": [
+                "R267K"
+            ],
+            "protein_score": 5,
+            "mutational_score": 1,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.3
+        },
+        "(802, 'TCGCTCAAA')": {
+            "variations": [
+                "TCGCTCAAG",
+                "TCGCTCAAA",
+                "TCACTCAAG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(811, 'CGTGCGCTC')": {
+            "variations": [
+                "CGTGCGCTC",
+                "CGCGCGCTC",
+                "CGTGCGCTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(820, 'ATCTTGACC')": {
+            "variations": [
+                "ATCCTTACC",
+                "ATCTTGACC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(829, 'GAGTCGCTC')": {
+            "variations": [
+                "GAGTCGCTC",
+                "GAGTCACTC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(838, 'GCCTTTTGT')": {
+            "variations": [
+                "GCCTTTTGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(847, 'CACTGTTGT')": {
+            "variations": [
+                "CACTGTTGT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(856, 'CTCAATCCG')": {
+            "variations": [
+                "CTCAATCCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(865, 'CTGCTGTAC')": {
+            "variations": [
+                "CTGCTGTAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(874, 'GTCTTCGTG')": {
+            "variations": [
+                "GTCTTCGTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(883, 'GGCACCAAG')": {
+            "variations": [
+                "GGCACCAAG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(892, 'TTTCGGCAA')": {
+            "variations": [
+                "TTTCGGCAA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(901, 'GAACTACAC')": {
+            "variations": [
+                "GAACTGCAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(910, 'TGTCTGCTG')": {
+            "variations": [
+                "TGTCTGCTG",
+                "TGTCTGCTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(919, 'GCCGAGTTT')": {
+            "variations": [
+                "GCCGAGTTT"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(928, 'CGCCAGCGA')": {
+            "variations": [
+                "CGCCAGCGA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(937, 'CTCTTTTCC')": {
+            "variations": [
+                "CTCTTTTCC",
+                "CTGTTTTCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(946, 'CGCGATGTA')": {
+            "variations": [
+                "CGCGATGTA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(955, 'TCCTGGTAC')": {
+            "variations": [
+                "TCCTGGTAC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(964, 'CACAGCATG')": {
+            "variations": [
+                "CACAGCATG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(973, 'AGCTTTTCG')": {
+            "variations": [
+                "AGCTTTTCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(982, 'CGTCGGAGC')": {
+            "variations": [
+                "CGTCGGGGC",
+                "CGTTGGAGC",
+                "CGTCGGAGC"
+            ],
+            "amino_acid_changes": [
+                "S330G",
+                "R329W"
+            ],
+            "protein_score": 5,
+            "mutational_score": 3,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 3.0
+        },
+        "(991, 'TCGCCGAGT')": {
+            "variations": [
+                "TCGCCGAGT",
+                "TCGCCGAGC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(1000, 'CGAAGAGAG')": {
+            "variations": [
+                "CGAAGAGAG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(1009, 'ACATCTTCC')": {
+            "variations": [
+                "ACATCTTCC",
+                "ACGTCTTCC"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(1018, 'GACACGCTG')": {
+            "variations": [
+                "GACACACTG",
+                "GACACGCTG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(1027, 'TCCGACGAG')": {
+            "variations": [
+                "TCCGACGAG",
+                "TCCGACGAA",
+                "TCCAACGAG"
+            ],
+            "amino_acid_changes": [
+                "D344N"
+            ],
+            "protein_score": 5,
+            "mutational_score": 1,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.3
+        },
+        "(1036, 'GTGTGTCGC')": {
+            "variations": [
+                "GCGTGTCGC",
+                "GTGTGTCGC"
+            ],
+            "amino_acid_changes": [
+                "V346A"
+            ],
+            "protein_score": 5,
+            "mutational_score": 3,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 3.0
+        },
+        "(1045, 'GTCTCACAA')": {
+            "variations": [
+                "GTCTCACAA"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        },
+        "(1054, 'ATTATACCG')": {
+            "variations": [
+                "ATTATACCG"
+            ],
+            "amino_acid_changes": [],
+            "protein_score": 5,
+            "mutational_score": 0,
+            "discriminative_score": 1,
+            "k_mer_significance_score": 2.0
+        }
+    }
+}

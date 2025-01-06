@@ -1,0 +1,32 @@
+track phyloP 
+longLabel phyloP
+shortLabel phyloP
+bigDataUrl phyloP.bw
+type bigWig
+autoScale on
+visibility full
+
+track phastCons
+longLabel phastCons
+shortLabel phastCons
+bigDataUrl phastCons.bw
+type bigWig
+autoScale on
+visibility full
+
+
+		track mostconserved
+		shortLabel Most Conserved Elements
+		superTrack on show
+		view bb	
+		longLabel Most Conserved Elements
+		visibility dense
+
+                	track MostConservedElements
+                	longLabel Most Conserved Elements
+	                shortLabel Most Conserved Elements
+        	        bigDataUrl most-cons.bb
+                	type bigBed 6
+             		itemRgb On
+	                visibility dense
+        	        parent mostconserved

@@ -1,0 +1,5245 @@
+{
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "primaryAccession": "Q80J95",
+    "secondaryAccessions": [
+        "Q2V8W5",
+        "S4V9Y7"
+    ],
+    "uniProtkbId": "POLG_MNV1",
+    "entryAudit": {
+        "firstPublicDate": "2024-05-29",
+        "lastAnnotationUpdateDate": "2024-05-29",
+        "lastSequenceUpdateDate": "2024-05-29",
+        "entryVersion": 126,
+        "sequenceVersion": 3
+    },
+    "annotationScore": 5,
+    "organism": {
+        "scientificName": "Norovirus (isolate Mouse/NoV/United States/MNV1/2002/GV)",
+        "commonName": "MNV-1",
+        "synonyms": [
+            "Murine Norovirus 1"
+        ],
+        "taxonId": 223997,
+        "lineage": [
+            "Viruses",
+            "Riboviria",
+            "Orthornavirae",
+            "Pisuviricota",
+            "Pisoniviricetes",
+            "Picornavirales",
+            "Caliciviridae",
+            "Norovirus",
+            "Norwalk virus"
+        ]
+    },
+    "proteinExistence": "1: Evidence at protein level",
+    "proteinDescription": {
+        "recommendedName": {
+            "fullName": {
+                "value": "Genome polyprotein"
+            }
+        },
+        "contains": [
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000303",
+                                "source": "PubMed",
+                                "id": "30647130"
+                            }
+                        ],
+                        "value": "NS1-2"
+                    }
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "value": "NS1.2"
+                        }
+                    },
+                    {
+                        "fullName": {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000305"
+                                }
+                            ],
+                            "value": "NS1/2"
+                        }
+                    },
+                    {
+                        "fullName": {
+                            "value": "Protein p37"
+                        }
+                    }
+                ]
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "NS1"
+                    }
+                }
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "NS2"
+                    }
+                }
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "NTPase"
+                    },
+                    "ecNumbers": [
+                        {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "30265237"
+                                }
+                            ],
+                            "value": "3.6.1.15"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000303",
+                                    "source": "PubMed",
+                                    "id": "30647130"
+                                }
+                            ],
+                            "value": "NS3"
+                        }
+                    },
+                    {
+                        "fullName": {
+                            "value": "p41"
+                        }
+                    }
+                ]
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000303",
+                                "source": "PubMed",
+                                "id": "30647130"
+                            }
+                        ],
+                        "value": "NS4"
+                    }
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "value": "Protein p20"
+                        }
+                    }
+                ]
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "Viral genome-linked protein"
+                    },
+                    "shortNames": [
+                        {
+                            "value": "VPg"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000303",
+                                    "source": "PubMed",
+                                    "id": "30647130"
+                                }
+                            ],
+                            "value": "NS5"
+                        }
+                    }
+                ]
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "3C-like protease"
+                    },
+                    "shortNames": [
+                        {
+                            "value": "3CLpro"
+                        }
+                    ],
+                    "ecNumbers": [
+                        {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000250",
+                                    "source": "UniProtKB",
+                                    "id": "Q83883"
+                                }
+                            ],
+                            "value": "3.4.22.66"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "value": "Calicivirin"
+                        }
+                    },
+                    {
+                        "fullName": {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000303",
+                                    "source": "PubMed",
+                                    "id": "30647130"
+                                }
+                            ],
+                            "value": "NS6"
+                        }
+                    }
+                ]
+            },
+            {
+                "recommendedName": {
+                    "fullName": {
+                        "value": "RNA-directed RNA polymerase"
+                    },
+                    "shortNames": [
+                        {
+                            "value": "RdRp"
+                        }
+                    ],
+                    "ecNumbers": [
+                        {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "21471315"
+                                },
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "22341781"
+                                },
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "22446684"
+                                },
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "24622391"
+                                },
+                                {
+                                    "evidenceCode": "ECO:0000269",
+                                    "source": "PubMed",
+                                    "id": "24657439"
+                                }
+                            ],
+                            "value": "2.7.7.48"
+                        }
+                    ]
+                },
+                "alternativeNames": [
+                    {
+                        "fullName": {
+                            "evidences": [
+                                {
+                                    "evidenceCode": "ECO:0000303",
+                                    "source": "PubMed",
+                                    "id": "30647130"
+                                }
+                            ],
+                            "value": "NS7"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "genes": [
+        {
+            "orfNames": [
+                {
+                    "value": "ORF1"
+                }
+            ]
+        }
+    ],
+    "comments": [
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000305",
+                            "source": "PubMed",
+                            "id": "28698274"
+                        }
+                    ],
+                    "value": "Induces the proliferation of the host smooth ER membranes forming long tubular structures (By similarity). These remodeled membranes probably form the viral factories that contain the replication complex (By similarity). May play a role in viral replication by interacting with host VAPA, a vesicle-associated membrane protein that plays a role in SNARE-mediated vesicle fusion. This interaction may target replication complex to intracellular membranes (Probable)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "NS1-2"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "23077309"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31130511"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31329638"
+                        }
+                    ],
+                    "value": "Promotes intestinal tropism and persistent fecal shedding in strain CR6 (PubMed:23077309, PubMed:31130511, PubMed:31329638). This function requires Glu-94 and is present in persistant strains (PubMed:23077309)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "NS1"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30265237"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31905230"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "36991121"
+                        }
+                    ],
+                    "value": "Displays NTPase activity, but probably no helicase activity (PubMed:30265237). Displays RNA chaperone-like activity and destabilizes dsRNA (PubMed:30265237). Induces the formation of convoluted membranes derived from the host ER (By similarity). These remodeled membranes probably form the viral factories that contain the replication complex (By similarity). Initiates host cell death by targeting the mitochondrial outer membrane, leading to the permeabilization of mitochondria, programmed host cell death and viral egress (PubMed:36991121). Externalization of host cardiolipin seems to be involved in the process (PubMed:36991121). Probably plays a role in preventing the assembly of host stress granules (PubMed:31905230)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "NTPase"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        }
+                    ],
+                    "value": "Probable key protein responsible for the formation of membrane alterations by the virus (By similarity). Induces the formation of convoluted membranes derived from the host ER (By similarity). These remodeled membranes probably form the viral factories that contain the replication complex (By similarity). May play a role in targeting replication complex to intracellular membranes"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "NS4"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P27409"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "16835235"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "24928504"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30038601"
+                        }
+                    ],
+                    "value": "Viral genome-linked protein is covalently linked to the 5'-end of the positive-strand, negative-strand genomic RNAs and subgenomic RNA (By similarity). Acts as a genome-linked replication primer (By similarity). May recruit ribosome to viral RNA thereby promoting viral proteins translation (By similarity). Interacts with host translation initiation complex to allow the translation of viral proteins (PubMed:16835235, PubMed:24928504). Induces the formation of aggregates of RNA-directed RNA polymerase in the presence of RNA (PubMed:30038601). Through its interaction with the viral RNA-directed RNA polymerase, plays a crucial role in enhancing the polymerase activity (PubMed:30038601)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "Viral genome-linked protein"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "26363064"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "27147742"
+                        }
+                    ],
+                    "value": "Processes the polyprotein. 3CLpro-RdRp is first released by autocleavage, then all other proteins are cleaved (PubMed:26363064). May cleave host polyadenylate-binding protein thereby inhibiting cellular translation. Does not cleave host G3BP1 (PubMed:27147742)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "3C-like protease"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "Q86119"
+                        }
+                    ],
+                    "value": "Replicates genomic and antigenomic RNA by recognizing replications specific signals. Transcribes also a subgenomic mRNA by initiating RNA synthesis internally on antigenomic RNA. This sgRNA codes for structural proteins. Catalyzes the covalent attachment VPg with viral RNAs (By similarity)"
+                }
+            ],
+            "commentType": "FUNCTION",
+            "molecule": "RNA-directed RNA polymerase"
+        },
+        {
+            "commentType": "CATALYTIC ACTIVITY",
+            "molecule": "NTPase",
+            "reaction": {
+                "name": "a ribonucleoside 5'-triphosphate + H2O = a ribonucleoside 5'-diphosphate + H(+) + phosphate",
+                "reactionCrossReferences": [
+                    {
+                        "database": "Rhea",
+                        "id": "RHEA:23680"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:15377"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:15378"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:43474"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:57930"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:61557"
+                    }
+                ],
+                "ecNumber": "3.6.1.15",
+                "evidences": [
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "30265237"
+                    }
+                ]
+            }
+        },
+        {
+            "commentType": "CATALYTIC ACTIVITY",
+            "molecule": "3C-like protease",
+            "reaction": {
+                "name": "Endopeptidase with a preference for cleavage when the P1 position is occupied by Glu-|-Xaa and the P1' position is occupied by Gly-|-Yaa.",
+                "ecNumber": "3.4.22.66",
+                "evidences": [
+                    {
+                        "evidenceCode": "ECO:0000305"
+                    }
+                ]
+            }
+        },
+        {
+            "commentType": "CATALYTIC ACTIVITY",
+            "molecule": "RNA-directed RNA polymerase",
+            "reaction": {
+                "name": "a ribonucleoside 5'-triphosphate + RNA(n) = diphosphate + RNA(n+1)",
+                "reactionCrossReferences": [
+                    {
+                        "database": "Rhea",
+                        "id": "RHEA:21248"
+                    },
+                    {
+                        "database": "Rhea",
+                        "id": "RHEA-COMP:14527"
+                    },
+                    {
+                        "database": "Rhea",
+                        "id": "RHEA-COMP:17342"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:33019"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:61557"
+                    },
+                    {
+                        "database": "ChEBI",
+                        "id": "CHEBI:140395"
+                    }
+                ],
+                "ecNumber": "2.7.7.48",
+                "evidences": [
+                    {
+                        "evidenceCode": "ECO:0000255",
+                        "source": "PROSITE-ProRule",
+                        "id": "PRU00539"
+                    },
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "21471315"
+                    },
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "22341781"
+                    },
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "22446684"
+                    },
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "24622391"
+                    },
+                    {
+                        "evidenceCode": "ECO:0000269",
+                        "source": "PubMed",
+                        "id": "24657439"
+                    }
+                ]
+            }
+        },
+        {
+            "commentType": "COFACTOR",
+            "molecule": "NTPase",
+            "cofactors": [
+                {
+                    "name": "Mg(2+)",
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30265237"
+                        }
+                    ],
+                    "cofactorCrossReference": {
+                        "database": "ChEBI",
+                        "id": "CHEBI:18420"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "COFACTOR",
+            "molecule": "RNA-directed RNA polymerase",
+            "cofactors": [
+                {
+                    "name": "Mg(2+)",
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "21471315"
+                        }
+                    ],
+                    "cofactorCrossReference": {
+                        "database": "ChEBI",
+                        "id": "CHEBI:18420"
+                    }
+                },
+                {
+                    "name": "Mn(2+)",
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "21471315"
+                        }
+                    ],
+                    "cofactorCrossReference": {
+                        "database": "ChEBI",
+                        "id": "CHEBI:29035"
+                    }
+                }
+            ]
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "22446684"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "24622391"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "24657439"
+                        }
+                    ],
+                    "value": "Inhibited by Suramin, Suramin-related compounds and NF023 (PubMed:22446684, PubMed:24622391). Inhibited by PPNDS (PubMed:24657439)"
+                }
+            ],
+            "commentType": "ACTIVITY REGULATION",
+            "molecule": "RNA-directed RNA polymerase"
+        },
+        {
+            "commentType": "BIOPHYSICOCHEMICAL PROPERTIES",
+            "molecule": "NTPase",
+            "phDependence": {
+                "texts": [
+                    {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "30265237"
+                            }
+                        ],
+                        "value": "Optimum pH is 7-9."
+                    }
+                ]
+            },
+            "temperatureDependence": {
+                "texts": [
+                    {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "30265237"
+                            }
+                        ],
+                        "value": "Optimum temperature is 37-45 degrees Celsius."
+                    }
+                ]
+            }
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "22347381"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "28698274"
+                        }
+                    ],
+                    "value": "Homodimer (PubMed:22347381). Interacts with NTPase; this interaction increases the proapoptotic activity of the NTPase and is crutial for the formation of the viral replication complex (By similarity). Interacts with NS4; this interaction is crutial for the formation of the viral replication complex (By similarity). Interacts (via N-terminus) with host VAPA (PubMed:28698274). Interacts with host VAPB (PubMed:28698274)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "NS1-2"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31130511"
+                        }
+                    ],
+                    "value": "Monomer"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "NS1"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30265237"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31905230"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "36991121"
+                        }
+                    ],
+                    "value": "Homooligomer (PubMed:30265237, PubMed:36991121). Interacts with NS1-2; this interaction increases the proapoptotic activity of the NTPase and is crutial for the formation of the viral replication complex (By similarity). Interacts with NS4; this interaction increases the proapoptotic activity of the NTPase (By similarity). Interacts with host G3BP1; this interaction leads to the redistribution of G3BP1 and its cellular partners to the viral replication complexes, thereby preventing the assembly of stress granules (PubMed:31905230)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "NTPase"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "Q83883"
+                        }
+                    ],
+                    "value": "Homodimer (By similarity). Monomer; in solution (By similarity)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "3C-like protease"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        }
+                    ],
+                    "value": "Interacts with NTPase; this interaction increases the proapoptotic activity of the NTPase (By similarity). Interacts with NS1-2; this interaction is crutial for the formation of the viral replication complex (By similarity)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "NS4"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "16835235"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "24928504"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30038601"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31403400"
+                        }
+                    ],
+                    "value": "Monomer (PubMed:30038601). Interacts with the RNA-directed RNA polymerase; this interaction induces the multimerization of the RdRp and enhances its activity (PubMed:30038601). Interacts with host IEF4E; this interaction plays a role in translation of viral proteins (PubMed:16835235). Interacts (via C-terminus) with host IEF4G1 (via central domain); this interaction plays a role in translation of viral proteins (PubMed:24928504, PubMed:31403400)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "Viral genome-linked protein"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30038601"
+                        }
+                    ],
+                    "value": "Homohexamer; also forms fibrous hexameric oligomer (PubMed:30038601). Interacts with the viral genome-linked protein; this interaction induces the multimerization of the RdRp and enhances its activity (PubMed:30038601)"
+                }
+            ],
+            "commentType": "SUBUNIT",
+            "molecule": "RNA-directed RNA polymerase"
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "NS1-2",
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "20674956"
+                            }
+                        ],
+                        "value": "Host endoplasmic reticulum membrane",
+                        "id": "SL-0390"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "NS1",
+            "note": {
+                "texts": [
+                    {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "31130511"
+                            }
+                        ],
+                        "value": "Secreted through an unconventional CASP3-mediated mechanism"
+                    }
+                ]
+            },
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "31130511"
+                            },
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "31329638"
+                            }
+                        ],
+                        "value": "Secreted",
+                        "id": "SL-0243"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "NTPase",
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000250",
+                                "source": "UniProtKB",
+                                "id": "P54634"
+                            }
+                        ],
+                        "value": "Host endoplasmic reticulum membrane",
+                        "id": "SL-0390"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "NS4",
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "19587041"
+                            }
+                        ],
+                        "value": "Host endoplasmic reticulum membrane",
+                        "id": "SL-0390"
+                    }
+                },
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "20674956"
+                            }
+                        ],
+                        "value": "Host endosome membrane",
+                        "id": "SL-0394"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "3C-like protease",
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "20674956"
+                            }
+                        ],
+                        "value": "Host mitochondrion",
+                        "id": "SL-0407"
+                    }
+                }
+            ]
+        },
+        {
+            "commentType": "SUBCELLULAR LOCATION",
+            "molecule": "RNA-directed RNA polymerase",
+            "subcellularLocations": [
+                {
+                    "location": {
+                        "evidences": [
+                            {
+                                "evidenceCode": "ECO:0000269",
+                                "source": "PubMed",
+                                "id": "19587041"
+                            }
+                        ],
+                        "value": "Host cytoplasm, host perinuclear region",
+                        "id": "SL-0382"
+                    }
+                }
+            ]
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "24273131"
+                        }
+                    ],
+                    "value": "Contains a disordered region and a PEST-like domain in the N-terminus, a putative hydrolase in the central part, and probably a membrane-targeting domain in the C-terminus"
+                }
+            ],
+            "commentType": "DOMAIN",
+            "molecule": "NS1-2"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "36991121"
+                        }
+                    ],
+                    "value": "Contains a four-helix bundle domain (4HB) membrane-disruption domain in the N-terminus (PubMed:36991121). Contains a mitochondrial localization signal in the N-terminus (PubMed:36991121). The N-terminus is involved in host cell death and viral egress (PubMed:36991121)"
+                }
+            ],
+            "commentType": "DOMAIN",
+            "molecule": "NTPase"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "23487472"
+                        }
+                    ],
+                    "value": "Contains a compact core domain in the N-terminus half that is composed of a two-helix bundle"
+                }
+            ],
+            "commentType": "DOMAIN",
+            "molecule": "Viral genome-linked protein"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "16873239"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "26363064"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "30647130"
+                        }
+                    ],
+                    "value": "Specific enzymatic cleavages in vivo yield mature proteins (PubMed:16873239, PubMed:26363064). 3CLpro is first autocatalytically cleaved, then processes the whole polyprotein (PubMed:26363064, PubMed:30647130)"
+                }
+            ],
+            "commentType": "PTM",
+            "molecule": "Genome polyprotein"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31130511"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000269",
+                            "source": "PubMed",
+                            "id": "31329638"
+                        }
+                    ],
+                    "value": "Cleaved by host CASP3/caspase 3 at 18-22 h.p.i (PubMed:31130511, PubMed:31329638). The cleavage allows NS1 secretion, which is essential for intestinal infection and resistance to IFN-lambda (PubMed:31130511)"
+                }
+            ],
+            "commentType": "PTM",
+            "molecule": "NS1-2"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000250",
+                            "source": "UniProtKB",
+                            "id": "P54634"
+                        },
+                        {
+                            "evidenceCode": "ECO:0000305",
+                            "source": "PubMed",
+                            "id": "27375966"
+                        }
+                    ],
+                    "value": "VPg is uridylylated by the polymerase and is covalently attached to the 5'-end of the polyadenylated genomic and subgenomic RNAs (Probable). This uridylylated form acts as a nucleotide-peptide primer for the polymerase (By similarity)"
+                }
+            ],
+            "commentType": "PTM",
+            "molecule": "Viral genome-linked protein"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000305"
+                        }
+                    ],
+                    "value": "The sequence shown is that of clone CW1"
+                }
+            ],
+            "commentType": "MISCELLANEOUS"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000303",
+                            "source": "PubMed",
+                            "id": "31130511"
+                        }
+                    ],
+                    "value": "MNoV infects tuft intestinal cells that express the receptor CD300LF"
+                }
+            ],
+            "commentType": "MISCELLANEOUS"
+        },
+        {
+            "texts": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000255",
+                            "source": "PROSITE-ProRule",
+                            "id": "PRU00870"
+                        }
+                    ],
+                    "value": "Lacks conserved residue(s) required for the propagation of feature annotation"
+                }
+            ],
+            "commentType": "CAUTION"
+        },
+        {
+            "commentType": "SEQUENCE CAUTION",
+            "sequenceCautionType": "Miscellaneous discrepancy",
+            "sequence": "AAO63098.2",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000305"
+                }
+            ]
+        }
+    ],
+    "features": [
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 1,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1687,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Genome polyprotein",
+            "featureId": "PRO_0000460168"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 1,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "NS1-2",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "Q83883"
+                }
+            ],
+            "featureId": "PRO_0000460169"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 1,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 121,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "NS1",
+            "featureId": "PRO_0000460170"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 132,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "NS2",
+            "featureId": "PRO_0000460171"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 342,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 705,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "NTPase",
+            "featureId": "PRO_0000460172"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 706,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 870,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "NS4",
+            "featureId": "PRO_0000460173"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 871,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 994,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Viral genome-linked protein",
+            "featureId": "PRO_0000460174"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 995,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1177,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "3C-like protease",
+            "featureId": "PRO_0000460175"
+        },
+        {
+            "type": "Chain",
+            "location": {
+                "start": {
+                    "value": 1178,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1687,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "RNA-directed RNA polymerase",
+            "featureId": "PRO_0000460176"
+        },
+        {
+            "type": "Domain",
+            "location": {
+                "start": {
+                    "value": 476,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 641,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "SF3 helicase",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00551"
+                }
+            ]
+        },
+        {
+            "type": "Domain",
+            "location": {
+                "start": {
+                    "value": 995,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1172,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Peptidase C37",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00870"
+                }
+            ]
+        },
+        {
+            "type": "Domain",
+            "location": {
+                "start": {
+                    "value": 1416,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1537,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "RdRp catalytic",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00539"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 1,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 116,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Interaction with host MAP1LC3A/LC3",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 117,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Interaction with NTPase",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 244,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Interaction with NS4",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 261,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 292,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Host ER membrane association",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 302,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Host ER membrane association",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000305",
+                    "source": "PubMed",
+                    "id": "24273131"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 342,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 518,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Interaction with NS1-2, NS4 and homooligomerization",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 595,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 700,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Important for mitochondrion targeting",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 893,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 898,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Acidic",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "23487472"
+                }
+            ]
+        },
+        {
+            "type": "Region",
+            "location": {
+                "start": {
+                    "value": 978,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 994,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Interaction with host EIF4G",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P54634"
+                }
+            ]
+        },
+        {
+            "type": "Active site",
+            "location": {
+                "start": {
+                    "value": 1024,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1024,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "For 3CLpro activity",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00870"
+                }
+            ]
+        },
+        {
+            "type": "Active site",
+            "location": {
+                "start": {
+                    "value": 1048,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1048,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "For 3CLpro activity",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000303",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Active site",
+            "location": {
+                "start": {
+                    "value": 1133,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1133,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "For 3CLpro activity",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00870"
+                }
+            ]
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 504,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 511,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:30616"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000255",
+                    "source": "PROSITE-ProRule",
+                    "id": "PRU00551"
+                }
+            ],
+            "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+            }
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 1420,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1420,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:18420"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "22341781"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24622391"
+                }
+            ],
+            "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "note": "catalytic; for RNA-directed RNA polymerase activity"
+            }
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 1422,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1422,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:18420"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                }
+            ],
+            "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "note": "catalytic; for RNA-directed RNA polymerase activity"
+            }
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 1524,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1524,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:18420"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24622391"
+                }
+            ],
+            "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "note": "catalytic; for RNA-directed RNA polymerase activity"
+            }
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 1525,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1525,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:18420"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "22341781"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24622391"
+                }
+            ],
+            "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "note": "catalytic; for RNA-directed RNA polymerase activity"
+            }
+        },
+        {
+            "type": "Binding site",
+            "location": {
+                "start": {
+                    "value": 1569,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1569,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "featureCrossReferences": [
+                {
+                    "database": "ChEBI",
+                    "id": "CHEBI:18420"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "22341781"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24622391"
+                }
+            ],
+            "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "note": "catalytic; for RNA-directed RNA polymerase activity"
+            }
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 94,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 94,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Critical for determining viral persistence",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "23077309"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24273131"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 121,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 122,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by host CASP3",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "31130511"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 131,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 132,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by host CASP3",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "31130511"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 341,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 342,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by 3CLpro",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 705,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 706,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by 3CLpro",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 870,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 871,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by 3CLpro",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 994,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 995,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by 3CLpro",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Site",
+            "location": {
+                "start": {
+                    "value": 1177,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1178,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Cleavage; by 3CLpro",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "16873239"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "26363064"
+                }
+            ]
+        },
+        {
+            "type": "Modified residue",
+            "location": {
+                "start": {
+                    "value": 896,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 896,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "O-(5'-phospho-RNA)-tyrosine",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27375966"
+                }
+            ]
+        },
+        {
+            "type": "Disulfide bond",
+            "location": {
+                "start": {
+                    "value": 1482,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1484,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "22446684"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24622391"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24657439"
+                }
+            ]
+        },
+        {
+            "type": "Natural variant",
+            "location": {
+                "start": {
+                    "value": 845,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 845,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "in strain: CW3",
+            "featureId": "",
+            "alternativeSequence": {
+                "originalSequence": "R",
+                "alternativeSequences": [
+                    "H"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 94,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 94,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Changes the stability of NS1-2 and induces viral persistance.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24273131"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "E"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 121,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 121,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Complete loss of NS1-2 cleavage; when associted with G-131.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "31130511"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "G"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 131,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 131,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Almost complete loss of NS1-2 cleavage; when associted with G-121.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "31130511"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "G"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 985,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 985,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Reduced virus replication.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24928504"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "V",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 986,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 986,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Reduced virus replication.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24928504"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 993,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 993,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Reduced interaction with host EIF4G and complete loss of production of virions.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "24928504"
+                },
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "31403400"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "F",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 1422,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1422,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Almost complete loss of RNA-directed RNA polymerase.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 1508,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1508,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Complete loss of oligomerization of RdRp in the presence of VPg and RNA. Decreased interaction of VPg with RdRp. No production of infectious particles.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "30038601"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 1523,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1523,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Almost complete loss of RNA-directed RNA polymerase.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 1524,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1524,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Almost complete loss of RNA-directed RNA polymerase.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "21471315"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "D",
+                "alternativeSequences": [
+                    "A"
+                ]
+            }
+        },
+        {
+            "type": "Mutagenesis",
+            "location": {
+                "start": {
+                    "value": 1531,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 1531,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "Complete loss of oligomerization of RdRp in the presence of VPg and RNA. Decreased interaction of VPg with RdRp. No production of infectious particles.",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "30038601"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "L",
+                "alternativeSequences": [
+                    "D"
+                ]
+            }
+        },
+        {
+            "type": "Sequence conflict",
+            "location": {
+                "start": {
+                    "value": 716,
+                    "modifier": "EXACT"
+                },
+                "end": {
+                    "value": 716,
+                    "modifier": "EXACT"
+                }
+            },
+            "description": "in Ref. 1; AAO63098",
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0000305"
+                }
+            ],
+            "alternativeSequence": {
+                "originalSequence": "I",
+                "alternativeSequences": [
+                    "V"
+                ]
+            }
+        }
+    ],
+    "keywords": [
+        {
+            "id": "KW-0002",
+            "category": "Technical term",
+            "name": "3D-structure"
+        },
+        {
+            "id": "KW-0067",
+            "category": "Ligand",
+            "name": "ATP-binding"
+        },
+        {
+            "id": "KW-0191",
+            "category": "PTM",
+            "name": "Covalent protein-RNA linkage"
+        },
+        {
+            "id": "KW-0903",
+            "category": "Technical term",
+            "name": "Direct protein sequencing"
+        },
+        {
+            "id": "KW-1015",
+            "category": "PTM",
+            "name": "Disulfide bond"
+        },
+        {
+            "id": "KW-1035",
+            "category": "Cellular component",
+            "name": "Host cytoplasm"
+        },
+        {
+            "id": "KW-1038",
+            "category": "Cellular component",
+            "name": "Host endoplasmic reticulum"
+        },
+        {
+            "id": "KW-1039",
+            "category": "Cellular component",
+            "name": "Host endosome"
+        },
+        {
+            "id": "KW-1043",
+            "category": "Cellular component",
+            "name": "Host membrane"
+        },
+        {
+            "id": "KW-1045",
+            "category": "Cellular component",
+            "name": "Host mitochondrion"
+        },
+        {
+            "id": "KW-0945",
+            "category": "Biological process",
+            "name": "Host-virus interaction"
+        },
+        {
+            "id": "KW-0378",
+            "category": "Molecular function",
+            "name": "Hydrolase"
+        },
+        {
+            "id": "KW-0460",
+            "category": "Ligand",
+            "name": "Magnesium"
+        },
+        {
+            "id": "KW-0464",
+            "category": "Ligand",
+            "name": "Manganese"
+        },
+        {
+            "id": "KW-0472",
+            "category": "Cellular component",
+            "name": "Membrane"
+        },
+        {
+            "id": "KW-0479",
+            "category": "Ligand",
+            "name": "Metal-binding"
+        },
+        {
+            "id": "KW-0547",
+            "category": "Ligand",
+            "name": "Nucleotide-binding"
+        },
+        {
+            "id": "KW-0548",
+            "category": "Molecular function",
+            "name": "Nucleotidyltransferase"
+        },
+        {
+            "id": "KW-0597",
+            "category": "PTM",
+            "name": "Phosphoprotein"
+        },
+        {
+            "id": "KW-0645",
+            "category": "Molecular function",
+            "name": "Protease"
+        },
+        {
+            "id": "KW-0696",
+            "category": "Molecular function",
+            "name": "RNA-directed RNA polymerase"
+        },
+        {
+            "id": "KW-0964",
+            "category": "Cellular component",
+            "name": "Secreted"
+        },
+        {
+            "id": "KW-0788",
+            "category": "Molecular function",
+            "name": "Thiol protease"
+        },
+        {
+            "id": "KW-0808",
+            "category": "Molecular function",
+            "name": "Transferase"
+        },
+        {
+            "id": "KW-0693",
+            "category": "Biological process",
+            "name": "Viral RNA replication"
+        }
+    ],
+    "references": [
+        {
+            "referenceNumber": 1,
+            "citation": {
+                "id": "12624267",
+                "citationType": "journal article",
+                "authors": [
+                    "Karst S.M.",
+                    "Wobus C.E.",
+                    "Lay M.",
+                    "Davidson J.",
+                    "Virgin H.W."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "12624267"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1126/science.1077905"
+                    }
+                ],
+                "title": "STAT1-dependent innate immunity to a Norwalk-like virus.",
+                "publicationDate": "2003",
+                "journal": "Science",
+                "firstPage": "1575",
+                "lastPage": "1578",
+                "volume": "299"
+            },
+            "referencePositions": [
+                "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+            ]
+        },
+        {
+            "referenceNumber": 2,
+            "citation": {
+                "id": "15562321",
+                "citationType": "journal article",
+                "authors": [
+                    "Wobus C.E.",
+                    "Karst S.M.",
+                    "Thackray L.B.",
+                    "Chang K.O.",
+                    "Sosnovtsev S.V.",
+                    "Belliot G.",
+                    "Krug A.",
+                    "Mackenzie J.M.",
+                    "Green K.Y.",
+                    "Virgin H.W."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "15562321"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.pbio.0020432"
+                    }
+                ],
+                "title": "Replication of Norovirus in cell culture reveals a tropism for dendritic cells and macrophages.",
+                "publicationDate": "2004",
+                "journal": "PLoS Biol.",
+                "firstPage": "E432",
+                "lastPage": "E432",
+                "volume": "2"
+            },
+            "referencePositions": [
+                "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+            ],
+            "referenceComments": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000305"
+                        }
+                    ],
+                    "value": "CW1",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 3,
+            "citation": {
+                "id": "24039576",
+                "citationType": "journal article",
+                "authors": [
+                    "Zhu S.",
+                    "Regev D.",
+                    "Watanabe M.",
+                    "Hickman D.",
+                    "Moussatche N.",
+                    "Jesus D.M.",
+                    "Kahan S.M.",
+                    "Napthine S.",
+                    "Brierley I.",
+                    "Hunter R.N.",
+                    "Devabhaktuni D.",
+                    "Jones M.K.",
+                    "Karst S.M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "24039576"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.ppat.1003592"
+                    }
+                ],
+                "title": "Identification of Immune and Viral Correlates of Norovirus Protective Immunity through Comparative Study of Intra-Cluster Norovirus Strains.",
+                "publicationDate": "2013",
+                "journal": "PLoS Pathog.",
+                "firstPage": "E1003592",
+                "lastPage": "E1003592",
+                "volume": "9"
+            },
+            "referencePositions": [
+                "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+            ],
+            "referenceComments": [
+                {
+                    "evidences": [
+                        {
+                            "evidenceCode": "ECO:0000305"
+                        }
+                    ],
+                    "value": "CW3",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 4,
+            "citation": {
+                "id": "16873239",
+                "citationType": "journal article",
+                "authors": [
+                    "Sosnovtsev S.V.",
+                    "Belliot G.",
+                    "Chang K.O.",
+                    "Prikhodko V.G.",
+                    "Thackray L.B.",
+                    "Wobus C.E.",
+                    "Karst S.M.",
+                    "Virgin H.W.",
+                    "Green K.Y."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "16873239"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/jvi.00532-06"
+                    }
+                ],
+                "title": "Cleavage map and proteolytic processing of the murine norovirus nonstructural polyprotein in infected cells.",
+                "publicationDate": "2006",
+                "journal": "J. Virol.",
+                "firstPage": "7816",
+                "lastPage": "7831",
+                "volume": "80"
+            },
+            "referencePositions": [
+                "PROTEIN SEQUENCE OF 706-714; 871-878 AND 1180-1187",
+                "PROTEOLYTIC CLEAVAGE (GENOME POLYPROTEIN)"
+            ]
+        },
+        {
+            "referenceNumber": 5,
+            "citation": {
+                "id": "31130511",
+                "citationType": "journal article",
+                "authors": [
+                    "Lee S.",
+                    "Liu H.",
+                    "Wilen C.B.",
+                    "Sychev Z.E.",
+                    "Desai C.",
+                    "Hykes B.L. Jr.",
+                    "Orchard R.C.",
+                    "McCune B.T.",
+                    "Kim K.W.",
+                    "Nice T.J.",
+                    "Handley S.A.",
+                    "Baldridge M.T.",
+                    "Amarasinghe G.K.",
+                    "Virgin H.W."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "31130511"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.chom.2019.04.005"
+                    }
+                ],
+                "title": "A Secreted Viral Nonstructural Protein Determines Intestinal Norovirus Pathogenesis.",
+                "publicationDate": "2019",
+                "journal": "Cell Host Microbe",
+                "firstPage": "845",
+                "lastPage": "857",
+                "volume": "25"
+            },
+            "referencePositions": [
+                "PROTEIN SEQUENCE OF 3-17 AND 81-104",
+                "PROTEOLYTIC CLEAVAGE (NS1-2)",
+                "FUNCTION (NS1)",
+                "SUBCELLULAR LOCATION (NS1)",
+                "MUTAGENESIS OF ASP-121 AND ASP-131",
+                "SUBUNIT (NS1)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CR6",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 6,
+            "citation": {
+                "id": "16835235",
+                "citationType": "journal article",
+                "authors": [
+                    "Chaudhry Y.",
+                    "Nayak A.",
+                    "Bordeleau M.E.",
+                    "Tanaka J.",
+                    "Pelletier J.",
+                    "Belsham G.J.",
+                    "Roberts L.O.",
+                    "Goodfellow I.G."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "16835235"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1074/jbc.m602230200"
+                    }
+                ],
+                "title": "Caliciviruses differ in their functional requirements for eIF4F components.",
+                "publicationDate": "2006",
+                "journal": "J. Biol. Chem.",
+                "firstPage": "25315",
+                "lastPage": "25325",
+                "volume": "281"
+            },
+            "referencePositions": [
+                "FUNCTION (VIRAL GENOME-LINKED PROTEIN)",
+                "INTERACTION WITH HOST EIF4E (VIRAL GENOME-LINKED PROTEIN)"
+            ]
+        },
+        {
+            "referenceNumber": 7,
+            "citation": {
+                "id": "19587041",
+                "citationType": "journal article",
+                "authors": [
+                    "Hyde J.L.",
+                    "Sosnovtsev S.V.",
+                    "Green K.Y.",
+                    "Wobus C.",
+                    "Virgin H.W.",
+                    "Mackenzie J.M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "19587041"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/jvi.00600-09"
+                    }
+                ],
+                "title": "Mouse norovirus replication is associated with virus-induced vesicle clusters originating from membranes derived from the secretory pathway.",
+                "publicationDate": "2009",
+                "journal": "J. Virol.",
+                "firstPage": "9709",
+                "lastPage": "9719",
+                "volume": "83"
+            },
+            "referencePositions": [
+                "SUBCELLULAR LOCATION (RNA-DIRECTED RNA POLYMERASE)"
+            ]
+        },
+        {
+            "referenceNumber": 8,
+            "citation": {
+                "id": "20674956",
+                "citationType": "journal article",
+                "authors": [
+                    "Hyde J.L.",
+                    "Mackenzie J.M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "20674956"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.virol.2010.06.047"
+                    }
+                ],
+                "title": "Subcellular localization of the MNV-1 ORF1 proteins and their potential roles in the formation of the MNV-1 replication complex.",
+                "publicationDate": "2010",
+                "journal": "Virology",
+                "firstPage": "138",
+                "lastPage": "148",
+                "volume": "406"
+            },
+            "referencePositions": [
+                "SUBCELLULAR LOCATION (NS1-2)",
+                "SUBCELLULAR LOCATION (NS4)",
+                "SUBCELLULAR LOCATION (3C-LIKE PROTEASE)"
+            ]
+        },
+        {
+            "referenceNumber": 9,
+            "citation": {
+                "id": "22347381",
+                "citationType": "journal article",
+                "authors": [
+                    "Baker E.S.",
+                    "Luckner S.R.",
+                    "Krause K.L.",
+                    "Lambden P.R.",
+                    "Clarke I.N.",
+                    "Ward V.K."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "22347381"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.pone.0030534"
+                    }
+                ],
+                "title": "Inherent structural disorder and dimerisation of murine norovirus NS1-2 protein.",
+                "publicationDate": "2012",
+                "journal": "PLoS ONE",
+                "firstPage": "e30534",
+                "lastPage": "e30534",
+                "volume": "7"
+            },
+            "referencePositions": [
+                "SUBUNIT (NS1-2)"
+            ]
+        },
+        {
+            "referenceNumber": 10,
+            "citation": {
+                "id": "23077309",
+                "citationType": "journal article",
+                "authors": [
+                    "Nice T.J.",
+                    "Strong D.W.",
+                    "McCune B.T.",
+                    "Pohl C.S.",
+                    "Virgin H.W."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "23077309"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/jvi.01864-12"
+                    }
+                ],
+                "title": "A single-amino-acid change in murine norovirus NS1/2 is sufficient for colonic tropism and persistence.",
+                "publicationDate": "2013",
+                "journal": "J. Virol.",
+                "firstPage": "327",
+                "lastPage": "334",
+                "volume": "87"
+            },
+            "referencePositions": [
+                "FUNCTION (NS1)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CR6",
+                    "type": "STRAIN"
+                },
+                {
+                    "value": "CW3",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 11,
+            "citation": {
+                "id": "24928504",
+                "citationType": "journal article",
+                "authors": [
+                    "Chung L.",
+                    "Bailey D.",
+                    "Leen E.N.",
+                    "Emmott E.P.",
+                    "Chaudhry Y.",
+                    "Roberts L.O.",
+                    "Curry S.",
+                    "Locker N.",
+                    "Goodfellow I.G."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "24928504"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1074/jbc.m114.550657"
+                    }
+                ],
+                "title": "Norovirus translation requires an interaction between the C Terminus of the genome-linked viral protein VPg and eukaryotic translation initiation factor 4G.",
+                "publicationDate": "2014",
+                "journal": "J. Biol. Chem.",
+                "firstPage": "21738",
+                "lastPage": "21750",
+                "volume": "289"
+            },
+            "referencePositions": [
+                "FUNCTION (VIRAL GENOME-LINKED PROTEIN)",
+                "INTERACTION WITH HOST EIF4G (VIRAL GENOME-LINKED PROTEIN)",
+                "MUTAGENESIS OF VAL-985; ASP-986 AND PHE-993"
+            ]
+        },
+        {
+            "referenceNumber": 12,
+            "citation": {
+                "id": "26363064",
+                "citationType": "journal article",
+                "authors": [
+                    "Emmott E.",
+                    "Sweeney T.R.",
+                    "Goodfellow I."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "26363064"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1074/jbc.m115.688234"
+                    }
+                ],
+                "title": "A Cell-based Fluorescence Resonance Energy Transfer (FRET) Sensor Reveals Inter- and Intragenogroup Variations in Norovirus Protease Activity and Polyprotein Cleavage.",
+                "publicationDate": "2015",
+                "journal": "J. Biol. Chem.",
+                "firstPage": "27841",
+                "lastPage": "27853",
+                "volume": "290"
+            },
+            "referencePositions": [
+                "FUNCTION (3C-LIKE PROTEASE)",
+                "PROTEOLYTIC CLEAVAGE (GENOME POLYPROTEIN)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CW1",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 13,
+            "citation": {
+                "id": "27147742",
+                "citationType": "journal article",
+                "authors": [
+                    "Humoud M.N.",
+                    "Doyle N.",
+                    "Royall E.",
+                    "Willcocks M.M.",
+                    "Sorgeloos F.",
+                    "van Kuppeveld F.",
+                    "Roberts L.O.",
+                    "Goodfellow I.G.",
+                    "Langereis M.A.",
+                    "Locker N."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "27147742"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/jvi.00647-16"
+                    }
+                ],
+                "title": "Feline Calicivirus Infection Disrupts Assembly of Cytoplasmic Stress Granules and Induces G3BP1 Cleavage.",
+                "publicationDate": "2016",
+                "journal": "J. Virol.",
+                "firstPage": "6489",
+                "lastPage": "6501",
+                "volume": "90"
+            },
+            "referencePositions": [
+                "FUNCTION (3C-LIKE PROTEASE)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CW1",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 14,
+            "citation": {
+                "id": "27375966",
+                "citationType": "journal article",
+                "authors": [
+                    "Olspert A.",
+                    "Hosmillo M.",
+                    "Chaudhry Y.",
+                    "Peil L.",
+                    "Truve E.",
+                    "Goodfellow I."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "27375966"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.7717/peerj.2134"
+                    }
+                ],
+                "title": "Protein-RNA linkage and posttranslational modifications of feline calicivirus and murine norovirus VPg proteins.",
+                "publicationDate": "2016",
+                "journal": "PeerJ",
+                "firstPage": "e2134",
+                "lastPage": "e2134",
+                "volume": "4"
+            },
+            "referencePositions": [
+                "COVALENT RNA LINKAGE AT TYR-896 (VIRAL GENOME-LINKED PROTEIN)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CW1",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 15,
+            "citation": {
+                "id": "28698274",
+                "citationType": "journal article",
+                "authors": [
+                    "McCune B.T.",
+                    "Tang W.",
+                    "Lu J.",
+                    "Eaglesham J.B.",
+                    "Thorne L.",
+                    "Mayer A.E.",
+                    "Condiff E.",
+                    "Nice T.J.",
+                    "Goodfellow I.",
+                    "Krezel A.M.",
+                    "Virgin H.W."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "28698274"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/mbio.00668-17"
+                    }
+                ],
+                "title": "Noroviruses Co-opt the Function of Host Proteins VAPA and VAPB for Replication via a Phenylalanine-Phenylalanine-Acidic-Tract-Motif Mimic in Nonstructural Viral Protein NS1/2.",
+                "publicationDate": "2017",
+                "journal": "MBio",
+                "firstPage": "0",
+                "lastPage": "0",
+                "volume": "8"
+            },
+            "referencePositions": [
+                "INTERACTION WITH HOST VAPA (NS1-2)",
+                "INTERACTION WITH HOST VAPB (NS1-2)",
+                "FUNCTION (NS1-2)"
+            ]
+        },
+        {
+            "referenceNumber": 16,
+            "citation": {
+                "id": "30265237",
+                "citationType": "journal article",
+                "authors": [
+                    "Han K.R.",
+                    "Lee J.H.",
+                    "Kotiguda G.G.",
+                    "Jung K.H.",
+                    "Chung M.S.",
+                    "Kang S.",
+                    "Hwang S.",
+                    "Kim K.H."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "30265237"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1099/jgv.0.001151"
+                    }
+                ],
+                "title": "Nucleotide triphosphatase and RNA chaperone activities of murine norovirus NS3.",
+                "publicationDate": "2018",
+                "journal": "J. Gen. Virol.",
+                "firstPage": "1482",
+                "lastPage": "1493",
+                "volume": "99"
+            },
+            "referencePositions": [
+                "SUBUNIT (NTPASE)",
+                "CATALYTIC ACTIVITY (NTPASE)",
+                "FUNCTION (NTPASE)",
+                "COFACTOR (NTPASE)",
+                "BIOPHYSICOCHEMICAL PROPERTIES (NTPASE)"
+            ]
+        },
+        {
+            "referenceNumber": 17,
+            "citation": {
+                "id": "31329638",
+                "citationType": "journal article",
+                "authors": [
+                    "Robinson B.A.",
+                    "Van Winkle J.A.",
+                    "McCune B.T.",
+                    "Peters A.M.",
+                    "Nice T.J."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "31329638"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.ppat.1007940"
+                    }
+                ],
+                "title": "Caspase-mediated cleavage of murine norovirus NS1/2 potentiates apoptosis and is required for persistent infection of intestinal epithelial cells.",
+                "publicationDate": "2019",
+                "journal": "PLoS Pathog.",
+                "firstPage": "e1007940",
+                "lastPage": "e1007940",
+                "volume": "15"
+            },
+            "referencePositions": [
+                "PROTEOLYTIC CLEAVAGE (NS1-2)",
+                "FUNCTION (NS1)",
+                "SUBCELLULAR LOCATION (NS1)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CR6",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 18,
+            "citation": {
+                "id": "30647130",
+                "citationType": "journal article",
+                "authors": [
+                    "Emmott E.",
+                    "de Rougemont A.",
+                    "Hosmillo M.",
+                    "Lu J.",
+                    "Fitzmaurice T.",
+                    "Haas J.",
+                    "Goodfellow I."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "30647130"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1074/jbc.ra118.006780"
+                    }
+                ],
+                "title": "Polyprotein processing and intermolecular interactions within the viral replication complex spatially and temporally control norovirus protease activity.",
+                "publicationDate": "2019",
+                "journal": "J. Biol. Chem.",
+                "firstPage": "4259",
+                "lastPage": "4271",
+                "volume": "294"
+            },
+            "referencePositions": [
+                "PROTEOLYTIC CLEAVAGE (GENOME POLYPROTEIN)"
+            ]
+        },
+        {
+            "referenceNumber": 19,
+            "citation": {
+                "id": "31403400",
+                "citationType": "journal article",
+                "authors": [
+                    "Hosmillo M.",
+                    "Lu J.",
+                    "McAllaster M.R.",
+                    "Eaglesham J.B.",
+                    "Wang X.",
+                    "Emmott E.",
+                    "Domingues P.",
+                    "Chaudhry Y.",
+                    "Fitzmaurice T.J.",
+                    "Tung M.K.",
+                    "Panas M.D.",
+                    "McInerney G.",
+                    "Locker N.",
+                    "Wilen C.B.",
+                    "Goodfellow I.G."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "31403400"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.7554/elife.46681"
+                    }
+                ],
+                "title": "Noroviruses subvert the core stress granule component G3BP1 to promote viral VPg-dependent translation.",
+                "publicationDate": "2019",
+                "journal": "Elife",
+                "firstPage": "0",
+                "lastPage": "0",
+                "volume": "8"
+            },
+            "referencePositions": [
+                "INTERACTION WITH HOST EIF4G (VIRAL GENOME-LINKED PROTEIN)",
+                "MUTAGENESIS OF PHE-993"
+            ]
+        },
+        {
+            "referenceNumber": 20,
+            "citation": {
+                "id": "31905230",
+                "citationType": "journal article",
+                "authors": [
+                    "Brocard M.",
+                    "Iadevaia V.",
+                    "Klein P.",
+                    "Hall B.",
+                    "Lewis G.",
+                    "Lu J.",
+                    "Burke J.",
+                    "Willcocks M.M.",
+                    "Parker R.",
+                    "Goodfellow I.G.",
+                    "Ruggieri A.",
+                    "Locker N."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "31905230"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.ppat.1008250"
+                    }
+                ],
+                "title": "Norovirus infection results in eIF2alpha independent host translation shut-off and remodels the G3BP1 interactome evading stress granule formation.",
+                "publicationDate": "2020",
+                "journal": "PLoS Pathog.",
+                "firstPage": "e1008250",
+                "lastPage": "e1008250",
+                "volume": "16"
+            },
+            "referencePositions": [
+                "INTERACTION WITH HOST G3BP1 (NTPASE)",
+                "FUNCTION (NTPASE)"
+            ]
+        },
+        {
+            "referenceNumber": 21,
+            "citation": {
+                "id": "34335548",
+                "citationType": "journal article",
+                "authors": [
+                    "Smertina E.",
+                    "Hall R.N.",
+                    "Urakova N.",
+                    "Strive T.",
+                    "Frese M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "34335548"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.3389/fmicb.2021.712710"
+                    }
+                ],
+                "title": "Calicivirus Non-structural Proteins: Potential Functions in Replication and Host Cell Manipulation.",
+                "publicationDate": "2021",
+                "journal": "Front. Microbiol.",
+                "firstPage": "712710",
+                "lastPage": "712710",
+                "volume": "12"
+            },
+            "referencePositions": [
+                "REVIEW"
+            ]
+        },
+        {
+            "referenceNumber": 22,
+            "citation": {
+                "id": "36991121",
+                "citationType": "journal article",
+                "authors": [
+                    "Wang G.",
+                    "Zhang D.",
+                    "Orchard R.C.",
+                    "Hancks D.C.",
+                    "Reese T.A."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "36991121"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1038/s41586-023-05851-w"
+                    }
+                ],
+                "title": "Norovirus MLKL-like protein initiates cell death to induce viral egress.",
+                "publicationDate": "2023",
+                "journal": "Nature",
+                "firstPage": "152",
+                "lastPage": "158",
+                "volume": "616"
+            },
+            "referencePositions": [
+                "FUNCTION (NTPASE)",
+                "DOMAIN (NTPASE)",
+                "SUBUNIT (NTPASE)"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CR6",
+                    "type": "STRAIN"
+                },
+                {
+                    "value": "CW3",
+                    "type": "STRAIN"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 23,
+            "citation": {
+                "id": "21471315",
+                "citationType": "journal article",
+                "authors": [
+                    "Lee J.H.",
+                    "Alam I.",
+                    "Han K.R.",
+                    "Cho S.",
+                    "Shin S.",
+                    "Kang S.",
+                    "Yang J.M.",
+                    "Kim K.H."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "21471315"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1099/vir.0.031104-0"
+                    }
+                ],
+                "title": "Crystal structures of murine norovirus-1 RNA-dependent RNA polymerase.",
+                "publicationDate": "2011",
+                "journal": "J. Gen. Virol.",
+                "firstPage": "1607",
+                "lastPage": "1616",
+                "volume": "92"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.50 ANGSTROMS) OF 1181-1686 IN COMPLEX WITH MAGNESIUM AND MANGANESE",
+                "CATALYTIC ACTIVITY (RNA-DIRECTED RNA POLYMERASE)",
+                "ACTIVE SITE (RNA-DIRECTED RNA POLYMERASE)",
+                "MUTAGENESIS OF ASP-1422; ASP-1523 AND ASP-1524",
+                "COFACTOR (RNA-DIRECTED RNA POLYMERASE)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3NAI"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3QID"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 24,
+            "citation": {
+                "id": "22446684",
+                "citationType": "journal article",
+                "authors": [
+                    "Mastrangelo E.",
+                    "Pezzullo M.",
+                    "Tarantino D.",
+                    "Petazzi R.",
+                    "Germani F.",
+                    "Kramer D.",
+                    "Robel I.",
+                    "Rohayem J.",
+                    "Bolognesi M.",
+                    "Milani M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "22446684"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.jmb.2012.03.008"
+                    }
+                ],
+                "title": "Structure-based inhibition of Norovirus RNA-dependent RNA polymerases.",
+                "publicationDate": "2012",
+                "journal": "J. Mol. Biol.",
+                "firstPage": "198",
+                "lastPage": "210",
+                "volume": "419"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.00 ANGSTROMS) OF 1181-1687 IN COMPLEX WITH SURAMIN AND NF023",
+                "DISULFIDE BONDS",
+                "CATALYTIC ACTIVITY (RNA-DIRECTED RNA POLYMERASE)",
+                "ACTIVITY REGULATION (RNA-DIRECTED RNA POLYMERASE)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3UPF"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3UQS"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3UR0"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 25,
+            "citation": {
+                "id": "22685603",
+                "citationType": "journal article",
+                "authors": [
+                    "Leen E.N.",
+                    "Baeza G.",
+                    "Curry S."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "22685603"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.pone.0038723"
+                    }
+                ],
+                "title": "Structure of a murine norovirus NS6 protease-product complex revealed by adventitious crystallisation.",
+                "publicationDate": "2012",
+                "journal": "PLoS ONE",
+                "firstPage": "e38723",
+                "lastPage": "e38723",
+                "volume": "7"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (1.58 ANGSTROMS) OF 995-1177"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "4ASH"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 26,
+            "citation": {
+                "id": "22341781",
+                "citationType": "journal article",
+                "authors": [
+                    "Alam I.",
+                    "Lee J.H.",
+                    "Cho K.J.",
+                    "Han K.R.",
+                    "Yang J.M.",
+                    "Chung M.S.",
+                    "Kim K.H."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "22341781"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.virol.2012.01.016"
+                    }
+                ],
+                "title": "Crystal structures of murine norovirus-1 RNA-dependent RNA polymerase in complex with 2-thiouridine or ribavirin.",
+                "publicationDate": "2012",
+                "journal": "Virology",
+                "firstPage": "143",
+                "lastPage": "151",
+                "volume": "426"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.21 ANGSTROMS) OF 1181-1686 IN COMPLEX WITH MAGNESIUM",
+                "CATALYTIC ACTIVITY (RNA-DIRECTED RNA POLYMERASE)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3SFG"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "3SFU"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 27,
+            "citation": {
+                "id": "23487472",
+                "citationType": "journal article",
+                "authors": [
+                    "Leen E.N.",
+                    "Kwok K.Y.",
+                    "Birtley J.R.",
+                    "Simpson P.J.",
+                    "Subba-Reddy C.V.",
+                    "Chaudhry Y.",
+                    "Sosnovtsev S.V.",
+                    "Green K.Y.",
+                    "Prater S.N.",
+                    "Tong M.",
+                    "Young J.C.",
+                    "Chung L.M.",
+                    "Marchant J.",
+                    "Roberts L.O.",
+                    "Kao C.C.",
+                    "Matthews S.",
+                    "Goodfellow I.G.",
+                    "Curry S."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "23487472"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1128/jvi.03151-12"
+                    }
+                ],
+                "title": "Structures of the compact helical core domains of feline calicivirus and murine norovirus VPg proteins.",
+                "publicationDate": "2013",
+                "journal": "J. Virol.",
+                "firstPage": "5318",
+                "lastPage": "5330",
+                "volume": "87"
+            },
+            "referencePositions": [
+                "STRUCTURE BY NMR OF 881-955",
+                "DOMAIN (VIRAL GENOME-LINKED PROTEIN)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "2M4G"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 28,
+            "citation": {
+                "id": "24657439",
+                "citationType": "journal article",
+                "authors": [
+                    "Croci R.",
+                    "Tarantino D.",
+                    "Milani M.",
+                    "Pezzullo M.",
+                    "Rohayem J.",
+                    "Bolognesi M.",
+                    "Mastrangelo E."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "24657439"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.febslet.2014.03.021"
+                    }
+                ],
+                "title": "PPNDS inhibits murine Norovirus RNA-dependent RNA-polymerase mimicking two RNA stacking bases.",
+                "publicationDate": "2014",
+                "journal": "FEBS Lett.",
+                "firstPage": "1720",
+                "lastPage": "1725",
+                "volume": "588"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.40 ANGSTROMS) OF 1181-1687 IN COMPLEX WITH PPNDS",
+                "DISULFIDE BONDS",
+                "CATALYTIC ACTIVITY (RNA-DIRECTED RNA POLYMERASE)",
+                "ACTIVITY REGULATION (RNA-DIRECTED RNA POLYMERASE)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "4O4R"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 29,
+            "citation": {
+                "id": "24622391",
+                "citationType": "journal article",
+                "authors": [
+                    "Croci R.",
+                    "Pezzullo M.",
+                    "Tarantino D.",
+                    "Milani M.",
+                    "Tsay S.C.",
+                    "Sureshbabu R.",
+                    "Tsai Y.J.",
+                    "Mastrangelo E.",
+                    "Rohayem J.",
+                    "Bolognesi M.",
+                    "Hwu J.R."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "24622391"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1371/journal.pone.0091765"
+                    }
+                ],
+                "title": "Structural bases of norovirus RNA dependent RNA polymerase inhibition by novel suramin-related compounds.",
+                "publicationDate": "2014",
+                "journal": "PLoS ONE",
+                "firstPage": "e91765",
+                "lastPage": "e91765",
+                "volume": "9"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.30 ANGSTROMS) OF 1181-1687 IN COMPLEX WITH MAGNESIUM AND SURAMIN-RELATED COMPOUNDS",
+                "DISULFIDE BONDS",
+                "CATALYTIC ACTIVITY (RNA-DIRECTED RNA POLYMERASE)",
+                "ACTIVITY REGULATION (RNA-DIRECTED RNA POLYMERASE)"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "4NRU"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 30,
+            "citation": {
+                "id": "24273131",
+                "citationType": "journal article",
+                "authors": [
+                    "Borin B.N.",
+                    "Tang W.",
+                    "Nice T.J.",
+                    "McCune B.T.",
+                    "Virgin H.W.",
+                    "Krezel A.M."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "24273131"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1002/prot.24484"
+                    }
+                ],
+                "title": "Murine norovirus protein NS1/2 aspartate to glutamate mutation, sufficient for persistence, reorients side chain of surface exposed tryptophan within a novel structured domain.",
+                "publicationDate": "2014",
+                "journal": "Proteins",
+                "firstPage": "1200",
+                "lastPage": "1209",
+                "volume": "82"
+            },
+            "referencePositions": [
+                "STRUCTURE BY NMR OF 28-114",
+                "DOMAIN (NS1-2)",
+                "MUTAGENESIS OF ASP-94"
+            ],
+            "referenceComments": [
+                {
+                    "value": "CR6",
+                    "type": "STRAIN"
+                },
+                {
+                    "value": "CW3",
+                    "type": "STRAIN"
+                }
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "2MCD"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "2MCH"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 31,
+            "citation": {
+                "id": "25755927",
+                "citationType": "journal article",
+                "authors": [
+                    "Fernandes H.",
+                    "Leen E.N.",
+                    "Cromwell H.",
+                    "Pfeil M.P.",
+                    "Curry S."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "25755927"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.7717/peerj.798"
+                    }
+                ],
+                "title": "Structure determination of Murine Norovirus NS6 proteases with C-terminal extensions designed to probe protease-substrate interactions.",
+                "publicationDate": "2015",
+                "journal": "PeerJ",
+                "firstPage": "e798",
+                "lastPage": "e798",
+                "volume": "3"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (2.30 ANGSTROMS) OF 995-1178 AND 1174-1178"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "4X2V"
+                },
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "4X2W"
+                }
+            ]
+        },
+        {
+            "referenceNumber": 32,
+            "citation": {
+                "id": "30038601",
+                "citationType": "journal article",
+                "authors": [
+                    "Lee J.H.",
+                    "Park B.S.",
+                    "Han K.R.",
+                    "Biering S.B.",
+                    "Kim S.J.",
+                    "Choi J.",
+                    "Seok J.H.",
+                    "Alam I.",
+                    "Chung M.S.",
+                    "Kim H.M.",
+                    "Hwang S.",
+                    "Kim K.H."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "30038601"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.3389/fmicb.2018.01466"
+                    }
+                ],
+                "title": "Insight Into the Interaction Between RNA Polymerase and VPg for Murine Norovirus Replication.",
+                "publicationDate": "2018",
+                "journal": "Front. Microbiol.",
+                "firstPage": "1466",
+                "lastPage": "1466",
+                "volume": "9"
+            },
+            "referencePositions": [
+                "X-RAY CRYSTALLOGRAPHY (3.14 ANGSTROMS) OF 1181-1686 IN COMPLEX WITH THE VIRAL GENOME-LINKED PROTEIN",
+                "SUBUNIT (RNA-DIRECTED RNA POLYMERASE)",
+                "INTERACTION WITH RNA-DIRECTED RNA POLYMERASE (VIRAL GENOME-LINKED PROTEIN)",
+                "INTERACTION WITH VIRAL GENOME-LINKED PROTEIN (RNA-DIRECTED RNA POLYMERASE)",
+                "SUBUNIT (VIRAL GENOME-LINKED PROTEIN)",
+                "MUTAGENESIS OF ASP-1508 AND LEU-1531"
+            ],
+            "evidences": [
+                {
+                    "evidenceCode": "ECO:0007744",
+                    "source": "PDB",
+                    "id": "5Y3D"
+                }
+            ]
+        }
+    ],
+    "uniProtKBCrossReferences": [
+        {
+            "database": "EMBL",
+            "id": "AY228235",
+            "properties": [
+                {
+                    "key": "ProteinId",
+                    "value": "AAO63098.2"
+                },
+                {
+                    "key": "Status",
+                    "value": "ALT_SEQ"
+                },
+                {
+                    "key": "MoleculeType",
+                    "value": "Genomic_RNA"
+                }
+            ]
+        },
+        {
+            "database": "EMBL",
+            "id": "DQ285629",
+            "properties": [
+                {
+                    "key": "ProteinId",
+                    "value": "ABB90153.1"
+                },
+                {
+                    "key": "Status",
+                    "value": "-"
+                },
+                {
+                    "key": "MoleculeType",
+                    "value": "Genomic_RNA"
+                }
+            ]
+        },
+        {
+            "database": "EMBL",
+            "id": "KC782764",
+            "properties": [
+                {
+                    "key": "ProteinId",
+                    "value": "AGO59889.1"
+                },
+                {
+                    "key": "Status",
+                    "value": "-"
+                },
+                {
+                    "key": "MoleculeType",
+                    "value": "Genomic_RNA"
+                }
+            ]
+        },
+        {
+            "database": "RefSeq",
+            "id": "YP_720001.1",
+            "properties": [
+                {
+                    "key": "NucleotideSequenceId",
+                    "value": "NC_008311.1"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "2M4G",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "NMR"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "-"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A=881-955"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "2MCD",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "NMR"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "-"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A=28-114"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "2MCH",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "NMR"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "-"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A=58-114"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3NAH",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.75 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3NAI",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.56 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3QID",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.50 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3SFG",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.21 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3SFU",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.50 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3UPF",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.60 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1174-1687"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3UQS",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.00 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1687"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "3UR0",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.45 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1687"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4ASH",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "1.58 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B=995-1177"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4NRU",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.30 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C/D/E/F=1181-1687"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4O4R",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.40 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C=1181-1687"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4X2V",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.30 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C/D=995-1178, E=1174-1178"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4X2W",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.70 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B=997-1175"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4X2X",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.47 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A=998-1173"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "4X2Y",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.42 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B=998-1173"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "5Y3D",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "3.14 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "A/B/C/D/E/F=1181-1686"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "8A5M",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.92 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "C/E=1171-1177"
+                }
+            ]
+        },
+        {
+            "database": "PDB",
+            "id": "8A8X",
+            "properties": [
+                {
+                    "key": "Method",
+                    "value": "X-ray"
+                },
+                {
+                    "key": "Resolution",
+                    "value": "2.37 A"
+                },
+                {
+                    "key": "Chains",
+                    "value": "B/D=699-705"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "2M4G",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "2MCD",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "2MCH",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3NAH",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3NAI",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3QID",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3SFG",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3SFU",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3UPF",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3UQS",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "3UR0",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4ASH",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4NRU",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4O4R",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4X2V",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4X2W",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4X2X",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "4X2Y",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "5Y3D",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "8A5M",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "PDBsum",
+            "id": "8A8X",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "SMR",
+            "id": "Q80J95",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "BindingDB",
+            "id": "Q80J95",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "MEROPS",
+            "id": "C37.003",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "GeneID",
+            "id": "4246735",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "KEGG",
+            "id": "vg:4246735",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "BRENDA",
+            "id": "2.7.7.48",
+            "properties": [
+                {
+                    "key": "OrganismId",
+                    "value": "11649"
+                }
+            ]
+        },
+        {
+            "database": "EvolutionaryTrace",
+            "id": "Q80J95",
+            "properties": [
+                {
+                    "key": "Description",
+                    "value": "-"
+                }
+            ]
+        },
+        {
+            "database": "Proteomes",
+            "id": "UP000109015",
+            "properties": [
+                {
+                    "key": "Component",
+                    "value": "Genome"
+                }
+            ]
+        },
+        {
+            "database": "Proteomes",
+            "id": "UP000179396",
+            "properties": [
+                {
+                    "key": "Component",
+                    "value": "Genome"
+                }
+            ]
+        },
+        {
+            "database": "Proteomes",
+            "id": "UP000179407",
+            "properties": [
+                {
+                    "key": "Component",
+                    "value": "Genome"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0005524",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:ATP binding"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:UniProtKB-KW"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0004197",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:cysteine-type endopeptidase activity"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:InterPro"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0046872",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:metal ion binding"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:UniProtKB-KW"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0017111",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:ribonucleoside triphosphate phosphatase activity"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:UniProtKB-EC"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0003723",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:RNA binding"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:InterPro"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0003724",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:RNA helicase activity"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:InterPro"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0003968",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "F:RNA-dependent RNA polymerase activity"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:UniProtKB-KW"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0006351",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "P:DNA-templated transcription"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:InterPro"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0006508",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "P:proteolysis"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:UniProtKB-KW"
+                }
+            ]
+        },
+        {
+            "database": "GO",
+            "id": "GO:0039694",
+            "properties": [
+                {
+                    "key": "GoTerm",
+                    "value": "P:viral RNA genome replication"
+                },
+                {
+                    "key": "GoEvidenceType",
+                    "value": "IEA:InterPro"
+                }
+            ]
+        },
+        {
+            "database": "CDD",
+            "id": "cd23192",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Caliciviridae_RdRp"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "1.20.960.20",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "-"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "3.30.70.270",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "-"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "2"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "6.10.20.70",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "-"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "6.10.250.3230",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "-"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "3.40.50.300",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "P-loop containing nucleotide triphosphate hydrolases"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Gene3D",
+            "id": "2.40.10.10",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Trypsin-like serine proteases"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "2"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR043502",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "DNA/RNA_pol_sf"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR000605",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Helicase_SF3_ssDNA/RNA_vir"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR014759",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Helicase_SF3_ssRNA_vir"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR001665",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Norovirus_pept_C37"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR027417",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "P-loop_NTPase"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR009003",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Peptidase_S1_PA"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR043504",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Peptidase_S1_PA_chymotrypsin"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR043128",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Rev_trsase/Diguanyl_cyclase"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR001205",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "RNA-dir_pol_C"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR007094",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "RNA-dir_pol_PSvirus"
+                }
+            ]
+        },
+        {
+            "database": "InterPro",
+            "id": "IPR013614",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Viral_PP_Calicivir_N"
+                }
+            ]
+        },
+        {
+            "database": "Pfam",
+            "id": "PF08405",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Calici_PP_N"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Pfam",
+            "id": "PF05416",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Peptidase_C37"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Pfam",
+            "id": "PF00680",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "RdRP_1"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "Pfam",
+            "id": "PF00910",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "RNA_helicase"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "PRINTS",
+            "id": "PR00917",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "SRSVCYSPTASE"
+                }
+            ]
+        },
+        {
+            "database": "SUPFAM",
+            "id": "SSF56672",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "DNA/RNA polymerases"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "SUPFAM",
+            "id": "SSF52540",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "P-loop containing nucleoside triphosphate hydrolases"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "SUPFAM",
+            "id": "SSF50494",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "Trypsin-like serine proteases"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "PROSITE",
+            "id": "PS51537",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "NV_3CL_PRO"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "PROSITE",
+            "id": "PS50507",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "RDRP_SSRNA_POS"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "database": "PROSITE",
+            "id": "PS51218",
+            "properties": [
+                {
+                    "key": "EntryName",
+                    "value": "SF3_HELICASE_2"
+                },
+                {
+                    "key": "MatchStatus",
+                    "value": "1"
+                }
+            ]
+        }
+    ],
+    "sequence": {
+        "value": "MRMATPSSAPSVRNTEKRKNKKASSKASVSFGAPSPLSSESEDEINYMTPPEQEAQPGALAALHAEGPLAGLPVTRSDARVLIFNEWEERKKSDPWLRLDMSDKAIFRRYPHLRPKEDRPDAPSHAEDAMDAKEPVIGSILEQDDHKFYHYSVYIGGGLVMGVNNPSAAVCQATIDVEKLHLWWRPVWEPRHPLDSAELRKCVGMTVPYVATTVNCYQVCCWIVGIKDTWLKRAKISRDLPFYSPVQDWNVDPQEPFIPSKLRMVSDGILVALSAVIGRPIKNLLASVKPLNILNIVLSCDWTFSGIVNALILLAELFDIFWTPPDVTNWMISIFGEWQAEGPFDLALDVVPTLLGGIGMAFGLTSETIGRKLASTNSALKAAQEMGKFAIEVFKQIMAWIWPSEDPVPALLSNMEQAIIKNECQLENQLTAMLRDRNAGAEFLRSLDEEEQEVRKIAAKCGNSATTGTTNALLARISMARAAFEKARAEQTSRVRPVVIMVSGRPGIGKTCFCQNLAKRIAASLGDETSVGIIPRADVDHWDAYKGARVVLWDDFGMDNVVKDALRLQMLADTCPVTLNCDRIENKGKMFDSQVIIITTNQQTPVPLDYVNLEAVCRRIDFLVYAESPVVDDARARAPGDVNAVKAAMRPDYSHINFILAPQGGFDRQGNTPYGKGVTKIIGATALCARAVALVHERHDDFGLQNKVYDFDAGKITAFKAMAADAGIPWYKMAAIGCKAMGCTCVEEAMHLLKDYEVAPCQVIYNGATYNVSCIKGAPMVEKVKEPELPKTLVNCVRRIKEARLRCYCRMAADVITSILQAAGTAFSIYHQIEKRSRPSFYWDRGYTYRDGPGSFDIFEDDDDGWYHSEGKKGKNKKGRGRPGVFRTRGLTDEEYDEFKKRRESRGGKYSIDDYLADREREEELLERDEEEAIFGDGFGLKATRRSRKAERAKLGLVSGGDIRARKPIDWNVVGPSWADDDRQVDYGEKINFEAPVSIWSRVVQFGTGWGFWVSGHVFITAKHVAPPKGTEIFGRKPGDFTVTSSGDFLKYYFTSAVRPDIPAMVLENGCQEGVVASVLVKRASGEMLALAVRMGSQAAIKIGSAVVHGQTGMLLTGSNAKAQDLGTIPGDCGCPYVYKKGNTWVVIGVHVAATRSGNTVIAATHGEPTLEALEFQGPPMLPRPSGTYAGLPIADYGDAPPLSTKTMFWRTSPEKLPPGAWEPAYLGSKDERVDGPSLQQVMRDQLKPYSEPRGLLPPQEILDAVCDAIENRLENTLEPQKPWTFKKACESLDKNTSSGYPYHKQKSKDWTGSAFIGDLGDQATHANNMYEMGKSMRPIYTAALKDELVKPDKIYGKIKKRLLWGSDLGTMIRAARAFGPFCDALKETCIFNPIRVGMSMNEDGPFIFARHANFRYHMDADYTRWDSTQQRAILKRAGDIMVRLSPEPDLARVVMDDLLAPSLLDVGDYKIVVEEGLPSGCPCTTQLNSLAHWILTLCAMVEVTRVDPDIVMQESEFSFYGDDEVVSTNLELDMVKYTMALRRYGLLPTRADKEEGPLERRQTLQGISFLRRAIVGDQFGWYGRLDRASIDRQLLWTKGPNHQNPFETLPGHAQRPSQLMALLGEAAMHGEKYYRTVASRVSKEAAQSGIEMVVPRHRSVLRWVRFGTMDAETPQERSAVFVNEDE",
+        "length": 1687,
+        "molWeight": 187557,
+        "crc64": "5422D7E8C10E98EF",
+        "md5": "ADFDCD853A9AC7EE74BB85243BDAE9F7"
+    },
+    "extraAttributes": {
+        "countByCommentType": {
+            "FUNCTION": 7,
+            "CATALYTIC ACTIVITY": 3,
+            "COFACTOR": 2,
+            "ACTIVITY REGULATION": 1,
+            "BIOPHYSICOCHEMICAL PROPERTIES": 1,
+            "SUBUNIT": 7,
+            "SUBCELLULAR LOCATION": 6,
+            "DOMAIN": 3,
+            "PTM": 3,
+            "MISCELLANEOUS": 2,
+            "CAUTION": 1,
+            "SEQUENCE CAUTION": 1
+        },
+        "countByFeatureType": {
+            "Chain": 9,
+            "Domain": 3,
+            "Region": 9,
+            "Active site": 3,
+            "Binding site": 6,
+            "Site": 8,
+            "Modified residue": 1,
+            "Disulfide bond": 1,
+            "Natural variant": 1,
+            "Mutagenesis": 11,
+            "Sequence conflict": 1
+        },
+        "uniParcId": "UPI0000663826"
+    }
+}
