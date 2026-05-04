@@ -1,0 +1,21 @@
+Accession,UniProt_Annotation_Score,UniProt_Normalized_Score,KSS_Score,Δ (KSS - UniProt_norm),Protein_Name,Organism,Protein_Existence,Num_References,GO_MF,GO_BP,GO_CC,Has_3D_Structure,Has_PTM,Has_Interactions,Num_Structural_Functional_Features
+P16751,1.0,0.0,0.42,0.42,Uncharacterized protein UL78,Human cytomegalovirus (strain AD169),1,3,0,0,1,Yes,Yes,No,7
+P42484,2.0,0.25,0.62,0.37,DNA-directed RNA polymerase RPB6 homolog,African swine fever virus (strain Badajoz 1971 Vero-adapted),1,5,4,2,3,Yes,No,No,0
+P34081,1.0,0.0,0.35,0.35,DNA endonuclease I-HmuI,Bacillus phage SP01,1,2,1,1,0,Yes,No,No,0
+P90463,2.0,0.25,0.6,0.35,Thymidylate synthase,Human herpesvirus 8 type P (isolate GK18),1,3,1,3,0,Yes,No,Yes,8
+Q5UPL1,1.0,0.0,0.35,0.35,Uncharacterized protein L136,Acanthamoeba polyphaga mimivirus,1,1,2,1,0,Yes,No,No,0
+P04132,1.0,0.0,0.33,0.33,Repressor protein C,Escherichia phage P2,1,3,1,0,0,Yes,No,No,1
+A7J3A1,2.0,0.25,0.58,0.32999999999999996,Intermediate capsid protein VP6,Rotavirus A (strain RVA/Cow/United States/NCDV-Lincoln/1969/G6P6[1]),1,3,3,1,2,Yes,Yes,No,4
+P42488,2.0,0.25,0.58,0.32999999999999996,DNA-directed RNA polymerase RPB10 homolog,African swine fever virus (strain Badajoz 1971 Vero-adapted),1,3,3,2,2,Yes,No,No,4
+P17574,1.0,0.0,0.32,0.32,Coat protein,Satellite tobacco mosaic virus,1,2,1,0,1,Yes,No,No,0
+Q5UNW3,1.0,0.0,0.32,0.32,Uncharacterized protein R705,Acanthamoeba polyphaga mimivirus,1,2,0,0,1,No,No,No,1
+Q5UPS5,1.0,0.0,0.32,0.32,Uncharacterized protein L780,Acanthamoeba polyphaga mimivirus,1,1,1,1,1,Yes,No,No,0
+Q5UQF8,1.0,0.0,0.32,0.32,Uncharacterized protein L488,Acanthamoeba polyphaga mimivirus,1,2,0,0,1,No,No,No,2
+Q5UQK5,1.0,0.0,0.32,0.32,Uncharacterized protein R403,Acanthamoeba polyphaga mimivirus,1,2,0,0,1,No,No,No,1
+Q5UQK6,1.0,0.0,0.32,0.32,Uncharacterized protein R402,Acanthamoeba polyphaga mimivirus,1,2,0,0,1,No,No,No,1
+Q5UQQ0,1.0,0.0,0.32,0.32,Uncharacterized protein L452,Acanthamoeba polyphaga mimivirus,1,2,0,0,1,No,No,No,4
+Q86993,1.0,0.0,0.32,0.32,Coat protein,Satellite panicum mosaic virus,1,2,1,0,1,Yes,No,No,0
+P32762,2.0,0.25,0.57,0.31999999999999995,Lytic amidase,Streptococcus pneumoniae phage HB-3,1,2,1,4,1,No,No,No,1
+P06794,2.0,0.25,0.56,0.31000000000000005,Major capsid protein L1,Human papillomavirus type 18,1,3,1,2,2,Yes,Yes,No,1
+G3FFN8,2.0,0.25,0.55,0.30000000000000004,DNA polymerase DpoZ,Vibrio phage phiVC8,1,2,3,3,0,Yes,No,No,0
+P03422,3.0,0.5,0.8,0.30000000000000004,Phosphoprotein,Measles virus (strain Edmonston),1,5,4,2,0,Yes,Yes,Yes,10

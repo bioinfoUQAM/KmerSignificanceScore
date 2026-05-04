@@ -16,7 +16,7 @@ KSS combines three complementary components:
 ## Installation
 
 ```bash
-git clone https://github.com/Dylan-Lebatteux/KmerSignificanceScore.git
+git clone https://github.com/bioinfoUQAM/KmerSignificanceScore.git
 cd KmerSignificanceScore
 
 python -m venv venv
@@ -72,15 +72,21 @@ parameters:
 
 ## Datasets
 
-The repository includes GenBank reference genomes and configuration files for three viral systems. **Sequence FASTA files are not included due to their size** (up to 5.6 GB per gene).
+The repository includes reference annotations, configuration files, and the exact accession lists used in the manuscript for three classes of viruses. **Raw FASTA files are not redistributed** because of their size; they can be reproduced from the accession lists.
 
 | Virus | Sequences | Classes | Source |
 |-------|-----------|---------|--------|
-| SARS-CoV-2 | 278,738 | 19 variants | [GISAID](https://gisaid.org/) / [NCBI Virus](https://www.ncbi.nlm.nih.gov/labs/virus/) |
-| HIV-1 | 12,223 | 15 subtypes | [Los Alamos HIV Database](https://www.hiv.lanl.gov/) |
+| SARS-CoV-2 | 278,738 | 19 variants | [NCBI GenBank](https://www.ncbi.nlm.nih.gov/genbank/) |
+| HIV-1 | 12,223 | 15 subtypes | [Los Alamos National Laboratory HIV Sequence Database](https://www.hiv.lanl.gov/) |
 | HCMV | 399-646 | 4-8 genotypes | [NCBI GenBank](https://www.ncbi.nlm.nih.gov/genbank/) |
 
-Place FASTA files as `data/<Virus>/<Gene>/sequences.fasta` with headers: `>sequence_id|Virus|Gene|CLASS`
+Accession lists live in `data/accessions/`. To regenerate the FASTA files from public databases, see [`data/README.md`](data/README.md):
+
+```bash
+python scripts/fetch_sequences.py --email you@example.com --virus hcmv
+```
+
+FASTA files use the header format: `>accession|Virus|Gene|class`
 
 ## Project Structure
 
@@ -102,10 +108,16 @@ KmerSignificanceScore/
 │   └── substitution_matrices/
 │       └── MIYATA_EVO.pkl           # Optimized substitution matrix
 │
-├── data/                            # Viral datasets (references + configs)
+├── data/                            # References, configs, and accession lists
+│   ├── README.md                    # How to reproduce the FASTA files
+│   ├── accessions/                  # Per-virus accession TSVs
 │   ├── Severe_acute_respiratory_syndrome_coronavirus_2/
 │   ├── Human_immunodeficiency_virus_1/
 │   └── Human_betaherpesvirus_5/
+│
+├── scripts/
+│   ├── extract_accessions.py        # Build accession lists from FASTA files
+│   └── fetch_sequences.py           # Download sequences from NCBI Entrez
 │
 └── notebooks/                       # Validation and evaluation
     ├── discriminative_score_validation.ipynb
@@ -119,12 +131,12 @@ KmerSignificanceScore/
 
 ## Validation Results
 
-KSS was validated on all three viral systems:
+KSS was validated on all three classes of viruses:
 
 - **Discriminative component**: Mean F1 = 0.880 across all datasets, comparable to or above six established feature selection methods (chi-squared, odds ratio, NMI, MI, ANOVA, Cramer's V)
 - **MIYATA_EVO matrix**: Composite biophysical correlation score of 4.578 vs 3.566 for the original MIYATA matrix (+28.4%), optimized via genetic algorithm over 625 generations
 - **Protein score**: Spearman rho = 0.900, Kendall tau = 0.777 against UniProt annotation levels on 17,470 viral proteins
-- **Functional validation**: Top-ranked positions across all three systems correspond to established variant-defining mutations, drug resistance sites, immune escape loci, and genotype markers documented in independent studies
+- **Functional validation**: Top-ranked positions across all three classes of viruses correspond to established variant-defining mutations, drug resistance sites, immune escape loci, and genotype markers documented in independent studies
 
 Detailed results are available in `notebooks/*_results/` directories.
 
