@@ -62,6 +62,10 @@ desktop.ini
 data/*/results/
 # Generated PDF reports (produced by `python main.py --report N`)
 *_report.pdf
+# The toy report is the one output the README describes that a reader cannot see without
+# installing the project, and it answers the report request of comment 4.5. Regenerate it
+# with: python main.py data/toy/config.yaml --report 12
+!data/toy/toy_report.pdf
 # Broad rule aimed at generated result files. It also silently excluded the substitution
 # matrices, which left MIYATA_EVO.pkl as the only matrix present in a clone, so they are
 # re-included explicitly below.
