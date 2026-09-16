@@ -19,8 +19,9 @@ the table and is resampled with the rest.
 The chance ceilings do not coincide across the three datasets, so a raw score low in the range does
 not mean the same thing everywhere. What the manuscript states from these files is bounded
 accordingly: above the highest ceiling observed anywhere in these data, a score separates from
-chance in every dataset, and the prioritized positions exceed it by two to three orders of
-magnitude. Separation from chance is not comparability of meaning, and the manuscript concludes
+chance in every dataset, and the positions the framework prioritizes score well above that
+ceiling. `per_position.csv` carries the observed score and the ceiling for every position, so
+the margin can be read there rather than quoted here. Separation from chance is not comparability of meaning, and the manuscript concludes
 that neither a universal threshold nor a statistical or biological interpretation transfers from
 one dataset to another.
 
