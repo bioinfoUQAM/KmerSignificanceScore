@@ -70,7 +70,8 @@ matplotlib, so it needs the analysis extra: `pip install -e ".[analysis]"`.
 python main.py data/toy/config.yaml --report 12
 ```
 
-The report (`data/toy/toy_report.pdf`) has a summary table of the top positions and, per gene,
+The report ([`data/toy/toy_report.pdf`](data/toy/toy_report.pdf), committed so it can be read
+without running anything) has a summary table of the top positions and, per gene,
 the discriminative, mutational and KSS scores along the gene with the protein's UniProt link.
 
 To redraw it from results already on disk, without rescoring:
