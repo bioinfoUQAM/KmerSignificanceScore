@@ -202,8 +202,7 @@ KmerSignificanceScore/
     ├── matrix_evaluation.ipynb
     ├── matrix_optimization.ipynb
     ├── generate_kss_figure.ipynb
-    ├── *_results/                   # Pre-computed validation results
-    └── publication_figures/          # Figures for the manuscript
+    └── *_results/                   # Pre-computed validation results
 ```
 
 To change the code rather than run it, [`CONTRIBUTING.md`](CONTRIBUTING.md) gives the flow through
