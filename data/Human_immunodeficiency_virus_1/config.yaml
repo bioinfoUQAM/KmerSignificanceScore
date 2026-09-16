@@ -10,7 +10,8 @@ parameters:
   # K-mer size for analysis
   k: 9
 
-  # Minimum number of sequences per class (threshold filtering)
+  # Minimum prevalence, in percent, that a variant k-mer must reach within at least
+  # one class to be retained. 25 corresponds to t = 0.25 in the manuscript.
   threshold: 33
 
   # Component weights for final KSS score

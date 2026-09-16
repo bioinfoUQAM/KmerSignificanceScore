@@ -1,35 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Amino Acid Substitution Scoring Module
+"""Mutational impact scoring from amino acid substitution matrices.
 
-This module provides functions for computing mutational impact scores based on
-amino acid substitution matrices. It evaluates the functional impact of amino
-acid changes by leveraging biochemical distance metrics.
-
-The module supports multiple substitution matrices including:
-- MIYATA: Evolutionary distance based on physicochemical properties
-- BLOSUM: Block substitution matrices from protein alignments
-- GRANTHAM: Chemical distance between amino acids
-- PAM: Point accepted mutation matrices
-
-Features:
-- Automatic format detection (JSON/Pickle)
-- Matrix normalization and scaling to [0, 1] range
-- Support for custom substitution matrices
-- Handling of deletions and insertions
-- High-precision value preservation
-
-Main functions:
-    get_mutational_scores: Calculate impact scores for amino acid changes
-    load_substitution_matrix: Load matrix from file with auto-detection
-    save_substitution_matrix: Save matrix in multiple formats
-    adjust_and_scale_substitution_matrix: Normalize matrix values
+Scores an amino acid change by the biochemical dissimilarity of the two residues, read from a
+substitution matrix (MIYATA_EVO, BLOSUM, GRANTHAM, PAM, ...) scaled to [0, 1]. Matrices load
+from and save to JSON. Main entry point: get_mutational_scores.
 """
 
 import os
 import json
-import pickle
 import numpy as np
 from typing import Dict, Any, List, Tuple, Optional, Union
 
@@ -40,65 +19,26 @@ _MATRIX_CACHE = {}
 
 def load_substitution_matrix(filename: str) -> Dict[Tuple[str, str], float]:
     """
-    Load a substitution matrix from JSON or Pickle file with automatic format detection.
-
-    The function first attempts to determine the file format from the extension,
-    then falls back to trying both formats if extension is ambiguous.
+    Load a substitution matrix from a JSON file.
 
     Args:
-        filename: Path to the matrix file (.json or .pkl extension preferred)
+        filename: Path to the matrix file
 
     Returns:
-        Substitution matrix as a dictionary with amino acid pair tuples as keys
-        and substitution scores as values. Example: {('A', 'G'): 0.45, ...}
+        Substitution matrix keyed by amino acid pair. Example: {('A', 'G'): 0.45, ...}
 
     Raises:
-        FileNotFoundError: If the specified file doesn't exist
-        RuntimeError: If the file format is not supported or corrupted
+        FileNotFoundError: If the file does not exist
+        RuntimeError: If the file cannot be parsed
 
     Notes:
-        - Pickle format is preferred for higher numerical precision
-        - JSON keys are automatically converted from strings to tuples
-        - Supports both ('A', 'G') and 'AG' key formats in JSON
+        JSON is the only format the matrices ship in. Keys are converted from strings to
+        tuples, and both '(A, G)' and 'AG' key formats are accepted.
     """
     if not os.path.exists(filename):
         raise FileNotFoundError(f"File not found: {filename}")
-    
-    # Automatic format detection by extension
-    _, ext = os.path.splitext(filename.lower())
 
-    if ext == '.pkl':
-        return _load_matrix_pickle(filename)
-    elif ext == '.json':
-        return _load_matrix_json(filename)
-    else:
-        # Try automatic detection if extension is unknown
-        try:
-            return _load_matrix_pickle(filename)
-        except (pickle.UnpicklingError, EOFError, AttributeError, ImportError):
-            # Pickle format failed, try JSON
-            return _load_matrix_json(filename)
-
-
-def _load_matrix_pickle(filename: str) -> Dict[Tuple[str, str], float]:
-    """
-    Load substitution matrix from pickle file.
-
-    Args:
-        filename: Path to pickle (.pkl) file
-
-    Returns:
-        Substitution matrix dictionary
-
-    Raises:
-        RuntimeError: If pickle loading fails
-    """
-    try:
-        with open(filename, 'rb') as f:
-            matrix = pickle.load(f)
-        return matrix
-    except Exception as e:
-        raise RuntimeError(f"Error loading pickle file {filename}: {e}")
+    return _load_matrix_json(filename)
 
 
 def _load_matrix_json(filename: str) -> Dict[Tuple[str, str], float]:
@@ -138,58 +78,26 @@ def _load_matrix_json(filename: str) -> Dict[Tuple[str, str], float]:
 
 
 def save_substitution_matrix(matrix: Dict[Tuple[str, str], float],
-                            base_filename: str,
-                            formats: List[str] = ['pickle']) -> Dict[str, str]:
+                            base_filename: str) -> str:
     """
-    Save a substitution matrix in one or multiple formats.
+    Save a substitution matrix as JSON.
+
+    JSON is the only format written: it is open, readable and language-agnostic, and it
+    stores float64 without loss.
 
     Args:
         matrix: Substitution matrix dictionary with tuple keys
         base_filename: Base filename without extension (e.g., 'matrices/BLOSUM62')
-        formats: List of output formats. Options: 'pickle', 'json', or 'both'
-                Default: ['pickle']
 
     Returns:
-        Dictionary mapping format names to created file paths.
-        Example: {'pickle': 'matrices/BLOSUM62.pkl', 'json': 'matrices/BLOSUM62.json'}
-
-    Notes:
-        - Creates parent directories if they don't exist
-        - 'both' is converted to ['pickle', 'json']
-        - JSON format uses 15 decimal places for precision
-        - Pickle format preserves full Python float precision
+        Path of the file created. Parent directories are created if needed.
     """
-    if 'both' in formats:
-        formats = ['pickle', 'json']
-    
-    created_files = {}
-    
-    # Create directory if necessary
     os.makedirs(os.path.dirname(base_filename), exist_ok=True)
-    
-    if 'pickle' in formats:
-        pickle_path = f"{base_filename}.pkl"
-        _save_matrix_pickle(matrix, pickle_path)
-        created_files['pickle'] = pickle_path
-    
-    if 'json' in formats:
-        json_path = f"{base_filename}.json"
-        _save_matrix_json(matrix, json_path)
-        created_files['json'] = json_path
-    
-    return created_files
 
+    json_path = f"{base_filename}.json"
+    _save_matrix_json(matrix, json_path)
 
-def _save_matrix_pickle(matrix: Dict[Tuple[str, str], float], filepath: str) -> None:
-    """
-    Save matrix in pickle format.
-
-    Args:
-        matrix: Substitution matrix dictionary
-        filepath: Complete path including .pkl extension
-    """
-    with open(filepath, 'wb') as f:
-        pickle.dump(matrix, f)
+    return json_path
 
 
 def _save_matrix_json(matrix: Dict[Tuple[str, str], float], filepath: str) -> None:
@@ -202,13 +110,16 @@ def _save_matrix_json(matrix: Dict[Tuple[str, str], float], filepath: str) -> No
 
     Notes:
         - Converts tuple keys to string format '(A, G)'
-        - Rounds values to 15 decimal places
+        - Values are written unrounded. json.dump emits the shortest decimal string that
+          reads back as the same float64, so the round trip is exact. An earlier version
+          rounded to 15 decimal places, which silently altered 216 of the 400 entries of
+          MIYATA_EVO by up to 4e-16. See tests/test_matrix_formats.py.
     """
     string_matrix = {}
     for (aa1, aa2), value in matrix.items():
         key = f"({aa1}, {aa2})"
-        string_matrix[key] = round(float(value), 15)
-    
+        string_matrix[key] = float(value)
+
     with open(filepath, "w") as outfile:
         json.dump(string_matrix, outfile, indent=4, sort_keys=True)
 
@@ -279,28 +190,18 @@ def adjust_and_scale_substitution_matrix(matrix: Dict[Tuple[str, str], float],
 
 
 def get_substitution_matrix(matrix_type: str) -> Dict[Tuple[str, str], float]:
-    """
-    Get a processed substitution matrix with automatic format selection.
+    """Load a substitution matrix from src/substitution_matrices/, scaled to [0, 1] and cached.
 
-    Attempts to load the matrix from the substitution_matrices directory,
-    preferring pickle format over JSON to preserve numerical precision.
+    Reads the JSON file, then applies adjust_and_scale_substitution_matrix.
 
     Args:
-        matrix_type: Name of the matrix to load (e.g., 'MIYATA_EVO', 'BLOSUM62')
+        matrix_type: matrix name, e.g. 'MIYATA_EVO' or 'BLOSUM62'.
 
     Returns:
-        Processed substitution matrix with values scaled to [0, 1] range
+        Substitution matrix with values scaled to [0, 1].
 
     Raises:
-        FileNotFoundError: If no matrix file (.pkl or .json) is found for the
-                          specified matrix_type
-
-    Notes:
-        - Priority order: .pkl > .json (to avoid precision loss)
-        - Automatically applies adjustment and scaling
-        - Looks for files in the 'substitution_matrices' subdirectory
-          relative to this module's location
-        - Results are cached to avoid repeated file I/O
+        FileNotFoundError: if no .json exists for matrix_type.
     """
     # OPTIMIZATION: Check cache first to avoid repeated file loading
     if matrix_type in _MATRIX_CACHE:
@@ -308,17 +209,11 @@ def get_substitution_matrix(matrix_type: str) -> Dict[Tuple[str, str], float]:
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # Priority 1: Try pickle first (higher precision)
-    pickle_path = os.path.join(current_dir, f'substitution_matrices/{matrix_type}.pkl')
-    if os.path.exists(pickle_path):
-        raw_matrix = load_substitution_matrix(pickle_path)
-    else:
-        # Priority 2: Fallback to JSON
-        json_path = os.path.join(current_dir, f'substitution_matrices/{matrix_type}.json')
-        if os.path.exists(json_path):
-            raw_matrix = load_substitution_matrix(json_path)
-        else:
-            raise FileNotFoundError(f"No file found for {matrix_type} (.pkl or .json)")
+    json_path = os.path.join(current_dir, f'substitution_matrices/{matrix_type}.json')
+    if not os.path.exists(json_path):
+        raise FileNotFoundError(f"No file found for {matrix_type} (.json)")
+
+    raw_matrix = load_substitution_matrix(json_path)
 
     processed_matrix = adjust_and_scale_substitution_matrix(raw_matrix, matrix_type)
 
@@ -333,56 +228,41 @@ def get_mutational_scores(changes: Union[List[str], Dict[str, Any]],
                          custom_matrix: Optional[Dict[Tuple[str, str], float]] = None,
                          min_score: float = 0.1,
                          indel_score: float = 1.0) -> Dict[str, float]:
-    """
-    Compute mutational impact scores for amino acid changes.
+    """Score amino acid changes by biochemical dissimilarity (higher = more impactful).
 
-    This function evaluates the functional impact of amino acid mutations using
-    substitution matrices. The scores reflect the biochemical dissimilarity
-    between original and mutated amino acids.
+    Each score is 1 - scaled_similarity from the substitution matrix, floored at min_score;
+    insertions and deletions (a '-' in the mutation string) receive indel_score. Lookup is
+    symmetric, so (A,G) and (G,A) score the same.
 
     Args:
-        changes: Amino acid changes to score. Can be:
-                - List of mutation strings (e.g., ["A123G", "R45K", "D100-"])
-                - Dictionary with mutation strings as keys
-                Format: {original_aa}{position}{mutated_aa}
-                Deletions use '-' as the mutated amino acid
-        substitution_matrix_type: Name of substitution matrix to use.
-                                 Default: "MIYATA_EVO"
-                                 Ignored if custom_matrix is provided
-                                 Options: MIYATA_EVO, BLOSUM62, GRANTHAM, etc.
-        custom_matrix: Optional custom substitution matrix to use instead of
-                      loading from file. Should have amino acid pair tuples as keys
-        min_score: Minimum score for any substitution. Ensures even conservative
-                  mutations have measurable impact. Default: 0.1
-        indel_score: Score assigned to insertions and deletions (indels).
-                    Default: 1.0 (maximum impact). Can be adjusted to
-                    modulate the penalty for indel events.
+        changes: mutation strings "{orig}{pos}{mut}" (e.g. "A123G", "D100-"), list or dict keys.
+        substitution_matrix_type: matrix name (default "MIYATA_EVO"); ignored if custom_matrix set.
+        custom_matrix: use this matrix (tuple keys) instead of loading one from file.
+        min_score: floor applied to every substitution (default 0.1).
+        indel_score: score for insertions and deletions (default 1.0).
 
     Returns:
-        Dictionary mapping mutation strings to impact scores.
-        Score range: [min_score, indel_score]
-        - min_score: Most conservative/similar substitution
-        - indel_score: Score for deletion/insertion events
-
-    Notes:
-        - Deletions ('-' in mutation string) receive the indel_score value
-        - Mutation format: first char = original AA, last char = mutated AA
-        - Uses inverse of similarity: score = 1.0 - similarity
-        - Symmetric lookup: (A,G) and (G,A) have same score
-        - Scores are rounded to 3 decimal places
+        {mutation: score} with score in [min_score, indel_score], rounded to 3 decimals.
     """
+    if not 0.0 <= indel_score <= 1.0:
+        raise ValueError(
+            f"indel_score must lie in [0, 1], got {indel_score}. "
+            f"An indel takes this value directly, so anything outside the interval moves the "
+            f"mutational score, and KSS with it, outside the [0, 1] they are defined on."
+        )
+
     # Handle both list and dict inputs
     if isinstance(changes, dict):
         mutation_list = list(changes.keys())
     else:
         mutation_list = changes
-    
+
     # Get processed substitution matrix
     if custom_matrix is not None:
         # Use the provided custom matrix and process it
         matrix = adjust_and_scale_substitution_matrix(custom_matrix, substitution_matrix_type)
     else:
-        # Load and process matrix from file (priority: pickle > json)
+        # Load and process matrix from its JSON file
         matrix = get_substitution_matrix(substitution_matrix_type)
 
     # Calculate impact scores for each mutation

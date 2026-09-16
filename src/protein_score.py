@@ -1,33 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Protein Functional Importance Scoring Module
+"""Protein characterization scoring from UniProt annotations.
 
-This module calculates protein functional importance scores based on UniProt
-annotations and literature evidence. It integrates multiple biological evidence
-types to quantify how well-characterized and functionally important a protein is.
-
-Scoring Components (total: 100 points):
-    - Protein existence evidence: 15 points
-    - Molecular function annotations: 20 points
-    - Biological process annotations: 20 points
-    - Cellular component annotations: 5 points
-    - Structural annotations: 10 points
-    - Protein-protein interactions: 5 points
-    - Post-translational modifications: 5 points
-    - 3D structure availability: 5 points
-    - Drug target information: 2.5 points
-    - Publication references: 12.5 points
-
-The final score is normalized to [0, 1] range, where:
-    - 1.0 = Extensively characterized protein with strong evidence
-    - 0.0 = Poorly characterized or hypothetical protein
-
-Main functions:
-    get_protein_score: Calculate overall protein importance score
-    fetch_uniprot_data: Retrieve and cache UniProt entries
-    calculate_protein_score: Compute score from cached UniProt JSON
-    score_* functions: Individual scoring components
+Quantifies how well characterized a protein is on a 100-point scale normalized to [0, 1],
+summing ten evidence components: protein existence (15), molecular function (20), biological
+process (20), cellular component (5), structural annotation (10), interactions (5),
+post-translational modifications (5), 3D structures (5), drug target (2.5), publications (12.5).
+Entry point: get_protein_score, which fetches and caches the UniProt entry, then scores it.
 """
 
 import os
@@ -37,6 +16,44 @@ from io import StringIO
 from typing import Dict, Any, Optional, Callable
 import requests
 import pandas as pd
+
+
+CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uniprot')
+RESOLUTION_INDEX = os.path.join(CACHE_DIR, 'index.json')
+
+
+def _load_resolution_index() -> Dict[str, str]:
+    """
+    Read the taxon and gene to accession index that ships with the repository.
+
+    Returns:
+        Mapping of "<taxon_id>|<gene_name>" to UniProt accession, empty if absent
+    """
+    try:
+        with open(RESOLUTION_INDEX, encoding='utf-8') as handle:
+            return json.load(handle)
+    except (OSError, ValueError):
+        return {}
+
+
+def _record_resolution(taxon_id: str, gene_name: str, entry_id: str) -> None:
+    """
+    Add a resolved pair to the index so the next run finds it without the network.
+
+    Args:
+        taxon_id: NCBI Taxonomy ID the search used
+        gene_name: Gene name as the caller supplied it, before any alias mapping
+        entry_id: UniProt accession the search selected
+    """
+    index = _load_resolution_index()
+    key = f"{taxon_id}|{gene_name}"
+    if index.get(key) == entry_id:
+        return
+    index[key] = entry_id
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    with open(RESOLUTION_INDEX, 'w', encoding='utf-8') as handle:
+        json.dump(dict(sorted(index.items())), handle, indent=2)
+        handle.write('\n')
 
 
 def _retry_request(request_func: Callable, max_retries: int = 3,
@@ -104,6 +121,15 @@ def fetch_uniprot_data(taxon_id: str,
         - Returns first (best) matching entry
     """
     try:
+        # The entry cache is keyed by accession, which only the search returns, so without this
+        # index a cached entry stays unreachable and an offline run fails on a protein it holds.
+        requested = gene_name
+        cached_entry = _load_resolution_index().get(f"{taxon_id}|{requested}")
+        if cached_entry and os.path.exists(os.path.join(CACHE_DIR, f'{cached_entry}.json')):
+            if verbose:
+                print(f"Resolved {requested} to {cached_entry} from the shipped index")
+            return cached_entry
+
         # Use requests directly with UniProt REST API
         if gene_name == "ORF1ab":
             gene_name = "rep"
@@ -174,7 +200,7 @@ def fetch_uniprot_data(taxon_id: str,
         entry_id = df_filtered.iloc[0][entry_col]
         
         # Cache handling
-        cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uniprot')
+        cache_dir = CACHE_DIR
         os.makedirs(cache_dir, exist_ok=True)
         json_file_path = os.path.join(cache_dir, f'{entry_id}.json')
         
@@ -195,7 +221,8 @@ def fetch_uniprot_data(taxon_id: str,
 
             with open(json_file_path, "w") as outfile:
                 json.dump(json_response.json(), outfile, indent=2)
-        
+
+        _record_resolution(taxon_id, requested, entry_id)
         return entry_id
         
     except Exception as e:
@@ -606,7 +633,7 @@ def score_publication_references(uniprot_data: Dict[str, Any],
 def calculate_protein_score(json_file_path: str,
                            verbose: bool = False) -> float:
     """
-    Calculate functional importance score for a protein based on UniProt JSON data.
+    Calculate the characterization depth score for a protein from its UniProt JSON data.
     
     Parameters
     ----------
@@ -618,7 +645,8 @@ def calculate_protein_score(json_file_path: str,
     Returns
     -------
     float
-        Normalized score (0-1) representing protein importance
+        Normalized score (0-1) representing the depth of characterization available for the
+        protein, not its functional importance.
     """
     # Check if file exists
     if not os.path.exists(json_file_path):
@@ -653,7 +681,7 @@ def calculate_protein_score(json_file_path: str,
         
         # Print detailed results if verbose
         if verbose:
-            print(f"\nProtein functional importance score: {total_score:.1f}/100")
+            print(f"\nProtein characterization score: {total_score:.1f}/100")
             print("\nScore breakdown by category:")
             print(f"- Protein existence: {scores['protein_existence']}/15")
             print(f"- Molecular function: {scores['molecular_function']}/20")
@@ -679,11 +707,10 @@ def get_protein_score(taxon_id: str,
                      gene_name: str,
                      verbose: bool = False) -> float:
     """
-    Calculate functional importance score for a gene.
+    Calculate the characterization depth score for a gene.
 
     This is the main entry point for protein scoring. It handles the complete
-    workflow: fetching UniProt data, caching it, and computing the comprehensive
-    functional importance score.
+    workflow: fetching UniProt data, caching it, and computing the score.
 
     Args:
         taxon_id: NCBI Taxonomy ID of the organism (e.g., "9606" for human)
@@ -691,8 +718,8 @@ def get_protein_score(taxon_id: str,
         verbose: If True, prints detailed progress and scoring breakdown
 
     Returns:
-        Normalized functional importance score in [0, 1] range:
-        - 1.0: Highly characterized, functionally important protein
+        Normalized characterization depth score in [0, 1] range:
+        - 1.0: Extensively characterized protein
         - 0.5-0.8: Moderately characterized protein
         - 0.0-0.5: Poorly characterized or hypothetical protein
         - 0.0: No UniProt data available
@@ -705,66 +732,50 @@ def get_protein_score(taxon_id: str,
     if verbose:
         print(f"\nProcessing taxon ID: {taxon_id}")
     
-    try:
-        # Retrieve UniProt entry ID
-        entry_id = fetch_uniprot_data(taxon_id, gene_name, verbose=verbose)
-        
-        # Skip if no data found
-        if isinstance(entry_id, str) and (entry_id.startswith("No") or entry_id.startswith("Error")):
-            if verbose:
-                print(f"No UniProt data found for taxon_id={taxon_id}, gene={gene_name}")
-            return 0.0
+    # A score of zero and a failure to fetch must not look alike. Zero is a meaningful answer:
+    # it says the protein has no UniProt entry, which for a component that measures depth of
+    # characterization is the lowest depth there is. A network that cannot be reached says
+    # nothing about the protein, and returning zero for it silently rewrites every position of
+    # the gene as uncharacterized. That is what happened on 29 July 2026: the five SARS-CoV-2
+    # genes were scored while the machine was offline and every protein score came back 0.0,
+    # which no count and no warning revealed. The two cases are separated here.
+    entry_id = fetch_uniprot_data(taxon_id, gene_name, verbose=verbose)
 
-        # Locate the cached JSON file
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        json_file_path = os.path.join(current_dir, 'uniprot', f'{entry_id}.json')
+    if isinstance(entry_id, str) and entry_id.startswith("Error"):
+        raise RuntimeError(
+            f"UniProt could not be reached for taxon {taxon_id}, gene {gene_name}: "
+            f"{entry_id}. Scoring would report this protein as uncharacterized, which is a "
+            f"statement about the network and not about the protein.")
 
-        # Calculate the protein score from cached data
-        if os.path.exists(json_file_path):
-            return calculate_protein_score(json_file_path, verbose=verbose)
-        else:
-            if verbose:
-                print(f"JSON file not found: {json_file_path}")
-            return 0.0
-
-    except Exception as e:
+    if isinstance(entry_id, str) and entry_id.startswith("No"):
         if verbose:
-            print(f"Error in get_protein_score: {str(e)}")
+            print(f"No UniProt entry for taxon_id={taxon_id}, gene={gene_name}: {entry_id}")
         return 0.0
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    json_file_path = os.path.join(current_dir, 'uniprot', f'{entry_id}.json')
+    if not os.path.exists(json_file_path):
+        raise RuntimeError(
+            f"UniProt entry {entry_id} was resolved for gene {gene_name} but its cached record "
+            f"{json_file_path} is missing, so the score cannot be computed.")
+
+    return calculate_protein_score(json_file_path, verbose=verbose)
 
 
 def get_detailed_scores(json_file_path: str,
                        verbose: bool = False) -> Optional[Dict[str, float]]:
-    """
-    Get detailed breakdown of all scoring components.
-
-    This utility function provides granular access to individual scoring
-    components for analysis or debugging purposes.
+    """Break a cached UniProt entry into its ten characterization components.
 
     Args:
-        json_file_path: Path to the cached UniProt JSON file
-        verbose: If True, prints detailed information for each component
+        json_file_path: path to the cached UniProt JSON.
+        verbose: print each component.
 
     Returns:
-        Dictionary containing individual scores for each component:
-            - protein_existence: 0-15
-            - molecular_function: 0-20
-            - biological_processes: 0-20
-            - cellular_component: 0-5
-            - structural_annotation: 0-10
-            - protein_interactions: 0-5
-            - post_translational_mods: 0-5
-            - 3d_structures: 0-5
-            - drug_target: 0-2.5
-            - publication_references: 0-12.5
-            - total_score: 0-100
-            - normalized_score: 0-1
-        Returns None if file not found or error occurs
-
-    Notes:
-        - Useful for understanding which factors contribute to protein score
-        - Total score is sum of all components (max 100)
-        - Normalized score is total/100 (range [0, 1])
+        Component scores (maximum in parentheses): protein_existence (15),
+        molecular_function (20), biological_processes (20), cellular_component (5),
+        structural_annotation (10), protein_interactions (5), post_translational_mods (5),
+        3d_structures (5), drug_target (2.5), publication_references (12.5), plus
+        'total_score' (out of 100) and 'normalized_score' ([0, 1]). None if the file is missing.
     """
     if not os.path.exists(json_file_path):
         return None

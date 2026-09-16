@@ -1,7 +1,7 @@
 # Data — sequence accessions and reproduction
 
 Raw nucleotide sequences are not redistributed in this repository (they exceed
-GitHub size limits and, for SARS-CoV-2, are subject to GISAID terms of use).
+GitHub size limits).
 Instead, the exact accession lists used in the manuscript are provided in
 `accessions/` so the analysis can be reproduced from public databases.
 
@@ -18,6 +18,11 @@ Instead, the exact accession lists used in the manuscript are provided in
 For SARS-CoV-2 and HIV-1 the accession lists are shared across all analysed
 genes (one TSV per virus). For HCMV the genotype assignment depends on the
 gene, so each gene has its own TSV.
+
+The `variant` column of `sars_cov2.tsv` stores the Pango lineage carried by the
+NCBI Virus record. Sequences were retrieved by one NCBI Virus query per lineage,
+restricted to lineages represented in the Nextclade reference tree; no lineage was
+called locally.
 
 ## Reproducing the FASTA files
 
@@ -52,7 +57,8 @@ target:
 |---|---|---|
 | SARS-CoV-2 (Wuhan-Hu-1) | NC_045512 | `data/Severe_acute_respiratory_syndrome_coronavirus_2/<Gene>/NC_045512.gb` |
 | HIV-1 (HXB2) | AF033819 | `data/Human_immunodeficiency_virus_1/<Gene>/AF033819.gb` |
-| HCMV (Merlin) | FJ616285 | `data/Human_betaherpesvirus_5/<Gene>/FJ616285.gb` |
+| HCMV UL55 (Towne) | FJ616285 | `data/Human_betaherpesvirus_5/UL55/FJ616285.gb` |
+| HCMV UL73, US28 (AD169) | FJ527563 | `data/Human_betaherpesvirus_5/{UL73,US28}/FJ527563.gb` |
 
 ## Extraction date
 

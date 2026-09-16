@@ -1,0 +1,34 @@
+# Toy dataset for the quick-start tutorial (see the "Quick start" section of the README).
+# A 16-sequence subset of the HCMV US28 gene, four genotypes with four sequences each,
+# small enough to run end to end in a few seconds on a laptop.
+
+dataset:
+  name: "toy"
+  description: "Quick-start toy: 16 HCMV US28 sequences across four genotypes"
+  genes: ["US28"]
+
+parameters:
+  # k-mer size (nucleotides)
+  k: 9
+
+  # Minimum prevalence, in percent, a variant k-mer must reach within at least one
+  # class to be kept. 25 corresponds to t = 0.25 in the manuscript.
+  threshold: 25
+
+  # Relative weight of each of the three KSS components.
+  weights:
+    discriminative: 1
+    mutational: 1
+    protein: 1
+
+  scoring:
+    mutational_matrix: "MIYATA_EVO"
+    substitution_matrix: "BLOSUM62"
+    indel_score: 1.0
+
+  alignment:
+    open_gap_score: -10
+    extend_gap_score: -1
+
+  output:
+    save_raw: true

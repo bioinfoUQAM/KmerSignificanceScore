@@ -1,0 +1,6 @@
+dataset,gene,positions,silent,with_amino_acid_change,decided_by_floor
+Human_betaherpesvirus_5,UL55,247,192,55,10
+Human_betaherpesvirus_5,UL73,45,16,29,1
+Human_betaherpesvirus_5,US28,93,81,12,3
+Human_immunodeficiency_virus_1,pooled,785,224,561,67
+Severe_acute_respiratory_syndrome_coronavirus_2,pooled,3027,2824,203,14

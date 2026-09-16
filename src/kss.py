@@ -10,7 +10,7 @@ to identify significant genetic variations that may correlate with phenotypic cl
 The KSS scoring system evaluates:
 - Mutational impact based on amino acid substitution matrices
 - Discriminative power for class separation
-- Protein functional importance from UniProt annotations
+- Protein characterization depth from UniProt annotations
 
 Main functions:
     compile_results: Aggregate sequence variations by position/k-mer
@@ -45,51 +45,23 @@ def compile_results(results: Dict[str, Any],
                    parameters: Dict[str, Any],
                    target_gene: Optional[str] = None,
                    verbose: bool = False) -> Dict[str, Dict[str, Dict[str, Any]]]:
-    """
-    Compile results by aggregating sequence mutations by position/k-mer.
+    """Aggregate the per-sequence mutations by position and k-mer, then filter by prevalence.
 
-    This function processes raw mutation data (incremental format) from multiple sequences,
-    groups them by genomic position and k-mer, counts class occurrences, and filters based
-    on threshold criteria. Only variations containing valid ACGT nucleotides are retained.
+    Groups the raw mutations by genomic position and variant k-mer, counts class occurrences,
+    and keeps only variants (k-mers of ACGT and gap characters) reaching the prevalence
+    threshold in at least one class. The reference k-mer passes the same filter as the others
+    and is dropped when it does not reach the threshold; amino acid changes start at score 0
+    (filled in later by compute_kss_scores).
 
     Args:
-        results: Dictionary with new incremental structure:
-            {
-                "_metadata": {...},
-                "genes": {
-                    gene: {
-                        "metadata": {...},
-                        "sequences": {
-                            seq_id: {"class": X, "mutations": [...]}
-                        }
-                    }
-                }
-            }
-        parameters: Configuration dictionary containing:
-            - threshold (float): Minimum count threshold for variation filtering
-            - k (int): K-mer size
-        target_gene: Optional gene name to process. If provided, only this gene is compiled.
-                    If None, all genes are compiled (backwards compatibility).
-        verbose: If True, print detailed progress information (default: False)
+        results: the incremental structure returned by kanalyzer.analyze_records.
+        parameters: needs 'threshold' (minimum prevalence in percent, 25 == t = 0.25) and 'k'.
+        target_gene: if given, compile only this gene; otherwise all genes.
+        verbose: print progress.
 
     Returns:
-        Compiled results dictionary with structure:
-            {gene_name: {
-                (position, ref_kmer): {
-                    'variations': {
-                        alt_kmer: {
-                            'amino_acid_changes': {mutation: 0},
-                            'class_counts': {class_id: count}
-                        }
-                    }
-                }
-            }}
-
-    Notes:
-        - Amino acid mutations are initialized with score 0 (scores computed later)
-        - Only nucleotide sequences with ACGT- characters are retained
-        - Reference k-mers are included automatically (even if no mutations)
-        - Variations are filtered by threshold frequency
+        {gene: {(position, ref_kmer): {'variations': {alt_kmer:
+        {'amino_acid_changes': {mutation: 0}, 'class_counts': {class: count}}}}}}.
     """
     compiled_results = {}
     threshold = parameters["threshold"]
@@ -211,7 +183,24 @@ def compile_results(results: Dict[str, Any],
         if verbose:
             print(" Done")
 
-        # Build final compiled structure
+        # Build final compiled structure.
+        #
+        # The aggregation above is keyed by (position, reference k-mer) but the output below is
+        # keyed by the position alone, so two reference k-mers at one position would silently
+        # overwrite one another, and which one survived would depend on dictionary order. That
+        # is how a defect stayed invisible: no count changed, no error was raised, one group of
+        # observed variants simply never reached the feature matrix. Upstream, kanalyzer no
+        # longer emits the truncated terminal windows that produced those collisions, so this
+        # should now be unreachable. It is checked rather than assumed.
+        seen_references = {}
+        for position, ref_kmer in position_mutations:
+            if seen_references.setdefault(position, ref_kmer) != ref_kmer:
+                raise RuntimeError(
+                    f"{gene} position {position} carries two reference k-mers, "
+                    f"{seen_references[position]!r} and {ref_kmer!r}. Writing them under the "
+                    f"position alone would discard one of them. Fix the window they come from "
+                    f"rather than letting this pass.")
+
         for key, variations in position_mutations.items():
             position, ref_kmer = key
 
@@ -350,14 +339,15 @@ def _get_all_positions(gene_metadata: Dict[str, Any], k: int) -> List[int]:
         List of all positions (1-indexed, step=k)
     """
     # Get gene length from metadata
-    ref_length = gene_metadata.get("reference_length", 0)
-    if ref_length == 0:
+    aa_length = gene_metadata.get("reference_aa_length", 0)
+    coding_length = aa_length * 3 if aa_length else gene_metadata.get("reference_length", 0)
+    if coding_length == 0:
         return []
 
-    # Generate positions: 1, 1+k, 1+2k, ..., until position+k-1 <= ref_length
+    # Generate positions: 1, 1+k, 1+2k, ..., until position+k-1 <= coding_length
     positions = []
     pos = 1
-    while pos + k - 1 <= ref_length:
+    while pos + k - 1 <= coding_length:
         positions.append(pos)
         pos += k
 
@@ -469,7 +459,7 @@ def _compute_position_scores(details: Dict[str, Any],
 
     Args:
         details: Position details containing 'alts' with amino acid changes
-        current_protein_score: Protein importance score for this gene
+        current_protein_score: Protein characterization score for this gene
         parameters: Configuration dictionary with mutational_matrix and
                    optionally indel_score (default: 1.0)
         weight_sum: Pre-computed sum of score weights
@@ -530,36 +520,20 @@ def compute_kss_scores(compiled_results: Dict[str, Dict[str, Dict[str, Any]]],
                        infos: Dict[str, Any],
                        parameters: Dict[str, Any],
                        target_gene: Optional[str] = None) -> Tuple[Dict, Dict]:
-    """
-    Compute k-mer significance scores (KSS) for compiled results.
+    """Add the three component scores and the final weighted KSS to every position.
 
-    This function calculates KSS combining:
-    - Discriminative power (class-specific frequency analysis)
-    - Mutational impact (amino acid substitution scoring)
-    - Protein functional importance (GO-based scoring)
+    Each position gets a discriminative, mutational and protein score in [0, 1], then their
+    weighted mean as the final KSS. Reference-only positions get discriminative_score = 0.
 
     Args:
-        compiled_results: Dictionary of compiled variations from compile_results()
-        results: Incremental structure with genes/sequences/mutations
-        infos: Information dictionary containing input_folder path
-        parameters: Configuration dictionary containing:
-            - mutational_matrix (str): Name of substitution matrix to use
-            - discriminative_weight (float): Weight for discriminative component
-            - mutational_weight (float): Weight for mutational component
-            - protein_weight (float): Weight for protein importance component
-            - k (int): K-mer size
-        target_gene: Optional gene name to process. If None, all genes are processed.
+        compiled_results: output of compile_results().
+        results: the incremental structure (used for class labels and sequences).
+        infos: needs 'input_folder' (to locate the GenBank file per gene).
+        parameters: needs 'mutational_matrix', the three component weights and 'k'.
+        target_gene: if given, score only this gene; otherwise all genes.
 
     Returns:
-        Tuple of (compiled_results_with_scores, discriminative_scores)
-        - compiled_results_with_scores: Input data enriched with KSS scores
-        - discriminative_scores: Dict mapping gene→position→discriminative_score
-
-    Notes:
-        - Each position receives: discriminative_score, mutational_score,
-          protein_score, and final weighted KSS
-        - All scores are normalized to [0, 1] range
-        - Reference-only positions receive discriminative_score=0
+        (compiled_results enriched with scores, {gene: {position: discriminative_score}}).
     """
     discriminative_scores = {}
 
@@ -597,8 +571,16 @@ def compute_kss_scores(compiled_results: Dict[str, Dict[str, Dict[str, Any]]],
             continue
 
         gb_path = os.path.join(gb_dir, gb_files[0])
-        taxon_id = get_taxon_id(gb_path)
-        current_protein_score = protein_score.get_protein_score(taxon_id, gene, verbose=False)
+        # UniProt is queried only when the component is weighted. The lookup aborts the run when
+        # it cannot reach UniProt, deliberately, because scoring a protein as uncharacterized on
+        # a network failure is a statement about the network. At w_p = 0 nothing is scored from
+        # it, so that guard would refuse a run whose result does not depend on the answer, which
+        # is the setting for a protein that has no UniProt entry to begin with.
+        if parameters["protein_weight"] == 0:
+            current_protein_score = 0.0
+        else:
+            taxon_id = get_taxon_id(gb_path)
+            current_protein_score = protein_score.get_protein_score(taxon_id, gene, verbose=False)
 
         # Build feature matrix using refactored function
         gene_sequences = genes_data.get(gene, {}).get("sequences", {})

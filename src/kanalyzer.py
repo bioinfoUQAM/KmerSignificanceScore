@@ -10,6 +10,15 @@ from Bio import BiopythonWarning
 from Bio.Align import PairwiseAligner, substitution_matrices
 from . import mutation_score
 
+# Parallel alignment is an optimisation, not a requirement: joblib belongs to the analysis
+# extra, and the scoring pipeline must keep running on a core install, which declares five
+# runtime dependencies and not six. Without joblib the sequences are aligned one after the
+# other, and the results are the same either way.
+try:
+    from joblib import Parallel, delayed
+except ImportError:  # pragma: no cover - exercised only on a core install
+    Parallel = delayed = None
+
 # Suppress BiopythonWarning
 warnings.filterwarnings("ignore", category=BiopythonWarning)
 
@@ -37,20 +46,19 @@ def initialize_aligner(parameters: dict) -> PairwiseAligner:
 
 
 def align_nucleotides(protein_a: str, protein_b: str, nucleotide_a: str, nucleotide_b: str) -> tuple:
-    """
-    Align nucleotide sequences based on aligned protein sequences.
+    """Place nucleotide sequences on the coordinate system of their protein alignment.
 
-    This function takes protein alignments and back-translates them to
-    nucleotide alignments, preserving codon structure (3 nucleotides per amino acid).
+    Each codon is copied verbatim from the query sequence and each amino acid gap becomes a
+    three-nucleotide gap, preserving the reading frame. The genetic code is never inverted,
+    so codon degeneracy introduces no ambiguity: the codons carried into the alignment are
+    those actually observed, not codons inferred from an amino acid.
 
     Args:
-        protein_a: First aligned protein sequence (may contain gaps '-')
-        protein_b: Second aligned protein sequence (may contain gaps '-')
-        nucleotide_a: Nucleotide sequence corresponding to protein_a
-        nucleotide_b: Nucleotide sequence corresponding to protein_b
+        protein_a, protein_b: Aligned protein sequences, gaps written '-'
+        nucleotide_a, nucleotide_b: The corresponding unaligned nucleotide sequences
 
     Returns:
-        Tuple of (aligned_nucleotide_a, aligned_nucleotide_b) as strings
+        The two aligned nucleotide sequences.
     """
     nucleotide_a = Seq(nucleotide_a)
     nucleotide_b = Seq(nucleotide_b)
@@ -106,7 +114,7 @@ def identify_mutations(infos: dict, parameters: dict, ref_nuc_seq: str,
 
     This function performs k-mer based mutation analysis by:
     1. Aligning protein sequences
-    2. Back-translating to nucleotide alignments
+    2. Placing the observed codons on that alignment, never inverting the genetic code
     3. Extracting k-mers and identifying variations
     4. Annotating amino acid changes
 
@@ -128,6 +136,7 @@ def identify_mutations(infos: dict, parameters: dict, ref_nuc_seq: str,
         - aa_changes: List of amino acid changes with impact scores
     """
     mutations = []
+    skipped = []
     k = parameters["k"]
 
     # Perform sequence alignments
@@ -158,6 +167,24 @@ def identify_mutations(infos: dict, parameters: dict, ref_nuc_seq: str,
         # Update insertion tracking
         current_insertion = (adjusted_k - k) // 3
         n_insertion += current_insertion
+
+        # A window is a k-mer position only if the reference actually supplies k nucleotides
+        # for it. At the end of a gene, once the accumulated insertions have pushed the window
+        # past the last complete codon, the extension loop above runs out of sequence and hands
+        # back a truncated reference: fewer than k non-gap nucleotides, padded with gaps. Such a
+        # window is not a position, and what would be recorded against it is the stop codon and
+        # the tail of the alignment. It is therefore not emitted.
+        #
+        # The insertion accounting above is deliberately left untouched, so that skipping this
+        # window changes nothing for any window that follows it.
+        #
+        # It is reported rather than dropped in silence. A silent skip here would be the same
+        # fault this fix exists to remove: something observed disappearing without trace.
+        reference_length = len(ref_kmer.replace('-', ''))
+        if reference_length != k:
+            skipped.append({"position": current_pos + 1,
+                            "reference_nucleotides": reference_length})
+            continue
 
         # Skip if k-mers are identical (incremental storage)
         if ref_kmer == query_kmer:
@@ -231,7 +258,69 @@ def identify_mutations(infos: dict, parameters: dict, ref_nuc_seq: str,
                 if clean_notation in mutation_scores:
                     aa_change["mut_score"] = mutation_scores[clean_notation]
 
-    return mutations
+    return mutations, skipped
+
+
+SEQUENCES_PER_BATCH = 500
+
+
+MAX_DEFAULT_WORKERS = 16
+
+
+def _worker_count() -> int:
+    """Workers to use, honouring KSS_WORKERS, and 1 when joblib is not installed.
+
+    The default is capped well below the core count. Each worker holds its own alignment,
+    which on the largest reference here is a 7,097 by 7,097 dynamic programming problem
+    costing on the order of 140 MB, while the parent accumulates every result before writing
+    them. Taking every core would trade a modest gain for the risk of exhausting memory
+    partway through a run of several hours.
+    """
+    if Parallel is None:
+        return 1
+    requested = os.environ.get("KSS_WORKERS")
+    if requested:
+        return max(1, int(requested))
+    return max(1, min((os.cpu_count() or 1) - 2, MAX_DEFAULT_WORKERS))
+
+
+def _batched(records, size: int):
+    """Read the FASTA in batches, so the whole file is never held in memory at once."""
+    batch = []
+    for record in records:
+        batch.append((record.id, str(record.seq)))
+        if len(batch) == size:
+            yield batch
+            batch = []
+    if batch:
+        yield batch
+
+
+def _process_batch(batch: list, infos: dict, parameters: dict,
+                   ref_nuc: str, ref_aa: str) -> list:
+    """One batch of sequences, aligned and scanned exactly as the serial loop did.
+
+    Defined at module level, and taking only picklable arguments, because a worker process on
+    Windows is started fresh rather than forked: it re-imports this module and rebuilds its own
+    aligner from `parameters`, so nothing about the parent's state can leak into the result.
+    """
+    aligner = initialize_aligner(parameters)
+    processed = []
+
+    for query_id, query_nuc in batch:
+        # Biopython's PairwiseAligner does not support 'J' (ambiguous Leu/Ile), which is
+        # normalised to 'L', the closest standard amino acid. Rare, and only in sequences with
+        # a non-standard translation.
+        query_aa = str(Seq(query_nuc).translate()).replace('J', 'L')
+
+        # Class label from the sequence header, format >ID|Virus|Gene|CLASS
+        class_label = query_id.split('|')[-1] if '|' in query_id else "unknown"
+
+        mutations, skipped = identify_mutations(
+            infos, parameters, ref_nuc, ref_aa, query_nuc, query_aa, aligner)
+        processed.append((query_id, class_label, mutations, skipped))
+
+    return processed
 
 
 def calculate_similarity(seq_a: str, seq_b: str) -> float:
@@ -251,38 +340,18 @@ def calculate_similarity(seq_a: str, seq_b: str) -> float:
 
 
 def analyze_records(infos: dict, parameters: dict) -> dict:
-    """
-    Analyze genomic records from GenBank and FASTA files to identify mutations.
+    """Align query sequences to the GenBank reference and record their mutations.
 
-    This is the main entry point for sequence analysis. It:
-    1. Loads reference sequences from GenBank files
-    2. Loads query sequences from FASTA files
-    3. Identifies mutations for each query sequence
-
-    Uses incremental storage: only positions with mutations are stored.
+    Main entry point for sequence analysis: loads the reference and the FASTA queries for
+    each selected gene and identifies mutations, storing only positions that carry one.
 
     Args:
-        infos: Dictionary containing:
-            - input_folder: Path to data directory
-            - cds_selection: Comma-separated list of genes/CDS to analyze
-        parameters: Analysis parameters (k-mer size, alignment parameters, etc.)
+        infos: needs 'input_folder' and 'cds_selection' (comma-separated gene list).
+        parameters: analysis parameters (k-mer size, alignment penalties, ...).
 
     Returns:
-        Dictionary structure:
-        {
-            "_metadata": {version, k, format, ...},
-            "genes": {
-                gene: {
-                    "metadata": {reference_length, genbank_id, ...},
-                    "sequences": {
-                        sequence_id: {
-                            "class": class_label,
-                            "mutations": [...]
-                        }
-                    }
-                }
-            }
-        }
+        {"_metadata": {...}, "genes": {gene: {"metadata": {...},
+        "sequences": {seq_id: {"class": label, "mutations": [...]}}}}}.
     """
     # Initialize results structure with metadata
     results = {
@@ -308,14 +377,22 @@ def analyze_records(infos: dict, parameters: dict) -> dict:
         gb_path = os.path.join(gb_dir, gb_files[0])
         gb_record = list(SeqIO.parse(gb_path, "genbank"))[0]
 
-        # Extract reference sequences
+        # Extract reference sequences. A gene qualifier does not always identify one CDS:
+        # NC_045512 annotates both the ORF1ab and the ORF1a polyprotein with gene="ORF1ab",
+        # 7,096 and 4,405 residues, the second being the product of the same reading frame
+        # without the ribosomal frameshift. Taking the first match made the choice depend on
+        # the order of the features in the record. The longest translation is taken instead,
+        # which is the whole gene and is what the reported results were computed from.
+        matches = [feature for feature in gb_record.features
+                   if feature.type == "CDS"
+                   and feature.qualifiers.get("gene", [""])[0] == cds
+                   and feature.qualifiers.get("translation")]
         ref_nuc = ""
         ref_aa = ""
-        for feature in gb_record.features:
-            if feature.type == "CDS" and feature.qualifiers.get("gene", [""])[0] == cds:
-                ref_nuc = str(feature.location.extract(gb_record.seq))
-                ref_aa = feature.qualifiers.get("translation", [""])[0]
-                break
+        if matches:
+            feature = max(matches, key=lambda f: len(f.qualifiers["translation"][0]))
+            ref_nuc = str(feature.location.extract(gb_record.seq))
+            ref_aa = feature.qualifiers["translation"][0]
 
         if not ref_nuc or not ref_aa:
             print(f"  ⚠ CDS {cds} not found in GenBank file")
@@ -337,7 +414,8 @@ def analyze_records(infos: dict, parameters: dict) -> dict:
 
         # Initialize gene structure
         k = parameters["k"]
-        num_positions = (len(ref_nuc) - k + 1 + k - 1) // k
+        # From the translated reference, as the scoring grid does: len(ref_nuc) counted the stop codon.
+        num_positions = (len(ref_aa) * 3) // k
 
         results["genes"][cds] = {
             "metadata": {
@@ -350,47 +428,71 @@ def analyze_records(infos: dict, parameters: dict) -> dict:
             "sequences": {}
         }
 
+        # position -> how many reference nucleotides that window could actually be given
+        incomplete_windows: dict[int, int] = {}
+
         # Pre-initialize aligner once (reuse across all sequences)
         aligner = initialize_aligner(parameters)
 
         # Process each query sequence - stream instead of loading all at once
         print(f"  Processing {cds} sequences: ", end='', flush=True)
 
-        for idx, record in enumerate(SeqIO.parse(fasta_path, "fasta"), 1):
-            # Progress indicator every 100 sequences
-            if idx % 100 == 0 or idx == num_sequences:
-                percent = (idx / num_sequences) * 100
-                print(f"\r  Processing {cds} sequences: {idx}/{num_sequences} ({percent:.1f}%)", end='', flush=True)
-            query_id = record.id
-            query_nuc = str(record.seq)
-            # Translate nucleotide sequence to amino acids
-            # Note: Biopython's PairwiseAligner does not support 'J' (ambiguous Leu/Ile)
-            # We normalize 'J' to 'L' (Leucine) as the closest standard amino acid
-            # This occurs rarely and only affects sequences with non-standard translation
-            query_aa = str(Seq(query_nuc).translate()).replace('J', 'L')
+        # Sequences are independent: each one is aligned against the same reference and shares
+        # nothing with the others, so the work splits cleanly. It is split in batches rather
+        # than one task per sequence, which is what makes the difference here: a single
+        # alignment takes a few milliseconds, while starting a worker on Windows and shipping
+        # its arguments costs far more than that, so per-sequence tasks spend their time being
+        # distributed. A batch amortises that cost over thousands of alignments.
+        #
+        # The work each batch does is bit for bit the work the serial loop did, and the batches
+        # are reassembled in the order they were read, so the results do not depend on how many
+        # workers ran or on the order they finished in.
+        workers = _worker_count()
+        batches = _batched(SeqIO.parse(fasta_path, "fasta"), SEQUENCES_PER_BATCH)
 
-            # Extract class label from sequence header (format: >ID|Virus|Gene|CLASS)
-            class_label = "unknown"
-            if '|' in query_id:
-                parts = query_id.split('|')
-                # Class is the last field
-                if len(parts) > 0:
-                    class_label = parts[-1]
+        if workers > 1:
+            print(f"\r  Processing {cds} sequences: {num_sequences:,} in batches of "
+                  f"{SEQUENCES_PER_BATCH} across {workers} workers", end='', flush=True)
+            # The batches stay a generator and `pre_dispatch` bounds how many are held at once,
+            # so the file is still streamed rather than loaded whole. Materialising them would
+            # cost, on the largest gene here, 278,738 sequences of some 21 kb held together
+            # with every result they produce. Order is preserved by joblib regardless of which
+            # worker finishes first.
+            # `verbose` matters on the largest gene: without it a stage that runs for over an
+            # hour prints nothing at all, which is indistinguishable from a hung process.
+            processed = Parallel(n_jobs=workers, backend="loky",
+                                 pre_dispatch="2 * n_jobs", verbose=5)(
+                delayed(_process_batch)(batch, infos, parameters, ref_nuc, ref_aa)
+                for batch in batches)
+        else:
+            processed = (_process_batch(batch, infos, parameters, ref_nuc, ref_aa)
+                         for batch in batches)
 
-            # Identify mutations (returns list of mutations only)
-            mutations = identify_mutations(
-                infos, parameters, ref_nuc, ref_aa, query_nuc, query_aa, aligner
-            )
-
-            results["genes"][cds]["sequences"][query_id] = {
-                "class": class_label,
-                "mutations": mutations
-            }
-
-            total_sequences += 1
+        for batch_results in processed:
+            for query_id, class_label, mutations, skipped in batch_results:
+                for window in skipped:
+                    incomplete_windows[window["position"]] = window["reference_nucleotides"]
+                results["genes"][cds]["sequences"][query_id] = {
+                    "class": class_label,
+                    "mutations": mutations
+                }
+                total_sequences += 1
 
         # Print summary for this gene
         print(f"\n  ✓ {cds}: {num_sequences} sequences processed")
+
+        # Windows the reference could not fill are recorded, not merely skipped: a reader of
+        # these results should be able to see that a position was declined and why, without
+        # having to notice its absence.
+        if incomplete_windows:
+            positions = sorted(incomplete_windows)
+            results["genes"][cds]["metadata"]["windows_without_full_reference"] = {
+                str(position): incomplete_windows[position] for position in positions
+            }
+            where = (str(positions[0]) if len(positions) == 1
+                     else f"{positions[0]}-{positions[-1]}")
+            print(f"    {len(positions)} window(s) declined at {where}: "
+                  f"reference incomplete (see metadata)")
 
     # Update global metadata
     results["_metadata"]["sequences_analyzed"] = total_sequences

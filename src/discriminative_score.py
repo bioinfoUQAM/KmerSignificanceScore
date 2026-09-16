@@ -32,46 +32,20 @@ def get_discriminative_score(
     X: np.ndarray,
     y: np.ndarray
 ) -> Dict[str, Any]:
-    """
-    Calculate discriminative score for a genomic position.
+    """Discriminative score for one position: how well its k-mers separate the classes.
 
-    This is the main entry point for discriminative scoring. It computes how well
-    k-mer patterns at a specific genomic position discriminate between classes
-    using normalized mutual information weighted by k-mer purity.
+    Combines normalized mutual information with class-weighted k-mer purity, scaled by
+    ln(n_classes + 1) and mapped into [0, 1] by tanh (see the module docstring for the
+    formula). Needs at least two classes; returns 0 otherwise.
 
-    Parameters
-    ----------
-    X : np.ndarray
-        Binary ONE-HOT feature matrix (n_sequences, n_kmers)
-        Each row represents a sequence, each column a possible k-mer
-        Each sequence has exactly one k-mer = 1, all others = 0
-    y : np.ndarray
-        Class labels (n_sequences,)
-        String or integer labels for each sequence
+    Args:
+        X: binary k-mer matrix (n_sequences, n_kmers), at most one 1 per row. A sequence whose
+            k-mer did not reach the prevalence threshold has no column and contributes a zero row.
+        y: class label per sequence (n_sequences,).
 
-    Returns
-    -------
-    dict
-        Dictionary containing:
-        - 'raw_score': Base score before tanh transformation
-        - 'normalized_score': Final score in [0, 1] range
-        - 'n_classes': Number of unique classes
-        - 'n_sequences': Number of sequences analyzed
-        - 'n_kmers': Number of distinct k-mers at this position
-
-    Examples
-    --------
-    >>> X = np.array([[1, 0], [0, 1], [1, 0]])
-    >>> y = np.array(['A', 'B', 'A'])
-    >>> result = get_discriminative_score(X, y)
-    >>> print(f"Score: {result['normalized_score']:.3f}")
-    Score: 0.882
-
-    Notes
-    -----
-    - Requires at least 2 classes to compute meaningful scores
-    - Empty feature matrices return score of 0.0
-    - Uses tanh transformation for bounded output in [0, 1]
+    Returns:
+        dict with 'raw_score', 'normalized_score' (the [0, 1] score), 'n_classes',
+        'n_sequences' and 'n_kmers'.
     """
     X = np.asarray(X)
     y = np.asarray(y)

@@ -1,0 +1,3 @@
+dataset,gene,position,kss,kss_without_floor,in_published,rank_published,rank_without_floor
+Human_betaherpesvirus_5,US28,19,0.455,0.455,False,,10.0
+Human_betaherpesvirus_5,US28,37,0.466,0.445,True,9.0,

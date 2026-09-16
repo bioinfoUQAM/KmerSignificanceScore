@@ -1,9 +1,0 @@
-Property,Correlation,p-value,q-value,Significant
-Hydrophob.,0.8489,6.06e-54,4.85e-53,Yes
-Polarity,0.7913,4.94e-42,1.98e-41,Yes
-Volume,0.286,6.34e-05,7.25e-05,Yes
-Area Lost,0.7643,1.13e-37,2.27e-37,Yes
-pI,0.4186,1.84e-09,2.95e-09,Yes
-In-Out,0.7729,5.51e-39,1.47e-38,Yes
-Aroma.,0.2835,7.36e-05,7.36e-05,Yes
-MinCodD,0.4124,3.39e-09,4.51e-09,Yes

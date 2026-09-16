@@ -1,0 +1,316 @@
+dataset_gene,top_k,baseline,shared_positions,jaccard
+HCMV / UL55,1,Chi-squared,1,1.0
+HCMV / UL55,1,Odds ratio,1,1.0
+HCMV / UL55,1,NMI,1,1.0
+HCMV / UL55,1,Mutual information,1,1.0
+HCMV / UL55,1,Normalized symmetric chi-squared divergence,0,0.0
+HCMV / UL55,1,ANOVA,1,1.0
+HCMV / UL55,1,Cramer's V,0,0.0
+HCMV / UL55,2,Chi-squared,2,1.0
+HCMV / UL55,2,Odds ratio,2,1.0
+HCMV / UL55,2,NMI,2,1.0
+HCMV / UL55,2,Mutual information,2,1.0
+HCMV / UL55,2,Normalized symmetric chi-squared divergence,1,0.3333333333333333
+HCMV / UL55,2,ANOVA,2,1.0
+HCMV / UL55,2,Cramer's V,0,0.0
+HCMV / UL55,3,Chi-squared,3,1.0
+HCMV / UL55,3,Odds ratio,2,0.5
+HCMV / UL55,3,NMI,2,0.5
+HCMV / UL55,3,Mutual information,2,0.5
+HCMV / UL55,3,Normalized symmetric chi-squared divergence,2,0.5
+HCMV / UL55,3,ANOVA,2,0.5
+HCMV / UL55,3,Cramer's V,0,0.0
+HCMV / UL55,5,Chi-squared,5,1.0
+HCMV / UL55,5,Odds ratio,4,0.6666666666666666
+HCMV / UL55,5,NMI,5,1.0
+HCMV / UL55,5,Mutual information,4,0.6666666666666666
+HCMV / UL55,5,Normalized symmetric chi-squared divergence,4,0.6666666666666666
+HCMV / UL55,5,ANOVA,4,0.6666666666666666
+HCMV / UL55,5,Cramer's V,0,0.0
+HCMV / UL55,7,Chi-squared,7,1.0
+HCMV / UL55,7,Odds ratio,6,0.75
+HCMV / UL55,7,NMI,7,1.0
+HCMV / UL55,7,Mutual information,7,1.0
+HCMV / UL55,7,Normalized symmetric chi-squared divergence,6,0.75
+HCMV / UL55,7,ANOVA,5,0.5555555555555556
+HCMV / UL55,7,Cramer's V,2,0.16666666666666666
+HCMV / UL55,10,Chi-squared,9,0.8181818181818182
+HCMV / UL55,10,Odds ratio,10,1.0
+HCMV / UL55,10,NMI,9,0.8181818181818182
+HCMV / UL55,10,Mutual information,9,0.8181818181818182
+HCMV / UL55,10,Normalized symmetric chi-squared divergence,9,0.8181818181818182
+HCMV / UL55,10,ANOVA,5,0.3333333333333333
+HCMV / UL55,10,Cramer's V,3,0.17647058823529413
+HCMV / UL55,15,Chi-squared,12,0.6666666666666666
+HCMV / UL55,15,Odds ratio,12,0.6666666666666666
+HCMV / UL55,15,NMI,12,0.6666666666666666
+HCMV / UL55,15,Mutual information,13,0.7647058823529411
+HCMV / UL55,15,Normalized symmetric chi-squared divergence,14,0.875
+HCMV / UL55,15,ANOVA,7,0.30434782608695654
+HCMV / UL55,15,Cramer's V,6,0.25
+HCMV / UL55,20,Chi-squared,18,0.8181818181818182
+HCMV / UL55,20,Odds ratio,16,0.6666666666666666
+HCMV / UL55,20,NMI,18,0.8181818181818182
+HCMV / UL55,20,Mutual information,18,0.8181818181818182
+HCMV / UL55,20,Normalized symmetric chi-squared divergence,19,0.9047619047619048
+HCMV / UL55,20,ANOVA,12,0.42857142857142855
+HCMV / UL55,20,Cramer's V,8,0.25
+HCMV / UL55,25,Chi-squared,22,0.7857142857142857
+HCMV / UL55,25,Odds ratio,22,0.7857142857142857
+HCMV / UL55,25,NMI,20,0.6666666666666666
+HCMV / UL55,25,Mutual information,22,0.7857142857142857
+HCMV / UL55,25,Normalized symmetric chi-squared divergence,23,0.8518518518518519
+HCMV / UL55,25,ANOVA,14,0.3888888888888889
+HCMV / UL55,25,Cramer's V,9,0.21951219512195122
+HCMV / UL73,1,Chi-squared,1,1.0
+HCMV / UL73,1,Odds ratio,1,1.0
+HCMV / UL73,1,NMI,1,1.0
+HCMV / UL73,1,Mutual information,1,1.0
+HCMV / UL73,1,Normalized symmetric chi-squared divergence,1,1.0
+HCMV / UL73,1,ANOVA,1,1.0
+HCMV / UL73,1,Cramer's V,1,1.0
+HCMV / UL73,2,Chi-squared,1,0.3333333333333333
+HCMV / UL73,2,Odds ratio,1,0.3333333333333333
+HCMV / UL73,2,NMI,1,0.3333333333333333
+HCMV / UL73,2,Mutual information,1,0.3333333333333333
+HCMV / UL73,2,Normalized symmetric chi-squared divergence,2,1.0
+HCMV / UL73,2,ANOVA,1,0.3333333333333333
+HCMV / UL73,2,Cramer's V,1,0.3333333333333333
+HCMV / UL73,3,Chi-squared,2,0.5
+HCMV / UL73,3,Odds ratio,2,0.5
+HCMV / UL73,3,NMI,1,0.2
+HCMV / UL73,3,Mutual information,2,0.5
+HCMV / UL73,3,Normalized symmetric chi-squared divergence,2,0.5
+HCMV / UL73,3,ANOVA,1,0.2
+HCMV / UL73,3,Cramer's V,1,0.2
+HCMV / UL73,5,Chi-squared,4,0.6666666666666666
+HCMV / UL73,5,Odds ratio,4,0.6666666666666666
+HCMV / UL73,5,NMI,4,0.6666666666666666
+HCMV / UL73,5,Mutual information,4,0.6666666666666666
+HCMV / UL73,5,Normalized symmetric chi-squared divergence,4,0.6666666666666666
+HCMV / UL73,5,ANOVA,2,0.25
+HCMV / UL73,5,Cramer's V,3,0.42857142857142855
+HCMV / UL73,7,Chi-squared,6,0.75
+HCMV / UL73,7,Odds ratio,5,0.5555555555555556
+HCMV / UL73,7,NMI,6,0.75
+HCMV / UL73,7,Mutual information,6,0.75
+HCMV / UL73,7,Normalized symmetric chi-squared divergence,6,0.75
+HCMV / UL73,7,ANOVA,3,0.2727272727272727
+HCMV / UL73,7,Cramer's V,5,0.5555555555555556
+HCMV / UL73,10,Chi-squared,9,0.8181818181818182
+HCMV / UL73,10,Odds ratio,9,0.8181818181818182
+HCMV / UL73,10,NMI,9,0.8181818181818182
+HCMV / UL73,10,Mutual information,10,1.0
+HCMV / UL73,10,Normalized symmetric chi-squared divergence,9,0.8181818181818182
+HCMV / UL73,10,ANOVA,5,0.3333333333333333
+HCMV / UL73,10,Cramer's V,8,0.6666666666666666
+HCMV / UL73,15,Chi-squared,15,1.0
+HCMV / UL73,15,Odds ratio,13,0.7647058823529411
+HCMV / UL73,15,NMI,14,0.875
+HCMV / UL73,15,Mutual information,13,0.7647058823529411
+HCMV / UL73,15,Normalized symmetric chi-squared divergence,14,0.875
+HCMV / UL73,15,ANOVA,12,0.6666666666666666
+HCMV / UL73,15,Cramer's V,11,0.5789473684210527
+HCMV / UL73,20,Chi-squared,19,0.9047619047619048
+HCMV / UL73,20,Odds ratio,19,0.9047619047619048
+HCMV / UL73,20,NMI,20,1.0
+HCMV / UL73,20,Mutual information,19,0.9047619047619048
+HCMV / UL73,20,Normalized symmetric chi-squared divergence,19,0.9047619047619048
+HCMV / UL73,20,ANOVA,19,0.9047619047619048
+HCMV / UL73,20,Cramer's V,17,0.7391304347826086
+HCMV / UL73,25,Chi-squared,24,0.9230769230769231
+HCMV / UL73,25,Odds ratio,23,0.8518518518518519
+HCMV / UL73,25,NMI,24,0.9230769230769231
+HCMV / UL73,25,Mutual information,24,0.9230769230769231
+HCMV / UL73,25,Normalized symmetric chi-squared divergence,24,0.9230769230769231
+HCMV / UL73,25,ANOVA,22,0.7857142857142857
+HCMV / UL73,25,Cramer's V,22,0.7857142857142857
+HCMV / US28,1,Chi-squared,1,1.0
+HCMV / US28,1,Odds ratio,1,1.0
+HCMV / US28,1,NMI,1,1.0
+HCMV / US28,1,Mutual information,1,1.0
+HCMV / US28,1,Normalized symmetric chi-squared divergence,1,1.0
+HCMV / US28,1,ANOVA,1,1.0
+HCMV / US28,1,Cramer's V,0,0.0
+HCMV / US28,2,Chi-squared,1,0.3333333333333333
+HCMV / US28,2,Odds ratio,2,1.0
+HCMV / US28,2,NMI,1,0.3333333333333333
+HCMV / US28,2,Mutual information,1,0.3333333333333333
+HCMV / US28,2,Normalized symmetric chi-squared divergence,1,0.3333333333333333
+HCMV / US28,2,ANOVA,1,0.3333333333333333
+HCMV / US28,2,Cramer's V,1,0.3333333333333333
+HCMV / US28,3,Chi-squared,2,0.5
+HCMV / US28,3,Odds ratio,3,1.0
+HCMV / US28,3,NMI,2,0.5
+HCMV / US28,3,Mutual information,2,0.5
+HCMV / US28,3,Normalized symmetric chi-squared divergence,2,0.5
+HCMV / US28,3,ANOVA,2,0.5
+HCMV / US28,3,Cramer's V,2,0.5
+HCMV / US28,5,Chi-squared,4,0.6666666666666666
+HCMV / US28,5,Odds ratio,5,1.0
+HCMV / US28,5,NMI,4,0.6666666666666666
+HCMV / US28,5,Mutual information,5,1.0
+HCMV / US28,5,Normalized symmetric chi-squared divergence,4,0.6666666666666666
+HCMV / US28,5,ANOVA,3,0.42857142857142855
+HCMV / US28,5,Cramer's V,3,0.42857142857142855
+HCMV / US28,7,Chi-squared,6,0.75
+HCMV / US28,7,Odds ratio,5,0.5555555555555556
+HCMV / US28,7,NMI,7,1.0
+HCMV / US28,7,Mutual information,7,1.0
+HCMV / US28,7,Normalized symmetric chi-squared divergence,5,0.5555555555555556
+HCMV / US28,7,ANOVA,4,0.4
+HCMV / US28,7,Cramer's V,4,0.4
+HCMV / US28,10,Chi-squared,7,0.5384615384615384
+HCMV / US28,10,Odds ratio,8,0.6666666666666666
+HCMV / US28,10,NMI,8,0.6666666666666666
+HCMV / US28,10,Mutual information,8,0.6666666666666666
+HCMV / US28,10,Normalized symmetric chi-squared divergence,8,0.6666666666666666
+HCMV / US28,10,ANOVA,6,0.42857142857142855
+HCMV / US28,10,Cramer's V,6,0.42857142857142855
+HCMV / US28,15,Chi-squared,13,0.7647058823529411
+HCMV / US28,15,Odds ratio,14,0.875
+HCMV / US28,15,NMI,14,0.875
+HCMV / US28,15,Mutual information,14,0.875
+HCMV / US28,15,Normalized symmetric chi-squared divergence,12,0.6666666666666666
+HCMV / US28,15,ANOVA,12,0.6666666666666666
+HCMV / US28,15,Cramer's V,12,0.6666666666666666
+HCMV / US28,20,Chi-squared,18,0.8181818181818182
+HCMV / US28,20,Odds ratio,16,0.6666666666666666
+HCMV / US28,20,NMI,19,0.9047619047619048
+HCMV / US28,20,Mutual information,19,0.9047619047619048
+HCMV / US28,20,Normalized symmetric chi-squared divergence,17,0.7391304347826086
+HCMV / US28,20,ANOVA,17,0.7391304347826086
+HCMV / US28,20,Cramer's V,16,0.6666666666666666
+HCMV / US28,25,Chi-squared,23,0.8518518518518519
+HCMV / US28,25,Odds ratio,18,0.5625
+HCMV / US28,25,NMI,23,0.8518518518518519
+HCMV / US28,25,Mutual information,23,0.8518518518518519
+HCMV / US28,25,Normalized symmetric chi-squared divergence,21,0.7241379310344828
+HCMV / US28,25,ANOVA,22,0.7857142857142857
+HCMV / US28,25,Cramer's V,20,0.6666666666666666
+HIV-1 / pooled,1,Chi-squared,0,0.0
+HIV-1 / pooled,1,Odds ratio,0,0.0
+HIV-1 / pooled,1,NMI,0,0.0
+HIV-1 / pooled,1,Mutual information,0,0.0
+HIV-1 / pooled,1,Normalized symmetric chi-squared divergence,0,0.0
+HIV-1 / pooled,1,ANOVA,0,0.0
+HIV-1 / pooled,1,Cramer's V,0,0.0
+HIV-1 / pooled,2,Chi-squared,0,0.0
+HIV-1 / pooled,2,Odds ratio,0,0.0
+HIV-1 / pooled,2,NMI,0,0.0
+HIV-1 / pooled,2,Mutual information,0,0.0
+HIV-1 / pooled,2,Normalized symmetric chi-squared divergence,0,0.0
+HIV-1 / pooled,2,ANOVA,0,0.0
+HIV-1 / pooled,2,Cramer's V,0,0.0
+HIV-1 / pooled,3,Chi-squared,2,0.5
+HIV-1 / pooled,3,Odds ratio,0,0.0
+HIV-1 / pooled,3,NMI,1,0.2
+HIV-1 / pooled,3,Mutual information,1,0.2
+HIV-1 / pooled,3,Normalized symmetric chi-squared divergence,0,0.0
+HIV-1 / pooled,3,ANOVA,0,0.0
+HIV-1 / pooled,3,Cramer's V,0,0.0
+HIV-1 / pooled,5,Chi-squared,2,0.25
+HIV-1 / pooled,5,Odds ratio,1,0.1111111111111111
+HIV-1 / pooled,5,NMI,3,0.42857142857142855
+HIV-1 / pooled,5,Mutual information,3,0.42857142857142855
+HIV-1 / pooled,5,Normalized symmetric chi-squared divergence,0,0.0
+HIV-1 / pooled,5,ANOVA,0,0.0
+HIV-1 / pooled,5,Cramer's V,0,0.0
+HIV-1 / pooled,7,Chi-squared,2,0.16666666666666666
+HIV-1 / pooled,7,Odds ratio,2,0.16666666666666666
+HIV-1 / pooled,7,NMI,5,0.5555555555555556
+HIV-1 / pooled,7,Mutual information,4,0.4
+HIV-1 / pooled,7,Normalized symmetric chi-squared divergence,2,0.16666666666666666
+HIV-1 / pooled,7,ANOVA,1,0.07692307692307693
+HIV-1 / pooled,7,Cramer's V,0,0.0
+HIV-1 / pooled,10,Chi-squared,3,0.17647058823529413
+HIV-1 / pooled,10,Odds ratio,2,0.1111111111111111
+HIV-1 / pooled,10,NMI,7,0.5384615384615384
+HIV-1 / pooled,10,Mutual information,6,0.42857142857142855
+HIV-1 / pooled,10,Normalized symmetric chi-squared divergence,2,0.1111111111111111
+HIV-1 / pooled,10,ANOVA,1,0.05263157894736842
+HIV-1 / pooled,10,Cramer's V,1,0.05263157894736842
+HIV-1 / pooled,15,Chi-squared,7,0.30434782608695654
+HIV-1 / pooled,15,Odds ratio,3,0.1111111111111111
+HIV-1 / pooled,15,NMI,13,0.7647058823529411
+HIV-1 / pooled,15,Mutual information,11,0.5789473684210527
+HIV-1 / pooled,15,Normalized symmetric chi-squared divergence,3,0.1111111111111111
+HIV-1 / pooled,15,ANOVA,2,0.07142857142857142
+HIV-1 / pooled,15,Cramer's V,1,0.034482758620689655
+HIV-1 / pooled,20,Chi-squared,8,0.25
+HIV-1 / pooled,20,Odds ratio,7,0.21212121212121213
+HIV-1 / pooled,20,NMI,15,0.6
+HIV-1 / pooled,20,Mutual information,17,0.7391304347826086
+HIV-1 / pooled,20,Normalized symmetric chi-squared divergence,4,0.1111111111111111
+HIV-1 / pooled,20,ANOVA,2,0.05263157894736842
+HIV-1 / pooled,20,Cramer's V,3,0.08108108108108109
+HIV-1 / pooled,25,Chi-squared,8,0.19047619047619047
+HIV-1 / pooled,25,Odds ratio,9,0.21951219512195122
+HIV-1 / pooled,25,NMI,18,0.5625
+HIV-1 / pooled,25,Mutual information,19,0.6129032258064516
+HIV-1 / pooled,25,Normalized symmetric chi-squared divergence,4,0.08695652173913043
+HIV-1 / pooled,25,ANOVA,3,0.06382978723404255
+HIV-1 / pooled,25,Cramer's V,5,0.1111111111111111
+SARS-CoV-2 / pooled,1,Chi-squared,0,0.0
+SARS-CoV-2 / pooled,1,Odds ratio,0,0.0
+SARS-CoV-2 / pooled,1,NMI,0,0.0
+SARS-CoV-2 / pooled,1,Mutual information,0,0.0
+SARS-CoV-2 / pooled,1,Normalized symmetric chi-squared divergence,0,0.0
+SARS-CoV-2 / pooled,1,ANOVA,0,0.0
+SARS-CoV-2 / pooled,1,Cramer's V,0,0.0
+SARS-CoV-2 / pooled,2,Chi-squared,1,0.3333333333333333
+SARS-CoV-2 / pooled,2,Odds ratio,1,0.3333333333333333
+SARS-CoV-2 / pooled,2,NMI,2,1.0
+SARS-CoV-2 / pooled,2,Mutual information,2,1.0
+SARS-CoV-2 / pooled,2,Normalized symmetric chi-squared divergence,1,0.3333333333333333
+SARS-CoV-2 / pooled,2,ANOVA,0,0.0
+SARS-CoV-2 / pooled,2,Cramer's V,1,0.3333333333333333
+SARS-CoV-2 / pooled,3,Chi-squared,2,0.5
+SARS-CoV-2 / pooled,3,Odds ratio,3,1.0
+SARS-CoV-2 / pooled,3,NMI,3,1.0
+SARS-CoV-2 / pooled,3,Mutual information,3,1.0
+SARS-CoV-2 / pooled,3,Normalized symmetric chi-squared divergence,3,1.0
+SARS-CoV-2 / pooled,3,ANOVA,0,0.0
+SARS-CoV-2 / pooled,3,Cramer's V,2,0.5
+SARS-CoV-2 / pooled,5,Chi-squared,4,0.6666666666666666
+SARS-CoV-2 / pooled,5,Odds ratio,5,1.0
+SARS-CoV-2 / pooled,5,NMI,5,1.0
+SARS-CoV-2 / pooled,5,Mutual information,5,1.0
+SARS-CoV-2 / pooled,5,Normalized symmetric chi-squared divergence,5,1.0
+SARS-CoV-2 / pooled,5,ANOVA,0,0.0
+SARS-CoV-2 / pooled,5,Cramer's V,4,0.6666666666666666
+SARS-CoV-2 / pooled,7,Chi-squared,5,0.5555555555555556
+SARS-CoV-2 / pooled,7,Odds ratio,5,0.5555555555555556
+SARS-CoV-2 / pooled,7,NMI,6,0.75
+SARS-CoV-2 / pooled,7,Mutual information,7,1.0
+SARS-CoV-2 / pooled,7,Normalized symmetric chi-squared divergence,5,0.5555555555555556
+SARS-CoV-2 / pooled,7,ANOVA,0,0.0
+SARS-CoV-2 / pooled,7,Cramer's V,4,0.4
+SARS-CoV-2 / pooled,10,Chi-squared,5,0.3333333333333333
+SARS-CoV-2 / pooled,10,Odds ratio,7,0.5384615384615384
+SARS-CoV-2 / pooled,10,NMI,9,0.8181818181818182
+SARS-CoV-2 / pooled,10,Mutual information,10,1.0
+SARS-CoV-2 / pooled,10,Normalized symmetric chi-squared divergence,6,0.42857142857142855
+SARS-CoV-2 / pooled,10,ANOVA,2,0.1111111111111111
+SARS-CoV-2 / pooled,10,Cramer's V,5,0.3333333333333333
+SARS-CoV-2 / pooled,15,Chi-squared,6,0.25
+SARS-CoV-2 / pooled,15,Odds ratio,8,0.36363636363636365
+SARS-CoV-2 / pooled,15,NMI,14,0.875
+SARS-CoV-2 / pooled,15,Mutual information,14,0.875
+SARS-CoV-2 / pooled,15,Normalized symmetric chi-squared divergence,11,0.5789473684210527
+SARS-CoV-2 / pooled,15,ANOVA,4,0.15384615384615385
+SARS-CoV-2 / pooled,15,Cramer's V,9,0.42857142857142855
+SARS-CoV-2 / pooled,20,Chi-squared,10,0.3333333333333333
+SARS-CoV-2 / pooled,20,Odds ratio,13,0.48148148148148145
+SARS-CoV-2 / pooled,20,NMI,17,0.7391304347826086
+SARS-CoV-2 / pooled,20,Mutual information,16,0.6666666666666666
+SARS-CoV-2 / pooled,20,Normalized symmetric chi-squared divergence,15,0.6
+SARS-CoV-2 / pooled,20,ANOVA,6,0.17647058823529413
+SARS-CoV-2 / pooled,20,Cramer's V,13,0.48148148148148145
+SARS-CoV-2 / pooled,25,Chi-squared,13,0.35135135135135137
+SARS-CoV-2 / pooled,25,Odds ratio,19,0.6129032258064516
+SARS-CoV-2 / pooled,25,NMI,17,0.5151515151515151
+SARS-CoV-2 / pooled,25,Mutual information,17,0.5151515151515151
+SARS-CoV-2 / pooled,25,Normalized symmetric chi-squared divergence,15,0.42857142857142855
+SARS-CoV-2 / pooled,25,ANOVA,11,0.28205128205128205
+SARS-CoV-2 / pooled,25,Cramer's V,15,0.42857142857142855

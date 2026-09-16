@@ -2,18 +2,23 @@
 K-mer Significance Score (KSS) Package
 
 A comprehensive toolkit for computing k-mer significance scores in genomic sequences,
-combining mutational impact, discriminative power, and protein functional importance.
+combining mutational impact, discriminative power, and protein characterization depth.
 
 Main modules:
-    - kss: Core KSS computation and compilation
-    - mutation_score: Amino acid substitution scoring
-    - discriminative_score: Class discrimination metrics
-    - protein_score: Protein functional importance from UniProt
+    - pipeline: Configuration loading and per-gene orchestration
     - kanalyzer: Sequence alignment and mutation identification
+    - discriminative_score: Class discrimination metrics
+    - mutation_score: Amino acid substitution scoring
+    - protein_score: Protein characterization depth from UniProt
+    - kss: Component combination, compilation and final scores
+    - report: Optional PDF report of the highest-scoring positions
     - utils: Data I/O utilities
+
+See CONTRIBUTING.md for how these fit together.
 """
 
-__version__ = "2.0.0"
+# Kept equal to the version pyproject.toml declares, which the cross-check enforces.
+__version__ = "1.1.0"
 __author__ = "KSS Development Team"
 
 # Import main functions for convenient top-level access

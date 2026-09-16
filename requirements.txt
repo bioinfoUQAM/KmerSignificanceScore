@@ -1,18 +1,30 @@
-# Core dependencies
-biopython>=1.79
-numpy>=1.21.0
-pandas>=1.3.0
-scipy>=1.7.0
-pyyaml>=6.0
-scikit-learn>=1.0.0
+# Dependency ranges for the KSS framework.
+#
+# This file mirrors pyproject.toml and is kept for convenience with `pip install -r`.
+# Prefer `pip install -e .` (core) or `pip install -e ".[analysis]"` (core plus the
+# packages needed to reproduce the benchmarks and figures).
+#
+# To reproduce the published results exactly, use requirements-lock.txt instead, which
+# records the versions the analyses were run with.
+#
+# Requires Python >=3.10,<3.15. The reported results were produced on 3.14.6.
 
-# Excel file handling
-openpyxl>=3.0.0
-bioservices>=1.11.0
-requests>=2.28.0
+# Core: needed to run the scoring pipeline
+biopython>=1.81,<2.0
+numpy>=1.24,<3.0
+pandas>=2.0,<4.0
+pyyaml>=6.0,<7.0
+requests>=2.28,<3.0
 
-# Optional: Jupyter notebooks
-jupyter>=1.0.0
-notebook>=6.4.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
+# Analysis: needed to reproduce the benchmarks, statistics and figures
+scipy>=1.10,<2.0
+scikit-learn>=1.3,<2.0
+matplotlib>=3.7,<4.0
+joblib>=1.3,<2.0
+statsmodels>=0.14,<1.0
+tqdm>=4.65,<5.0
+openpyxl>=3.1,<4.0
+
+# Notebooks: only needed to open the .ipynb files
+jupyter>=1.0,<2.0
+notebook>=7.0,<8.0

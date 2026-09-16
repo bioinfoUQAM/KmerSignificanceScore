@@ -1,0 +1,3 @@
+Dataset,Gene,Sequences,Positions,Preprocessing (s),Scoring (s),UniProt retrieval (s),Preprocessing share,Workers
+HCMV,US28,443,93,0.48,0.06,0.9,0.884,1
+SARS-CoV-2,E,278738,25,47.87,18.8,0.73,0.718,1

@@ -19,3 +19,21 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE
+
+The MIT License above applies to the material this project authored. It does
+not apply to third-party material distributed with or alongside this
+repository, which remains under its own terms.
+
+In particular, the eleven UniProtKB entries under src/uniprot/ are the work of
+the UniProt Consortium and are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0), not under the MIT License above. The twelfth file in
+that directory, index.json, is this project's own and is covered by the MIT
+License.
+
+THIRD_PARTY.md lists every item of third-party material, its origin, whether
+this repository redistributes it, and the terms that govern it. Nothing in this
+file or in THIRD_PARTY.md relicenses any third-party material.

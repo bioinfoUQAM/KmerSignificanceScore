@@ -1,0 +1,3131 @@
+{
+    "UL73": {
+        "1": {
+            "ref": "ATGGAGTGG",
+            "alts": {
+                "ATGGAGTGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 22,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 44
+                    },
+                    "amino_acid_changes": {
+                        "W3C": 0.317
+                    }
+                },
+                "ATGGAGTGG": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 90,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 47,
+                        "4C": 54,
+                        "3A": 108,
+                        "2": 15
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.317,
+            "discriminative_score": 0.187,
+            "kss": 0.31
+        },
+        "10": {
+            "ref": "AACACACTA",
+            "alts": {
+                "AAAACACGA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 44,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N4K": 0.336,
+                        "L6R": 0.68
+                    }
+                },
+                "AAAACAGTG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 90,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N4K": 0.336,
+                        "L6V": 0.1
+                    }
+                },
+                "AAAACACTG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "N4K": 0.336
+                    }
+                },
+                "AACACACTA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 111,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.68,
+            "discriminative_score": 0.711,
+            "kss": 0.605
+        },
+        "19": {
+            "ref": "GTATTAGGT",
+            "alts": {
+                "GTACTGGGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 62,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GTACTAAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "G9S": 0.106
+                    }
+                },
+                "GTACTAGGT": {
+                    "class_counts": {
+                        "4B": 55,
+                        "4D": 3,
+                        "1": 0,
+                        "4A": 40,
+                        "3B": 0,
+                        "4C": 50,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ATACTAGGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V7I": 0.1
+                    }
+                },
+                "GTGCTAGGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 57
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GTATTAGGT": {
+                    "class_counts": {
+                        "4B": 2,
+                        "4D": 109,
+                        "1": 103,
+                        "4A": 3,
+                        "3B": 0,
+                        "4C": 4,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.106,
+            "discriminative_score": 0.878,
+            "kss": 0.47
+        },
+        "28": {
+            "ref": "CTTTTAGTT",
+            "alts": {
+                "CTTTTGGTT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TTTTTGGTT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L10F": 0.141
+                    }
+                },
+                "CTTTTTGTT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 100,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L11F": 0.141
+                    }
+                },
+                "CTTTTGATT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "V12I": 0.1
+                    }
+                },
+                "CTTTTAGTT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.141,
+            "discriminative_score": 0.866,
+            "kss": 0.477
+        },
+        "37": {
+            "ref": "TTATCGGTA",
+            "alts": {
+                "TTATCGGTG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ATATCGGCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {
+                        "L13I": 0.1,
+                        "V15A": 0.222
+                    }
+                },
+                "TTATCGGTA": {
+                    "class_counts": {
+                        "4B": 55,
+                        "4D": 112,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.222,
+            "discriminative_score": 0.608,
+            "kss": 0.418
+        },
+        "46": {
+            "ref": "GTGGCAGAG",
+            "alts": {
+                "GCGGCA---": {
+                    "class_counts": {
+                        "4B": 47,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 52,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V16A": 0.222,
+                        "E18-": 1.0
+                    }
+                },
+                "GTGGCA---": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "E18-": 1.0
+                    }
+                },
+                "GCGGCG---": {
+                    "class_counts": {
+                        "4B": 10,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V16A": 0.222,
+                        "E18-": 1.0
+                    }
+                },
+                "GCGGTAGGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 15,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V16A": 0.222,
+                        "A17V": 0.222,
+                        "E18G": 0.247
+                    }
+                },
+                "GCGGCAGGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 32,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V16A": 0.222,
+                        "E18G": 0.247
+                    }
+                },
+                "GCAGCGGGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V16A": 0.222,
+                        "E18G": 0.247
+                    }
+                },
+                "GTAACAGGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {
+                        "A17T": 0.116,
+                        "E18G": 0.247
+                    }
+                },
+                "GTGGCAGAG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.958,
+            "kss": 0.794
+        },
+        "55": {
+            "ref": "AGTTCTGGT",
+            "alts": {
+                "---AGTTCC": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S19-": 1.0,
+                        "G21S": 0.106
+                    }
+                },
+                "AGTTATGGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S20Y": 0.295
+                    }
+                },
+                "AGCTCTAGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "G21S": 0.106
+                    }
+                },
+                "AGTTCTGGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.721,
+            "kss": 0.715
+        },
+        "64": {
+            "ref": "AACAATTCA",
+            "alts": {
+                "AACCATACG": {
+                    "class_counts": {
+                        "4B": 45,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N23H": 0.288,
+                        "S24T": 0.1
+                    }
+                },
+                "AACAATACG": {
+                    "class_counts": {
+                        "4B": 11,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S24T": 0.1
+                    }
+                },
+                "AACAGCTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N23S": 0.118
+                    }
+                },
+                "AGCAACTCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "N22S": 0.118
+                    }
+                },
+                "AACAATTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.288,
+            "discriminative_score": 0.857,
+            "kss": 0.523
+        },
+        "73": {
+            "ref": "TCCACGTCA",
+            "alts": {
+                "TCGACTGCT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 110,
+                        "1": 0,
+                        "4A": 61,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S27A": 0.137
+                    }
+                },
+                "TCGACTGTT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 44,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S27V": 0.415
+                    }
+                },
+                "TCTACGTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TCCACGTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.415,
+            "discriminative_score": 0.66,
+            "kss": 0.5
+        },
+        "82": {
+            "ref": "ACCTCTGCA",
+            "alts": {
+                "AGCACACCG": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T28S": 0.1,
+                        "S29T": 0.1,
+                        "A30P": 0.205
+                    }
+                },
+                "ACCTCCGCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACGTCTTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 46
+                    },
+                    "amino_acid_changes": {
+                        "A30S": 0.137
+                    }
+                },
+                "ACCTCTGCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.205,
+            "discriminative_score": 0.79,
+            "kss": 0.473
+        },
+        "91": {
+            "ref": "ACTACATCA",
+            "alts": {
+                "AGTCCCTCT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 104,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T31S": 0.1,
+                        "T32P": 0.149
+                    }
+                },
+                "CGTCCCTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 108,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T31R": 0.546,
+                        "T32P": 0.149
+                    }
+                },
+                "AGTACACCGAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T31S": 0.1,
+                        "-33P": 1.0
+                    }
+                },
+                "AGTCCTTCT": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T31S": 0.1,
+                        "T32P": 0.149
+                    }
+                },
+                "ACTACGTTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S33L": 0.432
+                    }
+                },
+                "ACTACA---": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 56
+                    },
+                    "amino_acid_changes": {
+                        "S33-": 1.0
+                    }
+                },
+                "ACTACATCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.957,
+            "kss": 0.794
+        },
+        "100": {
+            "ref": "AAGTCTTCT",
+            "alts": {
+                "AGCTCTACT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 2,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "K34S": 0.562,
+                        "S36T": 0.1
+                    }
+                },
+                "AGTTCTACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 110,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "K34S": 0.562,
+                        "S36T": 0.1
+                    }
+                },
+                "CCTCCTAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "K34P": 0.452,
+                        "S35P": 0.166
+                    }
+                },
+                "AAATCGTCCAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "-35S": 1.0
+                    }
+                },
+                "CCAAGTCCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "K34P": 0.452,
+                        "S36P": 0.166
+                    }
+                },
+                "AAGTCTTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.936,
+            "kss": 0.787
+        },
+        "109": {
+            "ref": "GCTAGCGTA",
+            "alts": {
+                "CACACCTCA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37H": 0.361,
+                        "S38T": 0.1,
+                        "V39S": 0.415
+                    }
+                },
+                "CACGCCTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 110,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37H": 0.361,
+                        "S38A": 0.137,
+                        "V39S": 0.415
+                    }
+                },
+                "ACTAGCGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 27,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37T": 0.116
+                    }
+                },
+                "CGCACCTTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37R": 0.737,
+                        "S38T": 0.1,
+                        "V39L": 0.1
+                    }
+                },
+                "TCTAGTGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37S": 0.137
+                    }
+                },
+                "CGCACCTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37R": 0.737,
+                        "S38T": 0.1,
+                        "V39S": 0.415
+                    }
+                },
+                "TCTAGCGTG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A37S": 0.137
+                    }
+                },
+                "TCTAGTGTG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "A37S": 0.137
+                    }
+                },
+                "GCTAGCGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 76,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.737,
+            "discriminative_score": 0.975,
+            "kss": 0.712
+        },
+        "118": {
+            "ref": "TCAACTACC",
+            "alts": {
+                "ACGACCGTG": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S40T": 0.1,
+                        "T42V": 0.313
+                    }
+                },
+                "ACAACCGTG": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S40T": 0.1,
+                        "T42V": 0.313
+                    }
+                },
+                "TCAACGGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T42V": 0.313
+                    }
+                },
+                "TCAACAAGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T42S": 0.1
+                    }
+                },
+                "TCGACGAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {
+                        "T42S": 0.1
+                    }
+                },
+                "TCAACTACC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.313,
+            "discriminative_score": 0.915,
+            "kss": 0.551
+        },
+        "127": {
+            "ref": "AAACTAACA",
+            "alts": {
+                "AAGGCAACG": {
+                    "class_counts": {
+                        "4B": 54,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L44A": 0.398
+                    }
+                },
+                "AAGGCAACC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 62,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L44A": 0.398
+                    }
+                },
+                "AAATCGACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L44S": 0.432
+                    }
+                },
+                "AAGTCAACG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L44S": 0.432
+                    }
+                },
+                "AAGGCAACA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 43,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L44A": 0.398
+                    }
+                },
+                "AAATTGACG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 104,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "AAACCAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "L44P": 0.27
+                    }
+                },
+                "AAACTAACA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.432,
+            "discriminative_score": 0.959,
+            "kss": 0.605
+        },
+        "136": {
+            "ref": "ACAGTTGCA",
+            "alts": {
+                "ACTACTGCG": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V47T": 0.313
+                    }
+                },
+                "ACTGTTGCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACAACTGCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 96,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V47T": 0.313
+                    }
+                },
+                "ACCAGCGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "V47S": 0.415,
+                        "A48V": 0.222
+                    }
+                },
+                "GCTGTTGCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T46A": 0.116
+                    }
+                },
+                "ACGAGCGTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "V47S": 0.415,
+                        "A48V": 0.222
+                    }
+                },
+                "ACAGTTGCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.415,
+            "discriminative_score": 0.947,
+            "kss": 0.596
+        },
+        "145": {
+            "ref": "ACAACTTCT",
+            "alts": {
+                "ACAACTAGT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACAACCTCC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACAACTACG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S51T": 0.1
+                    }
+                },
+                "ACAACTTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.1,
+            "discriminative_score": 0.802,
+            "kss": 0.442
+        },
+        "154": {
+            "ref": "GCAACAACT",
+            "alts": {
+                "ACAACTACG": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A52T": 0.116
+                    }
+                },
+                "---ACAACT": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A52-": 1.0
+                    }
+                },
+                "ACAACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A52T": 0.116
+                    }
+                },
+                "ACAACACCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A52T": 0.116,
+                        "T54P": 0.149
+                    }
+                },
+                "ACGACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {
+                        "A52T": 0.116
+                    }
+                },
+                "GCAACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.913,
+            "kss": 0.779
+        },
+        "163": {
+            "ref": "ACGACGACT",
+            "alts": {
+                "GTGACAAGT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T55V": 0.313,
+                        "T57S": 0.1
+                    }
+                },
+                "ACGGCGACA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 108,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T56A": 0.116
+                    }
+                },
+                "ACGAGGAGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 104,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T56R": 0.546,
+                        "T57S": 0.1
+                    }
+                },
+                "ACGACGACC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACGATGAGT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T56M": 0.359,
+                        "T57S": 0.1
+                    }
+                },
+                "ACGACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 47
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACGACGACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.546,
+            "discriminative_score": 0.957,
+            "kss": 0.643
+        },
+        "172": {
+            "ref": "ACGACCTTA",
+            "alts": {
+                "ACGACTTCA": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L60S": 0.432
+                    }
+                },
+                "AGTACTTCA": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T58S": 0.1,
+                        "L60S": 0.432
+                    }
+                },
+                "ACGACCTCA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 104,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L60S": 0.432
+                    }
+                },
+                "ACAACC---": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L60-": 1.0
+                    }
+                },
+                "ACAACTACA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 49
+                    },
+                    "amino_acid_changes": {
+                        "L60T": 0.473
+                    }
+                },
+                "ACGACCTTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.907,
+            "kss": 0.777
+        },
+        "181": {
+            "ref": "TCGACAACT",
+            "alts": {
+                "TCAACGACT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TCGACGACT": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACATTAACG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 44,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S61T": 0.1,
+                        "T62L": 0.473
+                    }
+                },
+                "TCAACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TCGACAACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.473,
+            "discriminative_score": 0.817,
+            "kss": 0.572
+        },
+        "190": {
+            "ref": "AGCACTAAA",
+            "alts": {
+                "AGTACCAAA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 36,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "AGTGCCAAA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 18,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "T65A": 0.116
+                    }
+                },
+                "AGTACTAAA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 46,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACCACTAAA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "S64T": 0.1
+                    }
+                },
+                "AGCACTAGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 58
+                    },
+                    "amino_acid_changes": {
+                        "K66R": 0.232
+                    }
+                },
+                "AGCACTAAA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.232,
+            "discriminative_score": 0.937,
+            "kss": 0.531
+        },
+        "199": {
+            "ref": "CTCAGTTCT",
+            "alts": {
+                "CCCGGTTCC": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 2,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L67P": 0.27,
+                        "S68G": 0.106
+                    }
+                },
+                "CCTGGTTCC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 108,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L67P": 0.27,
+                        "S68G": 0.106
+                    }
+                },
+                "CTCAGTTCC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CCAGGTTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 24,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L67P": 0.27,
+                        "S68G": 0.106
+                    }
+                },
+                "CCAAGTTCC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 107,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L67P": 0.27
+                    }
+                },
+                "CCGGGTTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 23,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "L67P": 0.27,
+                        "S68G": 0.106
+                    }
+                },
+                "CTCAGTTCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.27,
+            "discriminative_score": 0.937,
+            "kss": 0.544
+        },
+        "208": {
+            "ref": "ACCACCCAC",
+            "alts": {
+                "ACCACTCAC": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 2,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 46,
+                        "4C": 54,
+                        "3A": 97,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACTACTCAC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 109,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 1,
+                        "4C": 0,
+                        "3A": 11,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACTACCCAC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 17,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 57
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACCACCCAC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 86,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 3
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.757,
+            "kss": 0.394
+        },
+        "217": {
+            "ref": "GATCCTAAT",
+            "alts": {
+                "GACCCCAAT": {
+                    "class_counts": {
+                        "4B": 55,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GACCCCAAC": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GACCCTAAT": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "AACCCTAAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "D73N": 0.145
+                    }
+                },
+                "GATCCTAAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 101,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.145,
+            "discriminative_score": 0.857,
+            "kss": 0.476
+        },
+        "226": {
+            "ref": "GTGATGAGA",
+            "alts": {
+                "GTGATGAAA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "R78K": 0.232
+                    }
+                },
+                "GTAATGAGA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 57
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GTGATGAGA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 41,
+                        "3A": 0,
+                        "2": 3
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.232,
+            "discriminative_score": 0.613,
+            "kss": 0.423
+        },
+        "235": {
+            "ref": "CGACATGCG",
+            "alts": {
+                "CCACATGCT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "R79P": 0.405
+                    }
+                },
+                "CGACATGCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 0,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CGACACGAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 15,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A81D": 0.342
+                    }
+                },
+                "CGACATGAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 32,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A81D": 0.342
+                    }
+                },
+                "CGACATACT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "A81T": 0.116
+                    }
+                },
+                "CGACATGCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 101,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.405,
+            "discriminative_score": 0.894,
+            "kss": 0.575
+        },
+        "244": {
+            "ref": "AACGATGAT",
+            "alts": {
+                "CACGATGAT": {
+                    "class_counts": {
+                        "4B": 11,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 108,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N82H": 0.288
+                    }
+                },
+                "CACAATGAT": {
+                    "class_counts": {
+                        "4B": 46,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "N82H": 0.288,
+                        "D83N": 0.145
+                    }
+                },
+                "AACGATGAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 0,
+                        "2": 57
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.288,
+            "discriminative_score": 0.666,
+            "kss": 0.46
+        },
+        "253": {
+            "ref": "TTTTACAAG",
+            "alts": {
+                "TTTTACAAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 109,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 52,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {
+                        "K87N": 0.336
+                    }
+                },
+                "TTTTACAAG": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 2,
+                        "3A": 108,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0.336,
+            "discriminative_score": 0.412,
+            "kss": 0.391
+        },
+        "262": {
+            "ref": "GCGCATTGC",
+            "alts": {
+                "GCGCATTGT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 102,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GCACATTGC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 1,
+                        "3A": 105,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GCGCATTGC": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 0,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.654,
+            "kss": 0.36
+        },
+        "271": {
+            "ref": "ACATCGCAT",
+            "alts": {
+                "ACATCACAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ACATCGCAT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 103,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 54,
+                        "3A": 108,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.43,
+            "kss": 0.285
+        },
+        "280": {
+            "ref": "ATGTATGAG",
+            "alts": {
+                "ATGTATGAA": {
+                    "class_counts": {
+                        "4B": 54,
+                        "4D": 0,
+                        "1": 2,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ATGTATGAG": {
+                    "class_counts": {
+                        "4B": 3,
+                        "4D": 112,
+                        "1": 101,
+                        "4A": 105,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 107,
+                        "2": 55
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.274,
+            "kss": 0.233
+        },
+        "289": {
+            "ref": "CTCTCACTG",
+            "alts": {
+                "CTTTCACTG": {
+                    "class_counts": {
+                        "4B": 37,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 33,
+                        "3B": 0,
+                        "4C": 38,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTTTCACTA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 16,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTTTCTCTG": {
+                    "class_counts": {
+                        "4B": 19,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTCTCACTG": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 72,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 2,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.479,
+            "kss": 0.301
+        },
+        "298": {
+            "ref": "TCCAGCTTT",
+            "alts": {
+                "TCCAGCTTC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TCCAGCTTT": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 112,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 47,
+                        "4C": 53,
+                        "3A": 2,
+                        "2": 58
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.424,
+            "kss": 0.283
+        },
+        "307": {
+            "ref": "GCGGCCTGG",
+            "alts": {
+                "GCAGCCTGG": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 112,
+                        "1": 27,
+                        "4A": 33,
+                        "3B": 47,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GCGGCTTGG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GCGGCCTGG": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 0,
+                        "1": 76,
+                        "4A": 72,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 2,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.614,
+            "kss": 0.346
+        },
+        "325": {
+            "ref": "CTTAATGCT",
+            "alts": {
+                "CTTAACGCT": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 33,
+                        "3B": 0,
+                        "4C": 54,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTCAATGCT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 47,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTTAATGCT": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 1,
+                        "1": 103,
+                        "4A": 70,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 2,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.533,
+            "kss": 0.319
+        },
+        "334": {
+            "ref": "CTAATTCTC",
+            "alts": {
+                "CTCATTCTC": {
+                    "class_counts": {
+                        "4B": 55,
+                        "4D": 1,
+                        "1": 0,
+                        "4A": 72,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 106,
+                        "2": 3
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTCATTCTG": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 111,
+                        "1": 0,
+                        "4A": 33,
+                        "3B": 47,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTTATTCTC": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 57
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CTAATTCTC": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 102,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 2,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.764,
+            "kss": 0.396
+        },
+        "343": {
+            "ref": "ATGGGAGCT",
+            "alts": {
+                "ATGGGAGCC": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 2,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 53,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "ATGGGAGCT": {
+                    "class_counts": {
+                        "4B": 52,
+                        "4D": 110,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 47,
+                        "4C": 1,
+                        "3A": 108,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.264,
+            "kss": 0.23
+        },
+        "352": {
+            "ref": "TTTTGTATT",
+            "alts": {
+                "TTTTGTATC": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 111,
+                        "1": 1,
+                        "4A": 34,
+                        "3B": 47,
+                        "4C": 54,
+                        "3A": 106,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TTTTGTATT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 1,
+                        "1": 102,
+                        "4A": 71,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 2,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.36,
+            "kss": 0.262
+        },
+        "361": {
+            "ref": "GTACTACGA",
+            "alts": {
+                "GTATTACGA": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 108,
+                        "1": 0,
+                        "4A": 34,
+                        "3B": 0,
+                        "4C": 0,
+                        "3A": 1,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "GTACTACGA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 4,
+                        "1": 102,
+                        "4A": 71,
+                        "3B": 47,
+                        "4C": 52,
+                        "3A": 107,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.373,
+            "kss": 0.266
+        },
+        "370": {
+            "ref": "CATTGCTGC",
+            "alts": {
+                "CATTGCTGT": {
+                    "class_counts": {
+                        "4B": 55,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 1,
+                        "3A": 106,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "CATTGCTGC": {
+                    "class_counts": {
+                        "4B": 2,
+                        "4D": 112,
+                        "1": 103,
+                        "4A": 105,
+                        "3B": 45,
+                        "4C": 53,
+                        "3A": 2,
+                        "2": 59
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.409,
+            "kss": 0.278
+        },
+        "379": {
+            "ref": "TTCCAGAAC",
+            "alts": {
+                "TTTCAGAAC": {
+                    "class_counts": {
+                        "4B": 1,
+                        "4D": 2,
+                        "1": 1,
+                        "4A": 0,
+                        "3B": 0,
+                        "4C": 35,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TTCCAGAAC": {
+                    "class_counts": {
+                        "4B": 56,
+                        "4D": 108,
+                        "1": 102,
+                        "4A": 105,
+                        "3B": 47,
+                        "4C": 19,
+                        "3A": 107,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.164,
+            "kss": 0.196
+        },
+        "388": {
+            "ref": "TTTACTGCA",
+            "alts": {
+                "TTTACTGCG": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 86,
+                        "1": 0,
+                        "4A": 23,
+                        "3B": 0,
+                        "4C": 11,
+                        "3A": 0,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                },
+                "TTTACTGCA": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 26,
+                        "1": 103,
+                        "4A": 82,
+                        "3B": 47,
+                        "4C": 43,
+                        "3A": 108,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.275,
+            "kss": 0.233
+        },
+        "397": {
+            "ref": "ACCACCACC",
+            "alts": {
+                "ACCACCACC": {
+                    "class_counts": {
+                        "4B": 57,
+                        "4D": 109,
+                        "1": 99,
+                        "4A": 105,
+                        "3B": 47,
+                        "4C": 53,
+                        "3A": 102,
+                        "2": 60
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 0,
+            "discriminative_score": 0.03,
+            "kss": 0.152
+        },
+        "406": {
+            "ref": "AAAGGCTAT",
+            "alts": {
+                "AAAGGCTAA": {
+                    "class_counts": {
+                        "4B": 7,
+                        "4D": 7,
+                        "1": 24,
+                        "4A": 22,
+                        "3B": 15,
+                        "4C": 7,
+                        "3A": 22,
+                        "2": 15
+                    },
+                    "amino_acid_changes": {
+                        "Y138*": 1.0
+                    }
+                },
+                "AAAGGTTAT": {
+                    "class_counts": {
+                        "4B": 0,
+                        "4D": 0,
+                        "1": 0,
+                        "4A": 0,
+                        "3B": 2,
+                        "4C": 0,
+                        "3A": 0,
+                        "2": 45
+                    },
+                    "amino_acid_changes": {}
+                },
+                "AAAGGCTAT": {
+                    "class_counts": {
+                        "4B": 50,
+                        "4D": 103,
+                        "1": 79,
+                        "4A": 82,
+                        "3B": 28,
+                        "4C": 47,
+                        "3A": 80,
+                        "2": 0
+                    },
+                    "amino_acid_changes": {}
+                }
+            },
+            "protein_score": 0.425,
+            "mutational_score": 1.0,
+            "discriminative_score": 0.257,
+            "kss": 0.561
+        }
+    }
+}

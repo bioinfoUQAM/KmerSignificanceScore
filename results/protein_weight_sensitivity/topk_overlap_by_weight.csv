@@ -1,0 +1,51 @@
+dataset,unit,selection_mode,top_k,w_p,shared_with_default,jaccard_with_default,changed,drawn_shared_with_default,drawn_changed,changed_vs_lowest_weight,drawn_changed_vs_lowest_weight
+SARS-CoV-2,pooled,pooled,12,0.0,12,1.0,0,12,0,0,0
+SARS-CoV-2,pooled,pooled,12,0.5,12,1.0,0,12,0,0,0
+SARS-CoV-2,pooled,pooled,12,1.0,12,1.0,0,12,0,0,0
+SARS-CoV-2,pooled,pooled,12,2.0,12,1.0,0,12,0,0,0
+SARS-CoV-2,pooled,pooled,12,3.0,12,1.0,0,12,0,0,0
+SARS-CoV-2,pooled,pooled,25,0.0,25,1.0,0,24,1,0,0
+SARS-CoV-2,pooled,pooled,25,0.5,25,1.0,0,24,1,0,0
+SARS-CoV-2,pooled,pooled,25,1.0,25,1.0,0,25,0,0,1
+SARS-CoV-2,pooled,pooled,25,2.0,25,1.0,0,25,0,0,1
+SARS-CoV-2,pooled,pooled,25,3.0,25,1.0,0,25,0,0,1
+HIV-1,pooled,pooled,12,0.0,9,0.6,3,10,2,0,0
+HIV-1,pooled,pooled,12,0.5,10,0.7142857142857143,2,11,1,2,1
+HIV-1,pooled,pooled,12,1.0,12,1.0,0,12,0,3,2
+HIV-1,pooled,pooled,12,2.0,10,0.7142857142857143,2,10,2,5,4
+HIV-1,pooled,pooled,12,3.0,9,0.6,3,8,4,6,6
+HIV-1,pooled,pooled,25,0.0,24,0.9230769230769231,1,21,4,0,0
+HIV-1,pooled,pooled,25,0.5,24,0.9230769230769231,1,22,3,0,2
+HIV-1,pooled,pooled,25,1.0,25,1.0,0,25,0,1,4
+HIV-1,pooled,pooled,25,2.0,21,0.7241379310344828,4,20,5,4,9
+HIV-1,pooled,pooled,25,3.0,19,0.6129032258064516,6,18,7,7,11
+HCMV,UL55,per gene,12,0.0,12,1.0,0,12,0,0,0
+HCMV,UL55,per gene,12,0.5,12,1.0,0,12,0,0,0
+HCMV,UL55,per gene,12,1.0,12,1.0,0,12,0,0,0
+HCMV,UL55,per gene,12,2.0,12,1.0,0,12,0,0,0
+HCMV,UL55,per gene,12,3.0,12,1.0,0,12,0,0,0
+HCMV,UL55,per gene,25,0.0,25,1.0,0,25,0,0,0
+HCMV,UL55,per gene,25,0.5,25,1.0,0,25,0,0,0
+HCMV,UL55,per gene,25,1.0,25,1.0,0,25,0,0,0
+HCMV,UL55,per gene,25,2.0,25,1.0,0,25,0,0,0
+HCMV,UL55,per gene,25,3.0,25,1.0,0,25,0,0,0
+HCMV,UL73,per gene,12,0.0,12,1.0,0,12,0,0,0
+HCMV,UL73,per gene,12,0.5,12,1.0,0,12,0,0,0
+HCMV,UL73,per gene,12,1.0,12,1.0,0,12,0,0,0
+HCMV,UL73,per gene,12,2.0,12,1.0,0,12,0,0,0
+HCMV,UL73,per gene,12,3.0,12,1.0,0,12,0,0,0
+HCMV,UL73,per gene,25,0.0,25,1.0,0,25,0,0,0
+HCMV,UL73,per gene,25,0.5,25,1.0,0,25,0,0,0
+HCMV,UL73,per gene,25,1.0,25,1.0,0,25,0,0,0
+HCMV,UL73,per gene,25,2.0,25,1.0,0,25,0,0,0
+HCMV,UL73,per gene,25,3.0,25,1.0,0,25,0,0,0
+HCMV,US28,per gene,12,0.0,12,1.0,0,12,0,0,0
+HCMV,US28,per gene,12,0.5,12,1.0,0,12,0,0,0
+HCMV,US28,per gene,12,1.0,12,1.0,0,12,0,0,0
+HCMV,US28,per gene,12,2.0,12,1.0,0,12,0,0,0
+HCMV,US28,per gene,12,3.0,12,1.0,0,12,0,0,0
+HCMV,US28,per gene,25,0.0,25,1.0,0,25,0,0,0
+HCMV,US28,per gene,25,0.5,25,1.0,0,25,0,0,0
+HCMV,US28,per gene,25,1.0,25,1.0,0,25,0,0,0
+HCMV,US28,per gene,25,2.0,25,1.0,0,25,0,0,0
+HCMV,US28,per gene,25,3.0,25,1.0,0,25,0,0,0

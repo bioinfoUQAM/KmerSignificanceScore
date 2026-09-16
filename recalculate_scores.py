@@ -14,7 +14,7 @@ The script loads pre-computed mutation data and recalculates:
     - Compiled results (aggregated by position/k-mer)
     - Discriminative scores (class separation)
     - Mutational scores (amino acid substitution impact)
-    - Protein scores (functional importance)
+    - Protein scores (characterization depth)
     - Final weighted KSS scores
 
 Usage:
@@ -129,8 +129,32 @@ Notes:
         default=None,
         help='Specific gene to recalculate (default: all genes in config)'
     )
+    parser.add_argument(
+        '-o', '--output-dir',
+        type=str,
+        default=None,
+        metavar='DIR',
+        help='Write results to <DIR>/<dataset_name>/ instead of overwriting them next to '
+             'the input data. Use this when sweeping a parameter, so that the results '
+             'behind an existing analysis are left intact.'
+    )
+    parser.add_argument(
+        '--threshold',
+        type=float,
+        default=None,
+        metavar='PCT',
+        help='Override the prevalence threshold from the configuration, in percent. '
+             'Intended for sensitivity analyses; requires --output-dir so that the '
+             'sweep cannot overwrite the configured results.'
+    )
 
     args = parser.parse_args()
+
+    if args.threshold is not None and not args.output_dir:
+        parser.error("--threshold changes the results, so --output-dir is required to "
+                     "keep the existing ones intact.")
+
+    overrides = {} if args.threshold is None else {"threshold": args.threshold}
 
     # Header
     print("\n" + "="*70)
@@ -156,7 +180,9 @@ Notes:
             results = pipeline.recalculate_scores_from_config(
                 config_file,
                 target_gene=args.gene,
-                verbose=True
+                verbose=True,
+                output_root=args.output_dir,
+                overrides=overrides or None
             )
 
             all_results[config_file] = results
