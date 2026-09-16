@@ -132,10 +132,14 @@ ADMISSIBILITY = [
      "The 615 mutations reported in 2,587 papers are the closest thing the resource has to a "
      "relevance list, and it is the one category of the fifteen that the bulk download does "
      "not distribute: it exists per mutation on the web interface only."),
-    ("Bloom and Neher fitness effects", "reported separately",
-     "Measures evolutionary constraint rather than the quantity ranked here, so it "
-     "characterizes the selected positions instead of scoring them. Reported in the main "
-     "text for that reason."),
+    ("Bloom and Neher fitness effects", "exploratory characterization; not used for validation",
+     "Estimates evolutionary constraint from observed against expected counts, which is a "
+     "different quantity from the one ranked here. Ranking its sites by effect magnitude "
+     "coincides with ranking them by constraint, so the reference cannot separate whether a "
+     "site has a measurable effect from whether it is constrained. Examined while candidate "
+     "references were being surveyed and not used to validate the integrated score; the "
+     "characterization it yields is written to "
+     "results/functional_benchmark/fitness_characterisation.csv."),
 ]
 
 
