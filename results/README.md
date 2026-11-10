@@ -38,6 +38,14 @@ Two further result directories live beside the code that writes them:
 `notebooks/discriminative_score_validation.ipynb`, and `notebooks/chance_correction_results/`,
 from `notebooks/chance_correction.py`.
 
+The benchmark files in `notebooks/discriminative_score_validation_results/` were produced before
+the window covering the stop codon of `gag` and `N` was removed from the position grid, so they
+score 4,280 positions rather than 4,278. Those two positions score zero. Rerunning the notebook
+from a clean kernel reproduces the eight methods exactly and changes only the random baseline on
+HIV-1 and SARS-CoV-2, because it draws from the list of positions: its mean F1 is 0.5543 on a
+rerun against 0.5549 in these files, that is 0.554 against the 0.555 the article reports. The
+files are kept as they are, since the article and its statistical tables are read from them.
+
 The external files two of these analyses read are not redistributed here. They are pinned by
 checksum in `scripts/external_inputs.py`, which names the source of each, and the analyses stop
 rather than run on a different download. The UniProt entries the protein characterization
