@@ -224,7 +224,7 @@ Detailed results are available in `notebooks/*_results/` directories.
 
 If you use KSS in your research, please cite:
 
-> Lebatteux D, Corso F, Soudeyns H, Boucoiran I, Gantt S, Diallo AB. KmerSignificance Score: A discriminative and biologically informed framework for viral k-mer prioritization. *Submitted to PLOS Computational Biology*.
+> Lebatteux D, Corso F, Soudeyns H, Boucoiran I, Gantt S, Baniré Diallo A. KmerSignificance score: A discriminative and biologically informed framework for viral k-mer prioritization. *PLOS Computational Biology*. 2026;22(10):e1014332. <https://doi.org/10.1371/journal.pcbi.1014332>
 
 ## License
 
